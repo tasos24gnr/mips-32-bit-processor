@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu May 23 12:30:46 2019
+Quartus II 64-Bit Version : 7.2 Build 207 03/18/2008 SP 3 SJ Full Version
+Revision Name : controller
+Top-level Entity Name : controller
+Family : Cyclone II
+Total logic elements : 33
+    Total combinational functions : 33
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 17
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

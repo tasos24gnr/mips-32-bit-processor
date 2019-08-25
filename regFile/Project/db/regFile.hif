@@ -1,0 +1,439 @@
+Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Full Version
+11
+1009
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+regFile
+# storage
+db|regFile.(0).cnf
+db|regFile.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+regFile.vhd
+c8b133593d7018b8ded735532fd1ba5
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+16
+PARAMETER_SIGNED_DEC
+DEF
+k
+3
+PARAMETER_SIGNED_DEC
+DEF
+regnum
+8
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+|
+}
+# lmf
+..|..|..|..|..|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+decode3to8
+# storage
+db|regFile.(1).cnf
+db|regFile.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+regFile.vhd
+c8b133593d7018b8ded735532fd1ba5
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(input)
+2 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+decode3to8:G0
+}
+# lmf
+..|..|..|..|..|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+reg0
+# storage
+db|regFile.(2).cnf
+db|regFile.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+regFile.vhd
+c8b133593d7018b8ded735532fd1ba5
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+16
+PARAMETER_SIGNED_DEC
+DEF
+ constraint(input)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+reg0:G1
+}
+# lmf
+..|..|..|..|..|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+reg16
+# storage
+db|regFile.(3).cnf
+db|regFile.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+regFile.vhd
+c8b133593d7018b8ded735532fd1ba5
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+16
+PARAMETER_SIGNED_DEC
+DEF
+ constraint(input)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+reg16:G2
+reg16:G3
+reg16:G4
+reg16:G5
+reg16:G6
+reg16:G7
+reg16:G8
+}
+# lmf
+..|..|..|..|..|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+reg
+# storage
+db|regFile.(4).cnf
+db|regFile.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+regFile.vhd
+c8b133593d7018b8ded735532fd1ba5
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+reg16:G2|reg:G0
+reg16:G2|reg:G1
+reg16:G2|reg:G2
+reg16:G2|reg:G3
+reg16:G2|reg:G4
+reg16:G2|reg:G5
+reg16:G2|reg:G6
+reg16:G2|reg:G7
+reg16:G2|reg:G8
+reg16:G2|reg:G9
+reg16:G2|reg:G10
+reg16:G2|reg:G11
+reg16:G2|reg:G12
+reg16:G2|reg:G13
+reg16:G2|reg:G14
+reg16:G2|reg:G15
+reg16:G3|reg:G0
+reg16:G3|reg:G1
+reg16:G3|reg:G2
+reg16:G3|reg:G3
+reg16:G3|reg:G4
+reg16:G3|reg:G5
+reg16:G3|reg:G6
+reg16:G3|reg:G7
+reg16:G3|reg:G8
+reg16:G3|reg:G9
+reg16:G3|reg:G10
+reg16:G3|reg:G11
+reg16:G3|reg:G12
+reg16:G3|reg:G13
+reg16:G3|reg:G14
+reg16:G3|reg:G15
+reg16:G4|reg:G0
+reg16:G4|reg:G1
+reg16:G4|reg:G2
+reg16:G4|reg:G3
+reg16:G4|reg:G4
+reg16:G4|reg:G5
+reg16:G4|reg:G6
+reg16:G4|reg:G7
+reg16:G4|reg:G8
+reg16:G4|reg:G9
+reg16:G4|reg:G10
+reg16:G4|reg:G11
+reg16:G4|reg:G12
+reg16:G4|reg:G13
+reg16:G4|reg:G14
+reg16:G4|reg:G15
+reg16:G5|reg:G0
+reg16:G5|reg:G1
+reg16:G5|reg:G2
+reg16:G5|reg:G3
+reg16:G5|reg:G4
+reg16:G5|reg:G5
+reg16:G5|reg:G6
+reg16:G5|reg:G7
+reg16:G5|reg:G8
+reg16:G5|reg:G9
+reg16:G5|reg:G10
+reg16:G5|reg:G11
+reg16:G5|reg:G12
+reg16:G5|reg:G13
+reg16:G5|reg:G14
+reg16:G5|reg:G15
+reg16:G6|reg:G0
+reg16:G6|reg:G1
+reg16:G6|reg:G2
+reg16:G6|reg:G3
+reg16:G6|reg:G4
+reg16:G6|reg:G5
+reg16:G6|reg:G6
+reg16:G6|reg:G7
+reg16:G6|reg:G8
+reg16:G6|reg:G9
+reg16:G6|reg:G10
+reg16:G6|reg:G11
+reg16:G6|reg:G12
+reg16:G6|reg:G13
+reg16:G6|reg:G14
+reg16:G6|reg:G15
+reg16:G7|reg:G0
+reg16:G7|reg:G1
+reg16:G7|reg:G2
+reg16:G7|reg:G3
+reg16:G7|reg:G4
+reg16:G7|reg:G5
+reg16:G7|reg:G6
+reg16:G7|reg:G7
+reg16:G7|reg:G8
+reg16:G7|reg:G9
+reg16:G7|reg:G10
+reg16:G7|reg:G11
+reg16:G7|reg:G12
+reg16:G7|reg:G13
+reg16:G7|reg:G14
+reg16:G7|reg:G15
+reg16:G8|reg:G0
+reg16:G8|reg:G1
+reg16:G8|reg:G2
+reg16:G8|reg:G3
+reg16:G8|reg:G4
+reg16:G8|reg:G5
+reg16:G8|reg:G6
+reg16:G8|reg:G7
+reg16:G8|reg:G8
+reg16:G8|reg:G9
+reg16:G8|reg:G10
+reg16:G8|reg:G11
+reg16:G8|reg:G12
+reg16:G8|reg:G13
+reg16:G8|reg:G14
+reg16:G8|reg:G15
+}
+# lmf
+..|..|..|..|..|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+mux8
+# storage
+db|regFile.(5).cnf
+db|regFile.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+regFile.vhd
+c8b133593d7018b8ded735532fd1ba5
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+16
+PARAMETER_SIGNED_DEC
+DEF
+ constraint(input0)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(input1)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(input2)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(input3)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(input4)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(input5)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(input6)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(input7)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(choice)
+2 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+mux8:G9
+mux8:G10
+}
+# lmf
+..|..|..|..|..|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

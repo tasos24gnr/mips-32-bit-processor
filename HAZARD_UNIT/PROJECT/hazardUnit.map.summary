@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu May 23 12:40:39 2019
+Quartus II 64-Bit Version : 7.2 Build 207 03/18/2008 SP 3 SJ Full Version
+Revision Name : hazardUnit
+Top-level Entity Name : hazardUnit
+Family : Cyclone II
+Total logic elements : 2
+    Total combinational functions : 2
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 8
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

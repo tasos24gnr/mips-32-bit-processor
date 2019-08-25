@@ -1,0 +1,292 @@
+Simulator report for register_IF_ID
+Thu May 23 13:22:09 2019
+Quartus II 64-Bit Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 126 nodes    ;
+; Simulation Coverage         ;      93.55 % ;
+; Total Number of Transitions ; 5620         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                              ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+; Option                                                                                     ; Setting            ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+; Simulation mode                                                                            ; Functional         ; Timing        ;
+; Start time                                                                                 ; 0 ns               ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF               ;               ;
+; Vector input source                                                                        ; register_IF_ID.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                 ; On            ;
+; Check outputs                                                                              ; Off                ; Off           ;
+; Report simulation coverage                                                                 ; On                 ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                 ; On            ;
+; Display missing 1-value coverage report                                                    ; On                 ; On            ;
+; Display missing 0-value coverage report                                                    ; On                 ; On            ;
+; Detect setup and hold time violations                                                      ; Off                ; Off           ;
+; Detect glitches                                                                            ; Off                ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                ; Off           ;
+; Generate Signal Activity File                                                              ; Off                ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                 ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE         ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto               ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      93.55 % ;
+; Total nodes checked                                 ; 126          ;
+; Total output ports checked                          ; 124          ;
+; Total output ports with complete 1/0-value coverage ; 116          ;
+; Total output ports with no 1/0-value coverage       ; 8            ;
+; Total output ports with no 1-value coverage         ; 8            ;
+; Total output ports with no 0-value coverage         ; 8            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |register_IF_ID|outPC~0            ; |register_IF_ID|outPC~0            ; out              ;
+; |register_IF_ID|outPC~1            ; |register_IF_ID|outPC~1            ; out              ;
+; |register_IF_ID|outPC~2            ; |register_IF_ID|outPC~2            ; out              ;
+; |register_IF_ID|outPC~3            ; |register_IF_ID|outPC~3            ; out              ;
+; |register_IF_ID|outPC~4            ; |register_IF_ID|outPC~4            ; out              ;
+; |register_IF_ID|outPC~5            ; |register_IF_ID|outPC~5            ; out              ;
+; |register_IF_ID|outPC~6            ; |register_IF_ID|outPC~6            ; out              ;
+; |register_IF_ID|outPC~7            ; |register_IF_ID|outPC~7            ; out              ;
+; |register_IF_ID|outPC~8            ; |register_IF_ID|outPC~8            ; out              ;
+; |register_IF_ID|outPC~9            ; |register_IF_ID|outPC~9            ; out              ;
+; |register_IF_ID|outPC~10           ; |register_IF_ID|outPC~10           ; out              ;
+; |register_IF_ID|outPC~11           ; |register_IF_ID|outPC~11           ; out              ;
+; |register_IF_ID|outPC~12           ; |register_IF_ID|outPC~12           ; out              ;
+; |register_IF_ID|outPC~13           ; |register_IF_ID|outPC~13           ; out              ;
+; |register_IF_ID|outPC~14           ; |register_IF_ID|outPC~14           ; out              ;
+; |register_IF_ID|outPC~15           ; |register_IF_ID|outPC~15           ; out              ;
+; |register_IF_ID|outInstruction~1   ; |register_IF_ID|outInstruction~1   ; out              ;
+; |register_IF_ID|outInstruction~2   ; |register_IF_ID|outInstruction~2   ; out              ;
+; |register_IF_ID|outInstruction~3   ; |register_IF_ID|outInstruction~3   ; out              ;
+; |register_IF_ID|outInstruction~4   ; |register_IF_ID|outInstruction~4   ; out              ;
+; |register_IF_ID|outInstruction~5   ; |register_IF_ID|outInstruction~5   ; out              ;
+; |register_IF_ID|outInstruction~6   ; |register_IF_ID|outInstruction~6   ; out              ;
+; |register_IF_ID|outInstruction~7   ; |register_IF_ID|outInstruction~7   ; out              ;
+; |register_IF_ID|outInstruction~8   ; |register_IF_ID|outInstruction~8   ; out              ;
+; |register_IF_ID|outInstruction~9   ; |register_IF_ID|outInstruction~9   ; out              ;
+; |register_IF_ID|outInstruction~10  ; |register_IF_ID|outInstruction~10  ; out              ;
+; |register_IF_ID|outInstruction~11  ; |register_IF_ID|outInstruction~11  ; out              ;
+; |register_IF_ID|outInstruction~12  ; |register_IF_ID|outInstruction~12  ; out              ;
+; |register_IF_ID|outInstruction~13  ; |register_IF_ID|outInstruction~13  ; out              ;
+; |register_IF_ID|outInstruction~14  ; |register_IF_ID|outInstruction~14  ; out              ;
+; |register_IF_ID|outInstruction~15  ; |register_IF_ID|outInstruction~15  ; out              ;
+; |register_IF_ID|inPC[0]            ; |register_IF_ID|inPC[0]            ; out              ;
+; |register_IF_ID|inPC[1]            ; |register_IF_ID|inPC[1]            ; out              ;
+; |register_IF_ID|inPC[2]            ; |register_IF_ID|inPC[2]            ; out              ;
+; |register_IF_ID|inPC[3]            ; |register_IF_ID|inPC[3]            ; out              ;
+; |register_IF_ID|inPC[4]            ; |register_IF_ID|inPC[4]            ; out              ;
+; |register_IF_ID|inPC[5]            ; |register_IF_ID|inPC[5]            ; out              ;
+; |register_IF_ID|inPC[6]            ; |register_IF_ID|inPC[6]            ; out              ;
+; |register_IF_ID|inPC[7]            ; |register_IF_ID|inPC[7]            ; out              ;
+; |register_IF_ID|inPC[8]            ; |register_IF_ID|inPC[8]            ; out              ;
+; |register_IF_ID|inPC[9]            ; |register_IF_ID|inPC[9]            ; out              ;
+; |register_IF_ID|inPC[10]           ; |register_IF_ID|inPC[10]           ; out              ;
+; |register_IF_ID|inPC[11]           ; |register_IF_ID|inPC[11]           ; out              ;
+; |register_IF_ID|inPC[12]           ; |register_IF_ID|inPC[12]           ; out              ;
+; |register_IF_ID|inPC[13]           ; |register_IF_ID|inPC[13]           ; out              ;
+; |register_IF_ID|inPC[14]           ; |register_IF_ID|inPC[14]           ; out              ;
+; |register_IF_ID|inPC[15]           ; |register_IF_ID|inPC[15]           ; out              ;
+; |register_IF_ID|inInstruction[0]   ; |register_IF_ID|inInstruction[0]   ; out              ;
+; |register_IF_ID|inInstruction[1]   ; |register_IF_ID|inInstruction[1]   ; out              ;
+; |register_IF_ID|inInstruction[2]   ; |register_IF_ID|inInstruction[2]   ; out              ;
+; |register_IF_ID|inInstruction[3]   ; |register_IF_ID|inInstruction[3]   ; out              ;
+; |register_IF_ID|inInstruction[4]   ; |register_IF_ID|inInstruction[4]   ; out              ;
+; |register_IF_ID|inInstruction[5]   ; |register_IF_ID|inInstruction[5]   ; out              ;
+; |register_IF_ID|inInstruction[6]   ; |register_IF_ID|inInstruction[6]   ; out              ;
+; |register_IF_ID|inInstruction[7]   ; |register_IF_ID|inInstruction[7]   ; out              ;
+; |register_IF_ID|inInstruction[8]   ; |register_IF_ID|inInstruction[8]   ; out              ;
+; |register_IF_ID|inInstruction[9]   ; |register_IF_ID|inInstruction[9]   ; out              ;
+; |register_IF_ID|inInstruction[10]  ; |register_IF_ID|inInstruction[10]  ; out              ;
+; |register_IF_ID|inInstruction[11]  ; |register_IF_ID|inInstruction[11]  ; out              ;
+; |register_IF_ID|inInstruction[12]  ; |register_IF_ID|inInstruction[12]  ; out              ;
+; |register_IF_ID|inInstruction[13]  ; |register_IF_ID|inInstruction[13]  ; out              ;
+; |register_IF_ID|inInstruction[14]  ; |register_IF_ID|inInstruction[14]  ; out              ;
+; |register_IF_ID|inInstruction[15]  ; |register_IF_ID|inInstruction[15]  ; out              ;
+; |register_IF_ID|IF_Flush           ; |register_IF_ID|IF_Flush           ; out              ;
+; |register_IF_ID|outPC[0]           ; |register_IF_ID|outPC[0]           ; pin_out          ;
+; |register_IF_ID|outPC[1]           ; |register_IF_ID|outPC[1]           ; pin_out          ;
+; |register_IF_ID|outPC[2]           ; |register_IF_ID|outPC[2]           ; pin_out          ;
+; |register_IF_ID|outPC[3]           ; |register_IF_ID|outPC[3]           ; pin_out          ;
+; |register_IF_ID|outPC[4]           ; |register_IF_ID|outPC[4]           ; pin_out          ;
+; |register_IF_ID|outPC[5]           ; |register_IF_ID|outPC[5]           ; pin_out          ;
+; |register_IF_ID|outPC[6]           ; |register_IF_ID|outPC[6]           ; pin_out          ;
+; |register_IF_ID|outPC[7]           ; |register_IF_ID|outPC[7]           ; pin_out          ;
+; |register_IF_ID|outPC[8]           ; |register_IF_ID|outPC[8]           ; pin_out          ;
+; |register_IF_ID|outPC[9]           ; |register_IF_ID|outPC[9]           ; pin_out          ;
+; |register_IF_ID|outPC[10]          ; |register_IF_ID|outPC[10]          ; pin_out          ;
+; |register_IF_ID|outPC[11]          ; |register_IF_ID|outPC[11]          ; pin_out          ;
+; |register_IF_ID|outPC[12]          ; |register_IF_ID|outPC[12]          ; pin_out          ;
+; |register_IF_ID|outPC[13]          ; |register_IF_ID|outPC[13]          ; pin_out          ;
+; |register_IF_ID|outPC[14]          ; |register_IF_ID|outPC[14]          ; pin_out          ;
+; |register_IF_ID|outPC[15]          ; |register_IF_ID|outPC[15]          ; pin_out          ;
+; |register_IF_ID|outInstruction[0]  ; |register_IF_ID|outInstruction[0]  ; pin_out          ;
+; |register_IF_ID|outInstruction[1]  ; |register_IF_ID|outInstruction[1]  ; pin_out          ;
+; |register_IF_ID|outInstruction[2]  ; |register_IF_ID|outInstruction[2]  ; pin_out          ;
+; |register_IF_ID|outInstruction[3]  ; |register_IF_ID|outInstruction[3]  ; pin_out          ;
+; |register_IF_ID|outInstruction[4]  ; |register_IF_ID|outInstruction[4]  ; pin_out          ;
+; |register_IF_ID|outInstruction[5]  ; |register_IF_ID|outInstruction[5]  ; pin_out          ;
+; |register_IF_ID|outInstruction[6]  ; |register_IF_ID|outInstruction[6]  ; pin_out          ;
+; |register_IF_ID|outInstruction[7]  ; |register_IF_ID|outInstruction[7]  ; pin_out          ;
+; |register_IF_ID|outInstruction[8]  ; |register_IF_ID|outInstruction[8]  ; pin_out          ;
+; |register_IF_ID|outInstruction[9]  ; |register_IF_ID|outInstruction[9]  ; pin_out          ;
+; |register_IF_ID|outInstruction[10] ; |register_IF_ID|outInstruction[10] ; pin_out          ;
+; |register_IF_ID|outInstruction[11] ; |register_IF_ID|outInstruction[11] ; pin_out          ;
+; |register_IF_ID|outInstruction[12] ; |register_IF_ID|outInstruction[12] ; pin_out          ;
+; |register_IF_ID|outInstruction[13] ; |register_IF_ID|outInstruction[13] ; pin_out          ;
+; |register_IF_ID|outInstruction[14] ; |register_IF_ID|outInstruction[14] ; pin_out          ;
+; |register_IF_ID|fa:G15|sum         ; |register_IF_ID|fa:G15|sum         ; out0             ;
+; |register_IF_ID|fa:G14|sum         ; |register_IF_ID|fa:G14|sum         ; out0             ;
+; |register_IF_ID|fa:G13|sum         ; |register_IF_ID|fa:G13|sum         ; out0             ;
+; |register_IF_ID|fa:G12|sum         ; |register_IF_ID|fa:G12|sum         ; out0             ;
+; |register_IF_ID|fa:G11|sum         ; |register_IF_ID|fa:G11|sum         ; out0             ;
+; |register_IF_ID|fa:G10|sum         ; |register_IF_ID|fa:G10|sum         ; out0             ;
+; |register_IF_ID|fa:G9|sum          ; |register_IF_ID|fa:G9|sum          ; out0             ;
+; |register_IF_ID|fa:G8|sum          ; |register_IF_ID|fa:G8|sum          ; out0             ;
+; |register_IF_ID|fa:G8|carryout~1   ; |register_IF_ID|fa:G8|carryout~1   ; out0             ;
+; |register_IF_ID|fa:G7|sum          ; |register_IF_ID|fa:G7|sum          ; out0             ;
+; |register_IF_ID|fa:G7|carryout~1   ; |register_IF_ID|fa:G7|carryout~1   ; out0             ;
+; |register_IF_ID|fa:G6|sum          ; |register_IF_ID|fa:G6|sum          ; out0             ;
+; |register_IF_ID|fa:G6|carryout~1   ; |register_IF_ID|fa:G6|carryout~1   ; out0             ;
+; |register_IF_ID|fa:G5|sum          ; |register_IF_ID|fa:G5|sum          ; out0             ;
+; |register_IF_ID|fa:G5|carryout~1   ; |register_IF_ID|fa:G5|carryout~1   ; out0             ;
+; |register_IF_ID|fa:G4|sum          ; |register_IF_ID|fa:G4|sum          ; out0             ;
+; |register_IF_ID|fa:G4|carryout~1   ; |register_IF_ID|fa:G4|carryout~1   ; out0             ;
+; |register_IF_ID|fa:G3|sum          ; |register_IF_ID|fa:G3|sum          ; out0             ;
+; |register_IF_ID|fa:G3|carryout~1   ; |register_IF_ID|fa:G3|carryout~1   ; out0             ;
+; |register_IF_ID|fa:G2|sum          ; |register_IF_ID|fa:G2|sum          ; out0             ;
+; |register_IF_ID|fa:G2|carryout~1   ; |register_IF_ID|fa:G2|carryout~1   ; out0             ;
++------------------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                   ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |register_IF_ID|outInstruction~0   ; |register_IF_ID|outInstruction~0   ; out              ;
+; |register_IF_ID|outInstruction[15] ; |register_IF_ID|outInstruction[15] ; pin_out          ;
+; |register_IF_ID|fa:G14|carryout~1  ; |register_IF_ID|fa:G14|carryout~1  ; out0             ;
+; |register_IF_ID|fa:G13|carryout~1  ; |register_IF_ID|fa:G13|carryout~1  ; out0             ;
+; |register_IF_ID|fa:G12|carryout~1  ; |register_IF_ID|fa:G12|carryout~1  ; out0             ;
+; |register_IF_ID|fa:G11|carryout~1  ; |register_IF_ID|fa:G11|carryout~1  ; out0             ;
+; |register_IF_ID|fa:G10|carryout~1  ; |register_IF_ID|fa:G10|carryout~1  ; out0             ;
+; |register_IF_ID|fa:G9|carryout~1   ; |register_IF_ID|fa:G9|carryout~1   ; out0             ;
++------------------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                   ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |register_IF_ID|outInstruction~0   ; |register_IF_ID|outInstruction~0   ; out              ;
+; |register_IF_ID|outInstruction[15] ; |register_IF_ID|outInstruction[15] ; pin_out          ;
+; |register_IF_ID|fa:G14|carryout~1  ; |register_IF_ID|fa:G14|carryout~1  ; out0             ;
+; |register_IF_ID|fa:G13|carryout~1  ; |register_IF_ID|fa:G13|carryout~1  ; out0             ;
+; |register_IF_ID|fa:G12|carryout~1  ; |register_IF_ID|fa:G12|carryout~1  ; out0             ;
+; |register_IF_ID|fa:G11|carryout~1  ; |register_IF_ID|fa:G11|carryout~1  ; out0             ;
+; |register_IF_ID|fa:G10|carryout~1  ; |register_IF_ID|fa:G10|carryout~1  ; out0             ;
+; |register_IF_ID|fa:G9|carryout~1   ; |register_IF_ID|fa:G9|carryout~1   ; out0             ;
++------------------------------------+------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Full Version
+    Info: Processing started: Thu May 23 13:21:52 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off register_IF_ID -c register_IF_ID
+Info: Using vector source file "C:/altera/72/quartus/register_IF_ID/register_IF_ID.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      93.55 %
+Info: Number of transitions in simulation is 5620
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Allocated 4323 megabytes of memory during processing
+    Info: Processing ended: Thu May 23 13:22:25 2019
+    Info: Elapsed time: 00:00:33
+
+

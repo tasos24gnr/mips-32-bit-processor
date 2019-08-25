@@ -1,0 +1,37 @@
+|reg16b
+Input[0] => Output[0].DATAIN
+Input[1] => Output[1].DATAIN
+Input[2] => Output[2].DATAIN
+Input[3] => Output[3].DATAIN
+Input[4] => Output[4].DATAIN
+Input[5] => Output[5].DATAIN
+Input[6] => Output[6].DATAIN
+Input[7] => Output[7].DATAIN
+Input[8] => Output[8].DATAIN
+Input[9] => Output[9].DATAIN
+Input[10] => Output[10].DATAIN
+Input[11] => Output[11].DATAIN
+Input[12] => Output[12].DATAIN
+Input[13] => Output[13].DATAIN
+Input[14] => Output[14].DATAIN
+Input[15] => Output[15].DATAIN
+Enable => ~NO_FANOUT~
+Clock => ~NO_FANOUT~
+Output[0] <= Input[0].DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= Input[1].DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= Input[2].DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= Input[3].DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= Input[4].DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= Input[5].DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= Input[6].DB_MAX_OUTPUT_PORT_TYPE
+Output[7] <= Input[7].DB_MAX_OUTPUT_PORT_TYPE
+Output[8] <= Input[8].DB_MAX_OUTPUT_PORT_TYPE
+Output[9] <= Input[9].DB_MAX_OUTPUT_PORT_TYPE
+Output[10] <= Input[10].DB_MAX_OUTPUT_PORT_TYPE
+Output[11] <= Input[11].DB_MAX_OUTPUT_PORT_TYPE
+Output[12] <= Input[12].DB_MAX_OUTPUT_PORT_TYPE
+Output[13] <= Input[13].DB_MAX_OUTPUT_PORT_TYPE
+Output[14] <= Input[14].DB_MAX_OUTPUT_PORT_TYPE
+Output[15] <= Input[15].DB_MAX_OUTPUT_PORT_TYPE
+
+

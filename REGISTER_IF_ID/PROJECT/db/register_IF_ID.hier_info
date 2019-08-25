@@ -1,0 +1,325 @@
+|register_IF_ID
+inPC[0] => fa:G0.in1
+inPC[1] => fa:G1.in1
+inPC[2] => fa:G2.in1
+inPC[3] => fa:G3.in1
+inPC[4] => fa:G4.in1
+inPC[5] => fa:G5.in1
+inPC[6] => fa:G6.in1
+inPC[7] => fa:G7.in1
+inPC[8] => fa:G8.in1
+inPC[9] => fa:G9.in1
+inPC[10] => fa:G10.in1
+inPC[11] => fa:G11.in1
+inPC[12] => fa:G12.in1
+inPC[13] => fa:G13.in1
+inPC[14] => fa:G14.in1
+inPC[15] => fa:G15.in1
+inInstruction[0] => outInstruction~15.DATAA
+inInstruction[1] => outInstruction~14.DATAA
+inInstruction[2] => outInstruction~13.DATAA
+inInstruction[3] => outInstruction~12.DATAA
+inInstruction[4] => outInstruction~11.DATAA
+inInstruction[5] => outInstruction~10.DATAA
+inInstruction[6] => outInstruction~9.DATAA
+inInstruction[7] => outInstruction~8.DATAA
+inInstruction[8] => outInstruction~7.DATAA
+inInstruction[9] => outInstruction~6.DATAA
+inInstruction[10] => outInstruction~5.DATAA
+inInstruction[11] => outInstruction~4.DATAA
+inInstruction[12] => outInstruction~3.DATAA
+inInstruction[13] => outInstruction~2.DATAA
+inInstruction[14] => outInstruction~1.DATAA
+inInstruction[15] => outInstruction~0.DATAA
+clock => ~NO_FANOUT~
+IF_Flush => outInstruction~15.OUTPUTSELECT
+IF_Flush => outInstruction~14.OUTPUTSELECT
+IF_Flush => outInstruction~13.OUTPUTSELECT
+IF_Flush => outInstruction~12.OUTPUTSELECT
+IF_Flush => outInstruction~11.OUTPUTSELECT
+IF_Flush => outInstruction~10.OUTPUTSELECT
+IF_Flush => outInstruction~9.OUTPUTSELECT
+IF_Flush => outInstruction~8.OUTPUTSELECT
+IF_Flush => outInstruction~7.OUTPUTSELECT
+IF_Flush => outInstruction~6.OUTPUTSELECT
+IF_Flush => outInstruction~5.OUTPUTSELECT
+IF_Flush => outInstruction~4.OUTPUTSELECT
+IF_Flush => outInstruction~3.OUTPUTSELECT
+IF_Flush => outInstruction~2.OUTPUTSELECT
+IF_Flush => outInstruction~1.OUTPUTSELECT
+IF_Flush => outInstruction~0.OUTPUTSELECT
+IF_Flush => outPC~15.OUTPUTSELECT
+IF_Flush => outPC~14.OUTPUTSELECT
+IF_Flush => outPC~13.OUTPUTSELECT
+IF_Flush => outPC~12.OUTPUTSELECT
+IF_Flush => outPC~11.OUTPUTSELECT
+IF_Flush => outPC~10.OUTPUTSELECT
+IF_Flush => outPC~9.OUTPUTSELECT
+IF_Flush => outPC~8.OUTPUTSELECT
+IF_Flush => outPC~7.OUTPUTSELECT
+IF_Flush => outPC~6.OUTPUTSELECT
+IF_Flush => outPC~5.OUTPUTSELECT
+IF_Flush => outPC~4.OUTPUTSELECT
+IF_Flush => outPC~3.OUTPUTSELECT
+IF_Flush => outPC~2.OUTPUTSELECT
+IF_Flush => outPC~1.OUTPUTSELECT
+IF_Flush => outPC~0.OUTPUTSELECT
+IF_ID_ENABLE => ~NO_FANOUT~
+outPC[0] <= outPC~15.DB_MAX_OUTPUT_PORT_TYPE
+outPC[1] <= outPC~14.DB_MAX_OUTPUT_PORT_TYPE
+outPC[2] <= outPC~13.DB_MAX_OUTPUT_PORT_TYPE
+outPC[3] <= outPC~12.DB_MAX_OUTPUT_PORT_TYPE
+outPC[4] <= outPC~11.DB_MAX_OUTPUT_PORT_TYPE
+outPC[5] <= outPC~10.DB_MAX_OUTPUT_PORT_TYPE
+outPC[6] <= outPC~9.DB_MAX_OUTPUT_PORT_TYPE
+outPC[7] <= outPC~8.DB_MAX_OUTPUT_PORT_TYPE
+outPC[8] <= outPC~7.DB_MAX_OUTPUT_PORT_TYPE
+outPC[9] <= outPC~6.DB_MAX_OUTPUT_PORT_TYPE
+outPC[10] <= outPC~5.DB_MAX_OUTPUT_PORT_TYPE
+outPC[11] <= outPC~4.DB_MAX_OUTPUT_PORT_TYPE
+outPC[12] <= outPC~3.DB_MAX_OUTPUT_PORT_TYPE
+outPC[13] <= outPC~2.DB_MAX_OUTPUT_PORT_TYPE
+outPC[14] <= outPC~1.DB_MAX_OUTPUT_PORT_TYPE
+outPC[15] <= outPC~0.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[0] <= outInstruction~15.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[1] <= outInstruction~14.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[2] <= outInstruction~13.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[3] <= outInstruction~12.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[4] <= outInstruction~11.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[5] <= outInstruction~10.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[6] <= outInstruction~9.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[7] <= outInstruction~8.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[8] <= outInstruction~7.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[9] <= outInstruction~6.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[10] <= outInstruction~5.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[11] <= outInstruction~4.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[12] <= outInstruction~3.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[13] <= outInstruction~2.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[14] <= outInstruction~1.DB_MAX_OUTPUT_PORT_TYPE
+outInstruction[15] <= outInstruction~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G0
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G1
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G3
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G4
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G5
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G6
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G7
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G8
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G9
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G10
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G11
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G12
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G13
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G14
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_IF_ID|fa:G15
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+

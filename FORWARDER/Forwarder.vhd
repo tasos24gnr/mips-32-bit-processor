@@ -1,0 +1,38 @@
+--ANASTASIOS BENOS 3130141
+--TSOPELAS EFTHIMIOS 3130210
+
+-- FORWARDER
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Forwarder is
+	generic( addr_size : INTEGER := 3);
+	port ( R1AD , R2AD, regAD_EXMEM, RegAD_MEMWB : IN STD_LOGIC_VECTOR(addr_size-1 downto 0);
+			S1, S2 : OUT STD_LOGIC_VECTOR(1 downto 0));
+end entity Forwarder;
+
+
+architecture behave of Forwarder is
+begin
+	process (RegAD_EXMEM, RegAD_MEMWB, R1AD, R2AD)
+	begin
+		-- Arxikopoiw me 00 gia to default case
+		S1 <= "00";  --epilogh tou R1AD
+		S2 <= "00";  --epilogh tou R2AD
+		
+		if (R1AD = RegAD_EXMEM) then 
+			S1 <= "10" ; --epilogh RegAD_EXMEM
+		elsif (R1AD = RegAD_MEMWB) then
+			S1 <= "01" ; --epilogh RegAD_MEMWB
+		end if;
+		
+		if (R2AD = RegAD_EXMEM) then 
+			S2 <= "10";  --epilogh RegAD_EXMEM
+		elsif (R2AD = RegAD_MEMWB) then
+			S2 <= "01";  --epilogh RegAD_MEMWB
+		end if;
+	end process;
+end architecture behave;
+
+

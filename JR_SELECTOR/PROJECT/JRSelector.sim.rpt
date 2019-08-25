@@ -1,0 +1,274 @@
+Simulator report for JRSelector
+Thu May 23 13:57:13 2019
+Quartus II 64-Bit Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 117 nodes    ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 7591         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 117          ;
+; Total output ports checked                          ; 117          ;
+; Total output ports with complete 1/0-value coverage ; 117          ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                            ;
++--------------------------+--------------------------+------------------+
+; Node Name                ; Output Port Name         ; Output Port Type ;
++--------------------------+--------------------------+------------------+
+; |JRSelector|result~0     ; |JRSelector|result~0     ; out              ;
+; |JRSelector|result~1     ; |JRSelector|result~1     ; out              ;
+; |JRSelector|result~2     ; |JRSelector|result~2     ; out              ;
+; |JRSelector|result~3     ; |JRSelector|result~3     ; out              ;
+; |JRSelector|result~4     ; |JRSelector|result~4     ; out              ;
+; |JRSelector|result~5     ; |JRSelector|result~5     ; out              ;
+; |JRSelector|result~6     ; |JRSelector|result~6     ; out              ;
+; |JRSelector|result~7     ; |JRSelector|result~7     ; out              ;
+; |JRSelector|result~8     ; |JRSelector|result~8     ; out              ;
+; |JRSelector|result~9     ; |JRSelector|result~9     ; out              ;
+; |JRSelector|result~10    ; |JRSelector|result~10    ; out              ;
+; |JRSelector|result~11    ; |JRSelector|result~11    ; out              ;
+; |JRSelector|result~12    ; |JRSelector|result~12    ; out              ;
+; |JRSelector|result~13    ; |JRSelector|result~13    ; out              ;
+; |JRSelector|result~14    ; |JRSelector|result~14    ; out              ;
+; |JRSelector|result~15    ; |JRSelector|result~15    ; out              ;
+; |JRSelector|result~16    ; |JRSelector|result~16    ; out              ;
+; |JRSelector|result~17    ; |JRSelector|result~17    ; out              ;
+; |JRSelector|result~18    ; |JRSelector|result~18    ; out              ;
+; |JRSelector|result~19    ; |JRSelector|result~19    ; out              ;
+; |JRSelector|result~20    ; |JRSelector|result~20    ; out              ;
+; |JRSelector|result~21    ; |JRSelector|result~21    ; out              ;
+; |JRSelector|result~22    ; |JRSelector|result~22    ; out              ;
+; |JRSelector|result~23    ; |JRSelector|result~23    ; out              ;
+; |JRSelector|result~24    ; |JRSelector|result~24    ; out              ;
+; |JRSelector|result~25    ; |JRSelector|result~25    ; out              ;
+; |JRSelector|result~26    ; |JRSelector|result~26    ; out              ;
+; |JRSelector|result~27    ; |JRSelector|result~27    ; out              ;
+; |JRSelector|result~28    ; |JRSelector|result~28    ; out              ;
+; |JRSelector|result~29    ; |JRSelector|result~29    ; out              ;
+; |JRSelector|result~30    ; |JRSelector|result~30    ; out              ;
+; |JRSelector|result~31    ; |JRSelector|result~31    ; out              ;
+; |JRSelector|result~32    ; |JRSelector|result~32    ; out              ;
+; |JRSelector|result~33    ; |JRSelector|result~33    ; out              ;
+; |JRSelector|result~34    ; |JRSelector|result~34    ; out              ;
+; |JRSelector|result~35    ; |JRSelector|result~35    ; out              ;
+; |JRSelector|result~36    ; |JRSelector|result~36    ; out              ;
+; |JRSelector|result~37    ; |JRSelector|result~37    ; out              ;
+; |JRSelector|result~38    ; |JRSelector|result~38    ; out              ;
+; |JRSelector|result~39    ; |JRSelector|result~39    ; out              ;
+; |JRSelector|result~40    ; |JRSelector|result~40    ; out              ;
+; |JRSelector|result~41    ; |JRSelector|result~41    ; out              ;
+; |JRSelector|result~42    ; |JRSelector|result~42    ; out              ;
+; |JRSelector|result~43    ; |JRSelector|result~43    ; out              ;
+; |JRSelector|result~44    ; |JRSelector|result~44    ; out              ;
+; |JRSelector|result~45    ; |JRSelector|result~45    ; out              ;
+; |JRSelector|result~46    ; |JRSelector|result~46    ; out              ;
+; |JRSelector|result~47    ; |JRSelector|result~47    ; out              ;
+; |JRSelector|jumpAD[0]    ; |JRSelector|jumpAD[0]    ; out              ;
+; |JRSelector|jumpAD[1]    ; |JRSelector|jumpAD[1]    ; out              ;
+; |JRSelector|jumpAD[2]    ; |JRSelector|jumpAD[2]    ; out              ;
+; |JRSelector|jumpAD[3]    ; |JRSelector|jumpAD[3]    ; out              ;
+; |JRSelector|jumpAD[4]    ; |JRSelector|jumpAD[4]    ; out              ;
+; |JRSelector|jumpAD[5]    ; |JRSelector|jumpAD[5]    ; out              ;
+; |JRSelector|jumpAD[6]    ; |JRSelector|jumpAD[6]    ; out              ;
+; |JRSelector|jumpAD[7]    ; |JRSelector|jumpAD[7]    ; out              ;
+; |JRSelector|jumpAD[8]    ; |JRSelector|jumpAD[8]    ; out              ;
+; |JRSelector|jumpAD[9]    ; |JRSelector|jumpAD[9]    ; out              ;
+; |JRSelector|jumpAD[10]   ; |JRSelector|jumpAD[10]   ; out              ;
+; |JRSelector|jumpAD[11]   ; |JRSelector|jumpAD[11]   ; out              ;
+; |JRSelector|jumpAD[12]   ; |JRSelector|jumpAD[12]   ; out              ;
+; |JRSelector|jumpAD[13]   ; |JRSelector|jumpAD[13]   ; out              ;
+; |JRSelector|jumpAD[14]   ; |JRSelector|jumpAD[14]   ; out              ;
+; |JRSelector|jumpAD[15]   ; |JRSelector|jumpAD[15]   ; out              ;
+; |JRSelector|branchAd[0]  ; |JRSelector|branchAd[0]  ; out              ;
+; |JRSelector|branchAd[1]  ; |JRSelector|branchAd[1]  ; out              ;
+; |JRSelector|branchAd[2]  ; |JRSelector|branchAd[2]  ; out              ;
+; |JRSelector|branchAd[3]  ; |JRSelector|branchAd[3]  ; out              ;
+; |JRSelector|branchAd[4]  ; |JRSelector|branchAd[4]  ; out              ;
+; |JRSelector|branchAd[5]  ; |JRSelector|branchAd[5]  ; out              ;
+; |JRSelector|branchAd[6]  ; |JRSelector|branchAd[6]  ; out              ;
+; |JRSelector|branchAd[7]  ; |JRSelector|branchAd[7]  ; out              ;
+; |JRSelector|branchAd[8]  ; |JRSelector|branchAd[8]  ; out              ;
+; |JRSelector|branchAd[9]  ; |JRSelector|branchAd[9]  ; out              ;
+; |JRSelector|branchAd[10] ; |JRSelector|branchAd[10] ; out              ;
+; |JRSelector|branchAd[11] ; |JRSelector|branchAd[11] ; out              ;
+; |JRSelector|branchAd[12] ; |JRSelector|branchAd[12] ; out              ;
+; |JRSelector|branchAd[13] ; |JRSelector|branchAd[13] ; out              ;
+; |JRSelector|branchAd[14] ; |JRSelector|branchAd[14] ; out              ;
+; |JRSelector|branchAd[15] ; |JRSelector|branchAd[15] ; out              ;
+; |JRSelector|PCP2AD[0]    ; |JRSelector|PCP2AD[0]    ; out              ;
+; |JRSelector|PCP2AD[1]    ; |JRSelector|PCP2AD[1]    ; out              ;
+; |JRSelector|PCP2AD[2]    ; |JRSelector|PCP2AD[2]    ; out              ;
+; |JRSelector|PCP2AD[3]    ; |JRSelector|PCP2AD[3]    ; out              ;
+; |JRSelector|PCP2AD[4]    ; |JRSelector|PCP2AD[4]    ; out              ;
+; |JRSelector|PCP2AD[5]    ; |JRSelector|PCP2AD[5]    ; out              ;
+; |JRSelector|PCP2AD[6]    ; |JRSelector|PCP2AD[6]    ; out              ;
+; |JRSelector|PCP2AD[7]    ; |JRSelector|PCP2AD[7]    ; out              ;
+; |JRSelector|PCP2AD[8]    ; |JRSelector|PCP2AD[8]    ; out              ;
+; |JRSelector|PCP2AD[9]    ; |JRSelector|PCP2AD[9]    ; out              ;
+; |JRSelector|PCP2AD[10]   ; |JRSelector|PCP2AD[10]   ; out              ;
+; |JRSelector|PCP2AD[11]   ; |JRSelector|PCP2AD[11]   ; out              ;
+; |JRSelector|PCP2AD[12]   ; |JRSelector|PCP2AD[12]   ; out              ;
+; |JRSelector|PCP2AD[13]   ; |JRSelector|PCP2AD[13]   ; out              ;
+; |JRSelector|PCP2AD[14]   ; |JRSelector|PCP2AD[14]   ; out              ;
+; |JRSelector|PCP2AD[15]   ; |JRSelector|PCP2AD[15]   ; out              ;
+; |JRSelector|JRopcode[0]  ; |JRSelector|JRopcode[0]  ; out              ;
+; |JRSelector|JRopcode[1]  ; |JRSelector|JRopcode[1]  ; out              ;
+; |JRSelector|result[0]    ; |JRSelector|result[0]    ; pin_out          ;
+; |JRSelector|result[1]    ; |JRSelector|result[1]    ; pin_out          ;
+; |JRSelector|result[2]    ; |JRSelector|result[2]    ; pin_out          ;
+; |JRSelector|result[3]    ; |JRSelector|result[3]    ; pin_out          ;
+; |JRSelector|result[4]    ; |JRSelector|result[4]    ; pin_out          ;
+; |JRSelector|result[5]    ; |JRSelector|result[5]    ; pin_out          ;
+; |JRSelector|result[6]    ; |JRSelector|result[6]    ; pin_out          ;
+; |JRSelector|result[7]    ; |JRSelector|result[7]    ; pin_out          ;
+; |JRSelector|result[8]    ; |JRSelector|result[8]    ; pin_out          ;
+; |JRSelector|result[9]    ; |JRSelector|result[9]    ; pin_out          ;
+; |JRSelector|result[10]   ; |JRSelector|result[10]   ; pin_out          ;
+; |JRSelector|result[11]   ; |JRSelector|result[11]   ; pin_out          ;
+; |JRSelector|result[12]   ; |JRSelector|result[12]   ; pin_out          ;
+; |JRSelector|result[13]   ; |JRSelector|result[13]   ; pin_out          ;
+; |JRSelector|result[14]   ; |JRSelector|result[14]   ; pin_out          ;
+; |JRSelector|result[15]   ; |JRSelector|result[15]   ; pin_out          ;
+; |JRSelector|Equal0~3     ; |JRSelector|Equal0~3     ; out0             ;
+; |JRSelector|Equal1~3     ; |JRSelector|Equal1~3     ; out0             ;
+; |JRSelector|Equal2~3     ; |JRSelector|Equal2~3     ; out0             ;
++--------------------------+--------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Full Version
+    Info: Processing started: Thu May 23 13:56:57 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off JRSelector -c JRSelector
+Info: Using vector source file "C:/altera/72/quartus/JRSelector/JRSelector.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is     100.00 %
+Info: Number of transitions in simulation is 7591
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Allocated 4323 megabytes of memory during processing
+    Info: Processing ended: Thu May 23 13:57:30 2019
+    Info: Elapsed time: 00:00:33
+
+

@@ -1,0 +1,1025 @@
+Classic Timing Analyzer report for regFile
+Thu May 09 13:46:54 2019
+Quartus II 64-Bit Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. tco
+  6. tpd
+  7. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                       ;
++------------------------------+-------+---------------+-------------+-----------------------+----------+-------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From                  ; To       ; From Clock  ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+-----------------------+----------+-------------+----------+--------------+
+; Worst-case tco               ; N/A   ; None          ; 16.910 ns   ; reg16:G6|reg:G9|P4~45 ; read2[9] ; write1ad[0] ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 17.541 ns   ; read2ad[1]            ; read2[9] ; --          ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;                       ;          ;             ;          ; 0            ;
++------------------------------+-------+---------------+-------------+-----------------------+----------+-------------+----------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                      ;
++----------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                         ; Setting            ; From ; To ; Entity Name ;
++----------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                    ; EP2C35F672C6       ;      ;    ;             ;
+; Timing Models                                                  ; Final              ;      ;    ;             ;
+; Default hold multicycle                                        ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                      ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                         ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                 ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                               ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                          ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                        ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                               ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                           ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                  ; Off                ;      ;    ;             ;
+; Number of source nodes to report per destination node          ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                          ; 10                 ;      ;    ;             ;
+; Number of paths to report                                      ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                   ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                         ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                     ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                   ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis ; Off                ;      ;    ;             ;
++----------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; write1ad[1]     ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; clock           ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; write1ad[2]     ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; write1ad[0]     ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; tco                                                                                                                                                            ;
++-----------------------------------------+-----------------------------------------------------+------------+------------------------+------------+-------------+
+; Slack                                   ; Required tco                                        ; Actual tco ; From                   ; To         ; From Clock  ;
++-----------------------------------------+-----------------------------------------------------+------------+------------------------+------------+-------------+
+; N/A                                     ; None                                                ; 16.910 ns  ; reg16:G6|reg:G9|P4~45  ; read2[9]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 16.733 ns  ; reg16:G6|reg:G9|P4~45  ; read2[9]   ; clock       ;
+; N/A                                     ; None                                                ; 16.694 ns  ; reg16:G6|reg:G9|P4~45  ; read2[9]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 16.629 ns  ; reg16:G6|reg:G9|P4~45  ; read2[9]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 16.519 ns  ; reg16:G4|reg:G6|P4~45  ; read1[6]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 16.503 ns  ; reg16:G2|reg:G4|P4~45  ; read1[4]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 16.422 ns  ; reg16:G4|reg:G6|P4~45  ; read1[6]   ; clock       ;
+; N/A                                     ; None                                                ; 16.378 ns  ; reg16:G4|reg:G6|P4~45  ; read1[6]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 16.326 ns  ; reg16:G2|reg:G4|P4~45  ; read1[4]   ; clock       ;
+; N/A                                     ; None                                                ; 16.303 ns  ; reg16:G4|reg:G6|P4~45  ; read1[6]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 16.284 ns  ; reg16:G2|reg:G4|P4~45  ; read1[4]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 16.180 ns  ; reg16:G2|reg:G4|P4~45  ; read1[4]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 15.924 ns  ; reg16:G2|reg:G9|P4~45  ; read2[9]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 15.757 ns  ; reg16:G8|reg:G9|P4~45  ; read2[9]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 15.747 ns  ; reg16:G2|reg:G9|P4~45  ; read2[9]   ; clock       ;
+; N/A                                     ; None                                                ; 15.736 ns  ; reg16:G8|reg:G9|P4~45  ; read2[9]   ; clock       ;
+; N/A                                     ; None                                                ; 15.705 ns  ; reg16:G2|reg:G9|P4~45  ; read2[9]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 15.687 ns  ; reg16:G4|reg:G5|P4~45  ; read1[5]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 15.649 ns  ; reg16:G4|reg:G6|P4~45  ; read2[6]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 15.602 ns  ; reg16:G8|reg:G9|P4~45  ; read2[9]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 15.601 ns  ; reg16:G2|reg:G9|P4~45  ; read2[9]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 15.590 ns  ; reg16:G4|reg:G5|P4~45  ; read1[5]   ; clock       ;
+; N/A                                     ; None                                                ; 15.559 ns  ; reg16:G4|reg:G15|P4~45 ; read2[15]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 15.552 ns  ; reg16:G4|reg:G6|P4~45  ; read2[6]   ; clock       ;
+; N/A                                     ; None                                                ; 15.546 ns  ; reg16:G4|reg:G5|P4~45  ; read1[5]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 15.508 ns  ; reg16:G4|reg:G6|P4~45  ; read2[6]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 15.476 ns  ; reg16:G4|reg:G2|P4~45  ; read2[2]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 15.473 ns  ; reg16:G4|reg:G14|P4~45 ; read2[14]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 15.471 ns  ; reg16:G4|reg:G5|P4~45  ; read1[5]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 15.462 ns  ; reg16:G4|reg:G15|P4~45 ; read2[15]  ; clock       ;
+; N/A                                     ; None                                                ; 15.439 ns  ; reg16:G8|reg:G4|P4~45  ; read1[4]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 15.433 ns  ; reg16:G4|reg:G6|P4~45  ; read2[6]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 15.418 ns  ; reg16:G4|reg:G15|P4~45 ; read2[15]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 15.418 ns  ; reg16:G8|reg:G4|P4~45  ; read1[4]   ; clock       ;
+; N/A                                     ; None                                                ; 15.410 ns  ; reg16:G8|reg:G9|P4~45  ; read2[9]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 15.379 ns  ; reg16:G4|reg:G2|P4~45  ; read2[2]   ; clock       ;
+; N/A                                     ; None                                                ; 15.376 ns  ; reg16:G4|reg:G14|P4~45 ; read2[14]  ; clock       ;
+; N/A                                     ; None                                                ; 15.343 ns  ; reg16:G4|reg:G15|P4~45 ; read2[15]  ; write1ad[2] ;
+; N/A                                     ; None                                                ; 15.335 ns  ; reg16:G4|reg:G2|P4~45  ; read2[2]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 15.332 ns  ; reg16:G4|reg:G14|P4~45 ; read2[14]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 15.284 ns  ; reg16:G8|reg:G4|P4~45  ; read1[4]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 15.276 ns  ; reg16:G4|reg:G14|P4~45 ; read1[14]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 15.260 ns  ; reg16:G4|reg:G2|P4~45  ; read2[2]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 15.257 ns  ; reg16:G4|reg:G14|P4~45 ; read2[14]  ; write1ad[2] ;
+; N/A                                     ; None                                                ; 15.179 ns  ; reg16:G4|reg:G14|P4~45 ; read1[14]  ; clock       ;
+; N/A                                     ; None                                                ; 15.135 ns  ; reg16:G4|reg:G14|P4~45 ; read1[14]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 15.117 ns  ; reg16:G2|reg:G6|P4~45  ; read1[6]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 15.092 ns  ; reg16:G8|reg:G4|P4~45  ; read1[4]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 15.067 ns  ; reg16:G4|reg:G2|P4~45  ; read1[2]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 15.060 ns  ; reg16:G4|reg:G14|P4~45 ; read1[14]  ; write1ad[2] ;
+; N/A                                     ; None                                                ; 15.006 ns  ; reg16:G4|reg:G3|P4~45  ; read2[3]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.970 ns  ; reg16:G4|reg:G2|P4~45  ; read1[2]   ; clock       ;
+; N/A                                     ; None                                                ; 14.969 ns  ; reg16:G4|reg:G8|P4~45  ; read2[8]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.940 ns  ; reg16:G2|reg:G6|P4~45  ; read1[6]   ; clock       ;
+; N/A                                     ; None                                                ; 14.935 ns  ; reg16:G3|reg:G9|P4~45  ; read2[9]   ; clock       ;
+; N/A                                     ; None                                                ; 14.932 ns  ; reg16:G4|reg:G15|P4~45 ; read1[15]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.926 ns  ; reg16:G4|reg:G2|P4~45  ; read1[2]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.909 ns  ; reg16:G4|reg:G3|P4~45  ; read2[3]   ; clock       ;
+; N/A                                     ; None                                                ; 14.898 ns  ; reg16:G2|reg:G6|P4~45  ; read1[6]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.872 ns  ; reg16:G4|reg:G8|P4~45  ; read2[8]   ; clock       ;
+; N/A                                     ; None                                                ; 14.867 ns  ; reg16:G3|reg:G9|P4~45  ; read2[9]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.865 ns  ; reg16:G4|reg:G3|P4~45  ; read2[3]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.853 ns  ; reg16:G2|reg:G10|P4~45 ; read2[10]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.851 ns  ; reg16:G4|reg:G2|P4~45  ; read1[2]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.846 ns  ; reg16:G2|reg:G5|P4~45  ; read1[5]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.835 ns  ; reg16:G4|reg:G15|P4~45 ; read1[15]  ; clock       ;
+; N/A                                     ; None                                                ; 14.828 ns  ; reg16:G4|reg:G8|P4~45  ; read2[8]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.794 ns  ; reg16:G2|reg:G6|P4~45  ; read1[6]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.791 ns  ; reg16:G4|reg:G15|P4~45 ; read1[15]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.790 ns  ; reg16:G4|reg:G3|P4~45  ; read2[3]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.771 ns  ; reg16:G7|reg:G9|P4~45  ; read2[9]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.753 ns  ; reg16:G4|reg:G8|P4~45  ; read2[8]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.745 ns  ; reg16:G7|reg:G9|P4~45  ; read2[9]   ; clock       ;
+; N/A                                     ; None                                                ; 14.716 ns  ; reg16:G4|reg:G1|P4~45  ; read2[1]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.716 ns  ; reg16:G4|reg:G15|P4~45 ; read1[15]  ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.713 ns  ; reg16:G6|reg:G5|P4~45  ; read1[5]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.692 ns  ; reg16:G7|reg:G9|P4~45  ; read2[9]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.682 ns  ; reg16:G3|reg:G9|P4~45  ; read2[9]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.676 ns  ; reg16:G2|reg:G10|P4~45 ; read2[10]  ; clock       ;
+; N/A                                     ; None                                                ; 14.672 ns  ; reg16:G3|reg:G9|P4~45  ; read2[9]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.669 ns  ; reg16:G2|reg:G5|P4~45  ; read1[5]   ; clock       ;
+; N/A                                     ; None                                                ; 14.653 ns  ; reg16:G2|reg:G6|P4~45  ; read2[6]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.634 ns  ; reg16:G2|reg:G10|P4~45 ; read2[10]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.632 ns  ; reg16:G6|reg:G4|P4~45  ; read1[4]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.627 ns  ; reg16:G2|reg:G5|P4~45  ; read1[5]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.619 ns  ; reg16:G4|reg:G1|P4~45  ; read2[1]   ; clock       ;
+; N/A                                     ; None                                                ; 14.613 ns  ; reg16:G8|reg:G5|P4~45  ; read1[5]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.592 ns  ; reg16:G8|reg:G5|P4~45  ; read1[5]   ; clock       ;
+; N/A                                     ; None                                                ; 14.575 ns  ; reg16:G4|reg:G1|P4~45  ; read2[1]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.540 ns  ; reg16:G2|reg:G14|P4~45 ; read2[14]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.536 ns  ; reg16:G6|reg:G5|P4~45  ; read1[5]   ; clock       ;
+; N/A                                     ; None                                                ; 14.530 ns  ; reg16:G2|reg:G10|P4~45 ; read2[10]  ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.523 ns  ; reg16:G2|reg:G5|P4~45  ; read1[5]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.510 ns  ; reg16:G5|reg:G9|P4~45  ; read2[9]   ; clock       ;
+; N/A                                     ; None                                                ; 14.510 ns  ; reg16:G5|reg:G9|P4~45  ; read2[9]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.508 ns  ; reg16:G4|reg:G8|P4~45  ; read1[8]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.500 ns  ; reg16:G4|reg:G1|P4~45  ; read2[1]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.500 ns  ; reg16:G2|reg:G15|P4~45 ; read1[15]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.497 ns  ; reg16:G6|reg:G5|P4~45  ; read1[5]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.495 ns  ; reg16:G2|reg:G13|P4~45 ; read2[13]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.476 ns  ; reg16:G2|reg:G6|P4~45  ; read2[6]   ; clock       ;
+; N/A                                     ; None                                                ; 14.462 ns  ; reg16:G6|reg:G0|P4~45  ; read1[0]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.458 ns  ; reg16:G8|reg:G5|P4~45  ; read1[5]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.457 ns  ; reg16:G6|reg:G3|P4~45  ; read2[3]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.455 ns  ; reg16:G6|reg:G4|P4~45  ; read1[4]   ; clock       ;
+; N/A                                     ; None                                                ; 14.453 ns  ; reg16:G2|reg:G0|P4~45  ; read1[0]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.450 ns  ; reg16:G8|reg:G10|P4~45 ; read2[10]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.446 ns  ; reg16:G8|reg:G15|P4~45 ; read2[15]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.443 ns  ; reg16:G2|reg:G3|P4~45  ; read2[3]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.434 ns  ; reg16:G2|reg:G6|P4~45  ; read2[6]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.432 ns  ; reg16:G6|reg:G5|P4~45  ; read1[5]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.429 ns  ; reg16:G8|reg:G10|P4~45 ; read2[10]  ; clock       ;
+; N/A                                     ; None                                                ; 14.425 ns  ; reg16:G8|reg:G15|P4~45 ; read2[15]  ; clock       ;
+; N/A                                     ; None                                                ; 14.420 ns  ; reg16:G2|reg:G8|P4~45  ; read2[8]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.416 ns  ; reg16:G6|reg:G4|P4~45  ; read1[4]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.411 ns  ; reg16:G4|reg:G8|P4~45  ; read1[8]   ; clock       ;
+; N/A                                     ; None                                                ; 14.402 ns  ; reg16:G8|reg:G2|P4~45  ; read2[2]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.401 ns  ; reg16:G2|reg:G10|P4~45 ; read1[10]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.397 ns  ; reg16:G5|reg:G12|P4~45 ; read1[12]  ; clock       ;
+; N/A                                     ; None                                                ; 14.397 ns  ; reg16:G5|reg:G12|P4~45 ; read1[12]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.394 ns  ; reg16:G4|reg:G13|P4~45 ; read2[13]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.381 ns  ; reg16:G8|reg:G2|P4~45  ; read2[2]   ; clock       ;
+; N/A                                     ; None                                                ; 14.378 ns  ; reg16:G2|reg:G12|P4~45 ; read1[12]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.367 ns  ; reg16:G4|reg:G8|P4~45  ; read1[8]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.363 ns  ; reg16:G2|reg:G14|P4~45 ; read2[14]  ; clock       ;
+; N/A                                     ; None                                                ; 14.351 ns  ; reg16:G6|reg:G4|P4~45  ; read1[4]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.330 ns  ; reg16:G2|reg:G6|P4~45  ; read2[6]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.326 ns  ; reg16:G5|reg:G9|P4~45  ; read2[9]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.323 ns  ; reg16:G2|reg:G15|P4~45 ; read1[15]  ; clock       ;
+; N/A                                     ; None                                                ; 14.321 ns  ; reg16:G2|reg:G14|P4~45 ; read2[14]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.318 ns  ; reg16:G2|reg:G13|P4~45 ; read2[13]  ; clock       ;
+; N/A                                     ; None                                                ; 14.310 ns  ; reg16:G2|reg:G15|P4~45 ; read2[15]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.297 ns  ; reg16:G4|reg:G13|P4~45 ; read2[13]  ; clock       ;
+; N/A                                     ; None                                                ; 14.295 ns  ; reg16:G8|reg:G10|P4~45 ; read2[10]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.292 ns  ; reg16:G4|reg:G8|P4~45  ; read1[8]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.291 ns  ; reg16:G8|reg:G15|P4~45 ; read2[15]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.285 ns  ; reg16:G6|reg:G0|P4~45  ; read1[0]   ; clock       ;
+; N/A                                     ; None                                                ; 14.281 ns  ; reg16:G2|reg:G15|P4~45 ; read1[15]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.280 ns  ; reg16:G6|reg:G3|P4~45  ; read2[3]   ; clock       ;
+; N/A                                     ; None                                                ; 14.276 ns  ; reg16:G2|reg:G13|P4~45 ; read2[13]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.276 ns  ; reg16:G2|reg:G0|P4~45  ; read1[0]   ; clock       ;
+; N/A                                     ; None                                                ; 14.272 ns  ; reg16:G2|reg:G4|P4~45  ; read2[4]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.266 ns  ; reg16:G2|reg:G3|P4~45  ; read2[3]   ; clock       ;
+; N/A                                     ; None                                                ; 14.266 ns  ; reg16:G8|reg:G5|P4~45  ; read1[5]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.253 ns  ; reg16:G4|reg:G13|P4~45 ; read2[13]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.251 ns  ; reg16:G7|reg:G9|P4~45  ; read2[9]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.247 ns  ; reg16:G8|reg:G2|P4~45  ; read2[2]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.246 ns  ; reg16:G6|reg:G0|P4~45  ; read1[0]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.244 ns  ; reg16:G4|reg:G1|P4~45  ; read1[1]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.243 ns  ; reg16:G2|reg:G8|P4~45  ; read2[8]   ; clock       ;
+; N/A                                     ; None                                                ; 14.241 ns  ; reg16:G6|reg:G3|P4~45  ; read2[3]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.234 ns  ; reg16:G2|reg:G0|P4~45  ; read1[0]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.224 ns  ; reg16:G2|reg:G3|P4~45  ; read2[3]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.224 ns  ; reg16:G2|reg:G10|P4~45 ; read1[10]  ; clock       ;
+; N/A                                     ; None                                                ; 14.217 ns  ; reg16:G2|reg:G14|P4~45 ; read2[14]  ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.216 ns  ; reg16:G6|reg:G15|P4~45 ; read2[15]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.213 ns  ; reg16:G5|reg:G12|P4~45 ; read1[12]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.201 ns  ; reg16:G2|reg:G8|P4~45  ; read2[8]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.201 ns  ; reg16:G4|reg:G7|P4~45  ; read2[7]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.201 ns  ; reg16:G2|reg:G12|P4~45 ; read1[12]  ; clock       ;
+; N/A                                     ; None                                                ; 14.199 ns  ; reg16:G8|reg:G4|P4~45  ; read2[4]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.195 ns  ; reg16:G2|reg:G13|P4~45 ; read1[13]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.182 ns  ; reg16:G2|reg:G10|P4~45 ; read1[10]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.181 ns  ; reg16:G6|reg:G0|P4~45  ; read1[0]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.178 ns  ; reg16:G4|reg:G13|P4~45 ; read2[13]  ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.178 ns  ; reg16:G8|reg:G4|P4~45  ; read2[4]   ; clock       ;
+; N/A                                     ; None                                                ; 14.177 ns  ; reg16:G2|reg:G15|P4~45 ; read1[15]  ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.176 ns  ; reg16:G6|reg:G3|P4~45  ; read2[3]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.172 ns  ; reg16:G2|reg:G13|P4~45 ; read2[13]  ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.163 ns  ; reg16:G6|reg:G11|P4~45 ; read2[11]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.159 ns  ; reg16:G2|reg:G12|P4~45 ; read1[12]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.147 ns  ; reg16:G4|reg:G1|P4~45  ; read1[1]   ; clock       ;
+; N/A                                     ; None                                                ; 14.133 ns  ; reg16:G2|reg:G15|P4~45 ; read2[15]  ; clock       ;
+; N/A                                     ; None                                                ; 14.130 ns  ; reg16:G5|reg:G9|P4~45  ; read2[9]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.130 ns  ; reg16:G2|reg:G0|P4~45  ; read1[0]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.120 ns  ; reg16:G2|reg:G3|P4~45  ; read2[3]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.105 ns  ; reg16:G6|reg:G14|P4~45 ; read2[14]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.104 ns  ; reg16:G4|reg:G7|P4~45  ; read2[7]   ; clock       ;
+; N/A                                     ; None                                                ; 14.103 ns  ; reg16:G8|reg:G10|P4~45 ; read2[10]  ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.103 ns  ; reg16:G4|reg:G1|P4~45  ; read1[1]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.099 ns  ; reg16:G8|reg:G15|P4~45 ; read2[15]  ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.097 ns  ; reg16:G2|reg:G8|P4~45  ; read2[8]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.095 ns  ; reg16:G2|reg:G4|P4~45  ; read2[4]   ; clock       ;
+; N/A                                     ; None                                                ; 14.091 ns  ; reg16:G2|reg:G15|P4~45 ; read2[15]  ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.087 ns  ; reg16:G8|reg:G3|P4~45  ; read2[3]   ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.086 ns  ; reg16:G6|reg:G9|P4~45  ; outall[89] ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.078 ns  ; reg16:G6|reg:G12|P4~45 ; read2[12]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.078 ns  ; reg16:G2|reg:G10|P4~45 ; read1[10]  ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.066 ns  ; reg16:G8|reg:G3|P4~45  ; read2[3]   ; clock       ;
+; N/A                                     ; None                                                ; 14.064 ns  ; reg16:G8|reg:G15|P4~45 ; read1[15]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.060 ns  ; reg16:G4|reg:G7|P4~45  ; read2[7]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.059 ns  ; reg16:G2|reg:G12|P4~45 ; read2[12]  ; write1ad[0] ;
+; N/A                                     ; None                                                ; 14.055 ns  ; reg16:G8|reg:G2|P4~45  ; read2[2]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.055 ns  ; reg16:G2|reg:G12|P4~45 ; read1[12]  ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.053 ns  ; reg16:G2|reg:G4|P4~45  ; read2[4]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.044 ns  ; reg16:G8|reg:G4|P4~45  ; read2[4]   ; write1ad[1] ;
+; N/A                                     ; None                                                ; 14.043 ns  ; reg16:G8|reg:G15|P4~45 ; read1[15]  ; clock       ;
+; N/A                                     ; None                                                ; 14.039 ns  ; reg16:G6|reg:G15|P4~45 ; read2[15]  ; clock       ;
+; N/A                                     ; None                                                ; 14.028 ns  ; reg16:G4|reg:G1|P4~45  ; read1[1]   ; write1ad[2] ;
+; N/A                                     ; None                                                ; 14.022 ns  ; reg16:G8|reg:G7|P4~45  ; read2[7]   ; write1ad[0] ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;            ;                        ;            ;             ;
++-----------------------------------------+-----------------------------------------------------+------------+------------------------+------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; tpd                                                                                                                                        ;
++-----------------------------------------+-----------------------------------------------------+-----------------+-------------+------------+
+; Slack                                   ; Required P2P Time                                   ; Actual P2P Time ; From        ; To         ;
++-----------------------------------------+-----------------------------------------------------+-----------------+-------------+------------+
+; N/A                                     ; None                                                ; 17.541 ns       ; read2ad[1]  ; read2[9]   ;
+; N/A                                     ; None                                                ; 16.556 ns       ; read2ad[0]  ; read2[9]   ;
+; N/A                                     ; None                                                ; 16.500 ns       ; read2ad[2]  ; read2[9]   ;
+; N/A                                     ; None                                                ; 16.392 ns       ; read1ad[1]  ; read1[4]   ;
+; N/A                                     ; None                                                ; 16.075 ns       ; read1ad[2]  ; read1[4]   ;
+; N/A                                     ; None                                                ; 15.572 ns       ; write1ad[0] ; read1[4]   ;
+; N/A                                     ; None                                                ; 15.475 ns       ; clock       ; read1[4]   ;
+; N/A                                     ; None                                                ; 15.465 ns       ; read2ad[1]  ; read2[10]  ;
+; N/A                                     ; None                                                ; 15.444 ns       ; read2ad[1]  ; read2[15]  ;
+; N/A                                     ; None                                                ; 15.431 ns       ; write1ad[1] ; read1[4]   ;
+; N/A                                     ; None                                                ; 15.356 ns       ; write1ad[2] ; read1[4]   ;
+; N/A                                     ; None                                                ; 15.291 ns       ; read2ad[1]  ; read2[3]   ;
+; N/A                                     ; None                                                ; 15.273 ns       ; read2ad[1]  ; read2[14]  ;
+; N/A                                     ; None                                                ; 15.256 ns       ; read2ad[1]  ; read2[12]  ;
+; N/A                                     ; None                                                ; 15.254 ns       ; read1ad[2]  ; read1[5]   ;
+; N/A                                     ; None                                                ; 15.239 ns       ; read1ad[2]  ; read1[12]  ;
+; N/A                                     ; None                                                ; 15.215 ns       ; read2ad[1]  ; read2[2]   ;
+; N/A                                     ; None                                                ; 15.190 ns       ; read1ad[1]  ; read1[5]   ;
+; N/A                                     ; None                                                ; 15.183 ns       ; read2ad[1]  ; read2[13]  ;
+; N/A                                     ; None                                                ; 15.067 ns       ; read2ad[1]  ; read2[6]   ;
+; N/A                                     ; None                                                ; 15.006 ns       ; read1ad[0]  ; read1[5]   ;
+; N/A                                     ; None                                                ; 14.991 ns       ; read1ad[0]  ; read1[12]  ;
+; N/A                                     ; None                                                ; 14.988 ns       ; read2ad[1]  ; read2[4]   ;
+; N/A                                     ; None                                                ; 14.876 ns       ; read1ad[0]  ; read1[4]   ;
+; N/A                                     ; None                                                ; 14.860 ns       ; read1ad[1]  ; read1[6]   ;
+; N/A                                     ; None                                                ; 14.838 ns       ; write1ad[0] ; read2[9]   ;
+; N/A                                     ; None                                                ; 14.832 ns       ; read2ad[1]  ; read2[7]   ;
+; N/A                                     ; None                                                ; 14.780 ns       ; read2ad[2]  ; read2[4]   ;
+; N/A                                     ; None                                                ; 14.740 ns       ; read1ad[2]  ; read1[13]  ;
+; N/A                                     ; None                                                ; 14.736 ns       ; read2ad[1]  ; read2[11]  ;
+; N/A                                     ; None                                                ; 14.731 ns       ; read2ad[2]  ; read2[14]  ;
+; N/A                                     ; None                                                ; 14.661 ns       ; clock       ; read2[9]   ;
+; N/A                                     ; None                                                ; 14.660 ns       ; read1ad[2]  ; read1[0]   ;
+; N/A                                     ; None                                                ; 14.634 ns       ; read2ad[2]  ; read2[6]   ;
+; N/A                                     ; None                                                ; 14.622 ns       ; write1ad[1] ; read2[9]   ;
+; N/A                                     ; None                                                ; 14.614 ns       ; read1ad[1]  ; read1[12]  ;
+; N/A                                     ; None                                                ; 14.579 ns       ; read2ad[2]  ; read2[13]  ;
+; N/A                                     ; None                                                ; 14.557 ns       ; write1ad[2] ; read2[9]   ;
+; N/A                                     ; None                                                ; 14.532 ns       ; read2ad[2]  ; read2[12]  ;
+; N/A                                     ; None                                                ; 14.492 ns       ; read1ad[0]  ; read1[13]  ;
+; N/A                                     ; None                                                ; 14.491 ns       ; read2ad[1]  ; read2[1]   ;
+; N/A                                     ; None                                                ; 14.480 ns       ; read2ad[0]  ; read2[10]  ;
+; N/A                                     ; None                                                ; 14.459 ns       ; read2ad[0]  ; read2[15]  ;
+; N/A                                     ; None                                                ; 14.424 ns       ; read2ad[2]  ; read2[10]  ;
+; N/A                                     ; None                                                ; 14.403 ns       ; read2ad[2]  ; read2[15]  ;
+; N/A                                     ; None                                                ; 14.378 ns       ; read2ad[1]  ; read2[8]   ;
+; N/A                                     ; None                                                ; 14.373 ns       ; read1ad[2]  ; read1[14]  ;
+; N/A                                     ; None                                                ; 14.342 ns       ; read1ad[1]  ; read1[14]  ;
+; N/A                                     ; None                                                ; 14.318 ns       ; read1ad[2]  ; read1[6]   ;
+; N/A                                     ; None                                                ; 14.305 ns       ; read2ad[0]  ; read2[3]   ;
+; N/A                                     ; None                                                ; 14.271 ns       ; read2ad[0]  ; read2[12]  ;
+; N/A                                     ; None                                                ; 14.251 ns       ; read2ad[2]  ; read2[3]   ;
+; N/A                                     ; None                                                ; 14.230 ns       ; read2ad[0]  ; read2[2]   ;
+; N/A                                     ; None                                                ; 14.198 ns       ; read2ad[0]  ; read2[13]  ;
+; N/A                                     ; None                                                ; 14.174 ns       ; read2ad[2]  ; read2[2]   ;
+; N/A                                     ; None                                                ; 14.149 ns       ; write1ad[0] ; read1[6]   ;
+; N/A                                     ; None                                                ; 14.146 ns       ; read1ad[2]  ; read1[15]  ;
+; N/A                                     ; None                                                ; 14.131 ns       ; read2ad[0]  ; read2[14]  ;
+; N/A                                     ; None                                                ; 14.124 ns       ; read1ad[0]  ; read1[14]  ;
+; N/A                                     ; None                                                ; 14.115 ns       ; read1ad[1]  ; read1[13]  ;
+; N/A                                     ; None                                                ; 14.075 ns       ; read1ad[2]  ; read1[1]   ;
+; N/A                                     ; None                                                ; 14.071 ns       ; read1ad[0]  ; read1[0]   ;
+; N/A                                     ; None                                                ; 14.052 ns       ; clock       ; read1[6]   ;
+; N/A                                     ; None                                                ; 14.051 ns       ; read2ad[2]  ; read2[8]   ;
+; N/A                                     ; None                                                ; 14.019 ns       ; read1ad[1]  ; read1[11]  ;
+; N/A                                     ; None                                                ; 14.008 ns       ; write1ad[1] ; read1[6]   ;
+; N/A                                     ; None                                                ; 14.003 ns       ; read2ad[0]  ; read2[4]   ;
+; N/A                                     ; None                                                ; 14.003 ns       ; read1ad[2]  ; read1[10]  ;
+; N/A                                     ; None                                                ; 13.966 ns       ; read2ad[1]  ; read2[5]   ;
+; N/A                                     ; None                                                ; 13.963 ns       ; read2ad[2]  ; read2[11]  ;
+; N/A                                     ; None                                                ; 13.939 ns       ; read1ad[1]  ; read1[0]   ;
+; N/A                                     ; None                                                ; 13.933 ns       ; write1ad[2] ; read1[6]   ;
+; N/A                                     ; None                                                ; 13.901 ns       ; read1ad[1]  ; read1[15]  ;
+; N/A                                     ; None                                                ; 13.898 ns       ; read1ad[0]  ; read1[15]  ;
+; N/A                                     ; None                                                ; 13.862 ns       ; read1ad[1]  ; read1[10]  ;
+; N/A                                     ; None                                                ; 13.847 ns       ; read2ad[0]  ; read2[7]   ;
+; N/A                                     ; None                                                ; 13.829 ns       ; write1ad[0] ; read1[5]   ;
+; N/A                                     ; None                                                ; 13.800 ns       ; read1ad[2]  ; read1[7]   ;
+; N/A                                     ; None                                                ; 13.796 ns       ; read1ad[2]  ; read1[2]   ;
+; N/A                                     ; None                                                ; 13.791 ns       ; read2ad[2]  ; read2[7]   ;
+; N/A                                     ; None                                                ; 13.785 ns       ; read1ad[0]  ; read1[6]   ;
+; N/A                                     ; None                                                ; 13.754 ns       ; read1ad[0]  ; read1[10]  ;
+; N/A                                     ; None                                                ; 13.751 ns       ; read2ad[0]  ; read2[11]  ;
+; N/A                                     ; None                                                ; 13.692 ns       ; read1ad[2]  ; read1[8]   ;
+; N/A                                     ; None                                                ; 13.663 ns       ; read2ad[0]  ; read2[6]   ;
+; N/A                                     ; None                                                ; 13.663 ns       ; read1ad[2]  ; read1[9]   ;
+; N/A                                     ; None                                                ; 13.652 ns       ; clock       ; read1[5]   ;
+; N/A                                     ; None                                                ; 13.633 ns       ; read2ad[1]  ; read2[0]   ;
+; N/A                                     ; None                                                ; 13.631 ns       ; read1ad[2]  ; read1[11]  ;
+; N/A                                     ; None                                                ; 13.613 ns       ; write1ad[1] ; read1[5]   ;
+; N/A                                     ; None                                                ; 13.592 ns       ; read1ad[0]  ; read1[8]   ;
+; N/A                                     ; None                                                ; 13.577 ns       ; write1ad[0] ; read2[4]   ;
+; N/A                                     ; None                                                ; 13.548 ns       ; write1ad[2] ; read1[5]   ;
+; N/A                                     ; None                                                ; 13.547 ns       ; read1ad[0]  ; read1[2]   ;
+; N/A                                     ; None                                                ; 13.515 ns       ; read1ad[2]  ; read1[3]   ;
+; N/A                                     ; None                                                ; 13.506 ns       ; read2ad[0]  ; read2[1]   ;
+; N/A                                     ; None                                                ; 13.487 ns       ; read1ad[1]  ; read1[8]   ;
+; N/A                                     ; None                                                ; 13.480 ns       ; clock       ; read2[4]   ;
+; N/A                                     ; None                                                ; 13.450 ns       ; read2ad[2]  ; read2[1]   ;
+; N/A                                     ; None                                                ; 13.446 ns       ; read1ad[1]  ; read1[9]   ;
+; N/A                                     ; None                                                ; 13.436 ns       ; write1ad[1] ; read2[4]   ;
+; N/A                                     ; None                                                ; 13.415 ns       ; read1ad[0]  ; read1[9]   ;
+; N/A                                     ; None                                                ; 13.393 ns       ; read2ad[0]  ; read2[8]   ;
+; N/A                                     ; None                                                ; 13.388 ns       ; read1ad[1]  ; read1[2]   ;
+; N/A                                     ; None                                                ; 13.382 ns       ; read1ad[0]  ; read1[11]  ;
+; N/A                                     ; None                                                ; 13.361 ns       ; write1ad[2] ; read2[4]   ;
+; N/A                                     ; None                                                ; 13.353 ns       ; read1ad[1]  ; read1[1]   ;
+; N/A                                     ; None                                                ; 13.308 ns       ; write1ad[0] ; read2[14]  ;
+; N/A                                     ; None                                                ; 13.279 ns       ; write1ad[0] ; read2[6]   ;
+; N/A                                     ; None                                                ; 13.266 ns       ; read1ad[0]  ; read1[3]   ;
+; N/A                                     ; None                                                ; 13.182 ns       ; clock       ; read2[6]   ;
+; N/A                                     ; None                                                ; 13.177 ns       ; read1ad[1]  ; read1[7]   ;
+; N/A                                     ; None                                                ; 13.138 ns       ; write1ad[1] ; read2[6]   ;
+; N/A                                     ; None                                                ; 13.131 ns       ; clock       ; read2[14]  ;
+; N/A                                     ; None                                                ; 13.092 ns       ; write1ad[1] ; read2[14]  ;
+; N/A                                     ; None                                                ; 13.063 ns       ; write1ad[2] ; read2[6]   ;
+; N/A                                     ; None                                                ; 13.060 ns       ; read1ad[1]  ; read1[3]   ;
+; N/A                                     ; None                                                ; 13.053 ns       ; write1ad[0] ; read2[8]   ;
+; N/A                                     ; None                                                ; 13.027 ns       ; write1ad[2] ; read2[14]  ;
+; N/A                                     ; None                                                ; 12.981 ns       ; read2ad[0]  ; read2[5]   ;
+; N/A                                     ; None                                                ; 12.970 ns       ; write1ad[0] ; read2[3]   ;
+; N/A                                     ; None                                                ; 12.966 ns       ; write1ad[0] ; read2[10]  ;
+; N/A                                     ; None                                                ; 12.960 ns       ; write1ad[0] ; read2[2]   ;
+; N/A                                     ; None                                                ; 12.925 ns       ; read2ad[2]  ; read2[5]   ;
+; N/A                                     ; None                                                ; 12.903 ns       ; read1ad[0]  ; read1[7]   ;
+; N/A                                     ; None                                                ; 12.876 ns       ; clock       ; read2[8]   ;
+; N/A                                     ; None                                                ; 12.869 ns       ; clock       ; read2[10]  ;
+; N/A                                     ; None                                                ; 12.834 ns       ; write1ad[1] ; read2[8]   ;
+; N/A                                     ; None                                                ; 12.830 ns       ; clock       ; read2[2]   ;
+; N/A                                     ; None                                                ; 12.825 ns       ; write1ad[1] ; read2[10]  ;
+; N/A                                     ; None                                                ; 12.795 ns       ; write1ad[0] ; read2[11]  ;
+; N/A                                     ; None                                                ; 12.793 ns       ; clock       ; read2[3]   ;
+; N/A                                     ; None                                                ; 12.786 ns       ; write1ad[1] ; read2[2]   ;
+; N/A                                     ; None                                                ; 12.754 ns       ; write1ad[1] ; read2[3]   ;
+; N/A                                     ; None                                                ; 12.750 ns       ; write1ad[2] ; read2[10]  ;
+; N/A                                     ; None                                                ; 12.740 ns       ; read1ad[0]  ; read1[1]   ;
+; N/A                                     ; None                                                ; 12.730 ns       ; write1ad[2] ; read2[8]   ;
+; N/A                                     ; None                                                ; 12.723 ns       ; write1ad[0] ; read1[0]   ;
+; N/A                                     ; None                                                ; 12.711 ns       ; write1ad[2] ; read2[2]   ;
+; N/A                                     ; None                                                ; 12.699 ns       ; write1ad[0] ; read1[12]  ;
+; N/A                                     ; None                                                ; 12.690 ns       ; read2ad[2]  ; read2[0]   ;
+; N/A                                     ; None                                                ; 12.689 ns       ; write1ad[2] ; read2[3]   ;
+; N/A                                     ; None                                                ; 12.648 ns       ; read2ad[0]  ; read2[0]   ;
+; N/A                                     ; None                                                ; 12.618 ns       ; clock       ; read2[11]  ;
+; N/A                                     ; None                                                ; 12.602 ns       ; clock       ; read1[12]  ;
+; N/A                                     ; None                                                ; 12.598 ns       ; write1ad[0] ; read1[8]   ;
+; N/A                                     ; None                                                ; 12.593 ns       ; write1ad[0] ; read1[14]  ;
+; N/A                                     ; None                                                ; 12.579 ns       ; write1ad[1] ; read2[11]  ;
+; N/A                                     ; None                                                ; 12.558 ns       ; write1ad[1] ; read1[12]  ;
+; N/A                                     ; None                                                ; 12.546 ns       ; clock       ; read1[0]   ;
+; N/A                                     ; None                                                ; 12.518 ns       ; write1ad[0] ; read1[2]   ;
+; N/A                                     ; None                                                ; 12.515 ns       ; write1ad[0] ; read1[10]  ;
+; N/A                                     ; None                                                ; 12.514 ns       ; write1ad[2] ; read2[11]  ;
+; N/A                                     ; None                                                ; 12.507 ns       ; write1ad[1] ; read1[0]   ;
+; N/A                                     ; None                                                ; 12.503 ns       ; write1ad[0] ; read1[11]  ;
+; N/A                                     ; None                                                ; 12.496 ns       ; clock       ; read1[14]  ;
+; N/A                                     ; None                                                ; 12.483 ns       ; write1ad[2] ; read1[12]  ;
+; N/A                                     ; None                                                ; 12.452 ns       ; write1ad[1] ; read1[14]  ;
+; N/A                                     ; None                                                ; 12.442 ns       ; write1ad[2] ; read1[0]   ;
+; N/A                                     ; None                                                ; 12.421 ns       ; clock       ; read1[8]   ;
+; N/A                                     ; None                                                ; 12.421 ns       ; clock       ; read1[2]   ;
+; N/A                                     ; None                                                ; 12.418 ns       ; clock       ; read1[10]  ;
+; N/A                                     ; None                                                ; 12.379 ns       ; write1ad[1] ; read1[8]   ;
+; N/A                                     ; None                                                ; 12.377 ns       ; write1ad[2] ; read1[14]  ;
+; N/A                                     ; None                                                ; 12.377 ns       ; write1ad[1] ; read1[2]   ;
+; N/A                                     ; None                                                ; 12.374 ns       ; write1ad[1] ; read1[10]  ;
+; N/A                                     ; None                                                ; 12.357 ns       ; write1ad[0] ; read2[12]  ;
+; N/A                                     ; None                                                ; 12.326 ns       ; clock       ; read1[11]  ;
+; N/A                                     ; None                                                ; 12.302 ns       ; write1ad[2] ; read1[2]   ;
+; N/A                                     ; None                                                ; 12.299 ns       ; write1ad[2] ; read1[10]  ;
+; N/A                                     ; None                                                ; 12.298 ns       ; write1ad[2] ; read1[8]   ;
+; N/A                                     ; None                                                ; 12.287 ns       ; write1ad[1] ; read1[11]  ;
+; N/A                                     ; None                                                ; 12.260 ns       ; clock       ; read2[12]  ;
+; N/A                                     ; None                                                ; 12.223 ns       ; write1ad[0] ; read2[7]   ;
+; N/A                                     ; None                                                ; 12.222 ns       ; write1ad[2] ; read1[11]  ;
+; N/A                                     ; None                                                ; 12.216 ns       ; write1ad[1] ; read2[12]  ;
+; N/A                                     ; None                                                ; 12.214 ns       ; write1ad[0] ; read2[15]  ;
+; N/A                                     ; None                                                ; 12.184 ns       ; write1ad[0] ; read1[15]  ;
+; N/A                                     ; None                                                ; 12.181 ns       ; write1ad[0] ; read2[13]  ;
+; N/A                                     ; None                                                ; 12.178 ns       ; write1ad[0] ; read2[1]   ;
+; N/A                                     ; None                                                ; 12.141 ns       ; write1ad[2] ; read2[12]  ;
+; N/A                                     ; None                                                ; 12.096 ns       ; clock       ; read2[15]  ;
+; N/A                                     ; None                                                ; 12.081 ns       ; clock       ; read2[1]   ;
+; N/A                                     ; None                                                ; 12.052 ns       ; write1ad[1] ; read2[15]  ;
+; N/A                                     ; None                                                ; 12.046 ns       ; clock       ; read2[7]   ;
+; N/A                                     ; None                                                ; 12.037 ns       ; write1ad[1] ; read2[1]   ;
+; N/A                                     ; None                                                ; 12.014 ns       ; write1ad[0] ; outall[89] ;
+; N/A                                     ; None                                                ; 12.007 ns       ; clock       ; read1[15]  ;
+; N/A                                     ; None                                                ; 12.004 ns       ; clock       ; read2[13]  ;
+; N/A                                     ; None                                                ; 12.004 ns       ; write1ad[1] ; read2[7]   ;
+; N/A                                     ; None                                                ; 11.977 ns       ; write1ad[2] ; read2[15]  ;
+; N/A                                     ; None                                                ; 11.965 ns       ; write1ad[1] ; read2[13]  ;
+; N/A                                     ; None                                                ; 11.965 ns       ; write1ad[1] ; read1[15]  ;
+; N/A                                     ; None                                                ; 11.962 ns       ; write1ad[2] ; read2[1]   ;
+; N/A                                     ; None                                                ; 11.960 ns       ; write1ad[0] ; read1[9]   ;
+; N/A                                     ; None                                                ; 11.900 ns       ; write1ad[2] ; read2[13]  ;
+; N/A                                     ; None                                                ; 11.900 ns       ; write1ad[2] ; read2[7]   ;
+; N/A                                     ; None                                                ; 11.861 ns       ; write1ad[2] ; read1[15]  ;
+; N/A                                     ; None                                                ; 11.837 ns       ; clock       ; outall[89] ;
+; N/A                                     ; None                                                ; 11.798 ns       ; write1ad[1] ; outall[89] ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;                 ;             ;            ;
++-----------------------------------------+-----------------------------------------------------+-----------------+-------------+------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Classic Timing Analyzer
+    Info: Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Full Version
+    Info: Processing started: Thu May 09 13:46:37 2019
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off regFile -c regFile --timing_analysis_only
+Warning: Timing Analysis is analyzing one or more combinational loops as latches
+    Warning: Node "reg16:G6|reg:G0|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G0|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G0|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G0|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G0|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G0|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G0|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G0|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G0|P1~29" is a latch
+    Warning: Node "reg16:G5|reg:G0|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G0|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G0|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G0|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G0|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G1|P4~45" is a latch
+    Warning: Node "reg16:G6|reg:G1|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G1|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G1|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G1|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G1|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G1|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G1|P1~29" is a latch
+    Warning: Node "reg16:G5|reg:G1|P1~29" is a latch
+    Warning: Node "reg16:G5|reg:G1|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G1|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G1|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G1|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G1|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G2|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G2|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G2|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G2|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G2|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G2|P4~45" is a latch
+    Warning: Node "reg16:G6|reg:G2|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G2|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G2|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G2|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G2|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G2|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G2|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G2|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G3|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G3|P4~45" is a latch
+    Warning: Node "reg16:G6|reg:G3|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G3|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G3|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G3|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G3|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G3|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G3|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G3|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G3|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G3|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G3|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G3|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G4|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G4|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G4|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G4|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G4|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G4|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G4|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G4|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G4|P1~29" is a latch
+    Warning: Node "reg16:G5|reg:G4|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G4|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G4|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G4|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G4|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G5|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G5|P4~45" is a latch
+    Warning: Node "reg16:G6|reg:G5|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G5|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G5|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G5|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G5|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G5|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G5|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G5|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G5|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G5|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G5|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G5|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G6|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G6|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G6|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G6|P4~45" is a latch
+    Warning: Node "reg16:G6|reg:G6|P4~45" is a latch
+    Warning: Node "reg16:G6|reg:G6|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G6|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G6|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G6|P1~29" is a latch
+    Warning: Node "reg16:G5|reg:G6|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G6|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G6|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G6|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G6|P4~45" is a latch
+    Warning: Node "reg16:G6|reg:G7|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G7|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G7|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G7|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G7|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G7|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G7|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G7|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G7|P1~29" is a latch
+    Warning: Node "reg16:G5|reg:G7|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G7|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G7|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G7|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G7|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G8|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G8|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G8|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G8|P4~45" is a latch
+    Warning: Node "reg16:G6|reg:G8|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G8|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G8|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G8|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G8|P1~29" is a latch
+    Warning: Node "reg16:G5|reg:G8|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G8|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G8|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G8|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G8|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G9|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G9|P4~45" is a latch
+    Warning: Node "reg16:G6|reg:G9|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G9|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G9|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G9|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G9|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G9|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G9|P1~29" is a latch
+    Warning: Node "reg16:G5|reg:G9|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G9|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G9|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G9|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G9|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G10|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G10|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G10|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G10|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G10|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G10|P4~45" is a latch
+    Warning: Node "reg16:G6|reg:G10|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G10|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G10|P1~29" is a latch
+    Warning: Node "reg16:G5|reg:G10|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G10|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G10|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G10|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G10|P4~45" is a latch
+    Warning: Node "reg16:G6|reg:G11|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G11|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G11|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G11|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G11|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G11|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G11|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G11|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G11|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G11|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G11|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G11|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G11|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G11|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G12|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G12|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G12|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G12|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G12|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G12|P4~45" is a latch
+    Warning: Node "reg16:G6|reg:G12|P4~45" is a latch
+    Warning: Node "reg16:G6|reg:G12|P1~29" is a latch
+    Warning: Node "reg16:G5|reg:G12|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G12|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G12|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G12|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G12|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G12|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G13|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G13|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G13|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G13|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G13|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G13|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G13|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G13|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G13|P1~29" is a latch
+    Warning: Node "reg16:G5|reg:G13|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G13|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G13|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G13|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G13|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G14|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G14|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G14|P1~29" is a latch
+    Warning: Node "reg16:G2|reg:G14|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G14|P1~29" is a latch
+    Warning: Node "reg16:G8|reg:G14|P4~45" is a latch
+    Warning: Node "reg16:G6|reg:G14|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G14|P4~45" is a latch
+    Warning: Node "reg16:G5|reg:G14|P1~29" is a latch
+    Warning: Node "reg16:G5|reg:G14|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G14|P1~29" is a latch
+    Warning: Node "reg16:G7|reg:G14|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G14|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G14|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G15|P4~45" is a latch
+    Warning: Node "reg16:G2|reg:G15|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G15|P1~29" is a latch
+    Warning: Node "reg16:G6|reg:G15|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G15|P4~45" is a latch
+    Warning: Node "reg16:G8|reg:G15|P1~29" is a latch
+    Warning: Node "reg16:G4|reg:G15|P4~45" is a latch
+    Warning: Node "reg16:G4|reg:G15|P1~29" is a latch
+    Warning: Node "reg16:G5|reg:G15|P1~29" is a latch
+    Warning: Node "reg16:G5|reg:G15|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G15|P4~45" is a latch
+    Warning: Node "reg16:G7|reg:G15|P1~29" is a latch
+    Warning: Node "reg16:G3|reg:G15|P4~45" is a latch
+    Warning: Node "reg16:G3|reg:G15|P1~29" is a latch
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G15|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G15|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G15|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G15|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G15|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G15|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G15|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G14|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G14|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G14|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G14|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G14|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G14|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G14|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G13|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G13|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G13|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G13|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G13|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G13|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G13|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G12|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G12|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G12|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G12|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G12|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G12|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G12|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G11|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G11|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G11|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G11|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G11|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G11|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G11|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G10|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G10|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G10|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G10|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G10|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G10|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G10|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G9|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G9|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G9|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G9|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G9|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G9|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G9|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G8|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G8|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G8|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G8|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G8|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G8|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G8|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G7|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G7|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G7|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G7|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G7|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G7|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G7|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G6|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G6|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G6|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G6|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G6|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G6|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G6|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G5|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G5|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G5|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G5|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G5|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G5|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G5|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G4|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G4|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G4|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G4|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G4|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G4|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G4|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G3|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G3|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G3|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G3|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G3|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G3|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G3|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G2|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G2|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G2|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G2|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G2|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G2|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G2|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G1|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G1|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G1|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G1|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G1|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G1|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G1|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G3|reg:G0|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G7|reg:G0|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G5|reg:G0|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G4|reg:G0|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G8|reg:G0|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G6|reg:G0|five~81"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "reg16:G2|reg:G0|five~81"
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "write1ad[1]" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "clock" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "write1ad[2]" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "write1ad[0]" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+Warning: Found 22 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected ripple clock "reg16:G7|reg:G13|P1~29" as buffer
+    Info: Detected ripple clock "reg16:G3|reg:G12|P1~29" as buffer
+    Info: Detected ripple clock "reg16:G4|reg:G12|P1~29" as buffer
+    Info: Detected ripple clock "reg16:G7|reg:G10|P1~29" as buffer
+    Info: Detected ripple clock "reg16:G4|reg:G10|P1~29" as buffer
+    Info: Detected ripple clock "reg16:G4|reg:G9|P1~29" as buffer
+    Info: Detected ripple clock "reg16:G7|reg:G7|P1~29" as buffer
+    Info: Detected ripple clock "reg16:G4|reg:G4|P1~29" as buffer
+    Info: Detected ripple clock "reg16:G6|reg:G2|P1~29" as buffer
+    Info: Detected ripple clock "reg16:G2|reg:G2|P1~29" as buffer
+    Info: Detected ripple clock "reg16:G7|reg:G1|P1~29" as buffer
+    Info: Detected ripple clock "reg16:G5|reg:G1|P1~29" as buffer
+    Info: Detected ripple clock "reg16:G8|reg:G1|P1~29" as buffer
+    Info: Detected ripple clock "reg16:G5|reg:G0|P1~29" as buffer
+    Info: Detected ripple clock "reg16:G4|reg:G0|P1~29" as buffer
+    Info: Detected gated clock "decode3to8:G0|Mux3~880" as buffer
+    Info: Detected gated clock "decode3to8:G0|Mux3~879" as buffer
+    Info: Detected gated clock "decode3to8:G0|Mux3~881" as buffer
+    Info: Detected gated clock "decode3to8:G0|Mux3~885" as buffer
+    Info: Detected gated clock "decode3to8:G0|Mux3~882" as buffer
+    Info: Detected gated clock "decode3to8:G0|Mux3~884" as buffer
+    Info: Detected gated clock "decode3to8:G0|Mux3~883" as buffer
+Info: tco from clock "write1ad[0]" to destination pin "read2[9]" through register "reg16:G6|reg:G9|P4~45" is 16.910 ns
+    Info: + Longest clock path from clock "write1ad[0]" to source register is 5.773 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.862 ns) = 0.862 ns; Loc. = PIN_E24; Fanout = 7; CLK Node = 'write1ad[0]'
+        Info: 2: + IC(1.683 ns) + CELL(0.437 ns) = 2.982 ns; Loc. = LCCOMB_X38_Y33_N4; Fanout = 49; COMB Node = 'decode3to8:G0|Mux3~883'
+        Info: 3: + IC(1.204 ns) + CELL(0.000 ns) = 4.186 ns; Loc. = CLKCTRL_G8; Fanout = 16; COMB Node = 'decode3to8:G0|Mux3~883clkctrl'
+        Info: 4: + IC(1.312 ns) + CELL(0.275 ns) = 5.773 ns; Loc. = LCCOMB_X33_Y29_N22; Fanout = 3; REG Node = 'reg16:G6|reg:G9|P4~45'
+        Info: Total cell delay = 1.574 ns ( 27.26 % )
+        Info: Total interconnect delay = 4.199 ns ( 72.74 % )
+    Info: + Micro clock to output delay of source is 0.000 ns
+    Info: + Longest register to pin delay is 11.137 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCCOMB_X33_Y29_N22; Fanout = 3; REG Node = 'reg16:G6|reg:G9|P4~45'
+        Info: 2: + IC(0.000 ns) + CELL(1.268 ns) = 1.268 ns; Loc. = LCCOMB_X33_Y27_N14; Fanout = 4; COMB LOOP Node = 'reg16:G6|reg:G9|five~81'
+            Info: Loc. = LCCOMB_X33_Y27_N14; Node "reg16:G6|reg:G9|five~81"
+        Info: 3: + IC(0.278 ns) + CELL(0.416 ns) = 1.962 ns; Loc. = LCCOMB_X33_Y27_N12; Fanout = 1; COMB Node = 'mux8:G10|Mux6~5'
+        Info: 4: + IC(0.255 ns) + CELL(0.150 ns) = 2.367 ns; Loc. = LCCOMB_X33_Y27_N0; Fanout = 1; COMB Node = 'mux8:G10|Mux6~6'
+        Info: 5: + IC(0.720 ns) + CELL(0.150 ns) = 3.237 ns; Loc. = LCCOMB_X34_Y28_N20; Fanout = 1; COMB Node = 'mux8:G10|Mux6~7'
+        Info: 6: + IC(0.724 ns) + CELL(0.150 ns) = 4.111 ns; Loc. = LCCOMB_X33_Y29_N24; Fanout = 1; COMB Node = 'mux8:G10|Mux6'
+        Info: 7: + IC(4.228 ns) + CELL(2.798 ns) = 11.137 ns; Loc. = PIN_AE13; Fanout = 0; PIN Node = 'read2[9]'
+        Info: Total cell delay = 4.932 ns ( 44.28 % )
+        Info: Total interconnect delay = 6.205 ns ( 55.72 % )
+Info: Longest tpd from source pin "read2ad[1]" to destination pin "read2[9]" is 17.541 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.830 ns) = 0.830 ns; Loc. = PIN_E15; Fanout = 28; PIN Node = 'read2ad[1]'
+    Info: 2: + IC(6.917 ns) + CELL(0.150 ns) = 7.897 ns; Loc. = LCCOMB_X36_Y29_N28; Fanout = 16; COMB Node = 'mux8:G10|Mux15~88'
+    Info: 3: + IC(1.306 ns) + CELL(0.438 ns) = 9.641 ns; Loc. = LCCOMB_X34_Y28_N20; Fanout = 1; COMB Node = 'mux8:G10|Mux6~7'
+    Info: 4: + IC(0.724 ns) + CELL(0.150 ns) = 10.515 ns; Loc. = LCCOMB_X33_Y29_N24; Fanout = 1; COMB Node = 'mux8:G10|Mux6'
+    Info: 5: + IC(4.228 ns) + CELL(2.798 ns) = 17.541 ns; Loc. = PIN_AE13; Fanout = 0; PIN Node = 'read2[9]'
+    Info: Total cell delay = 4.366 ns ( 24.89 % )
+    Info: Total interconnect delay = 13.175 ns ( 75.11 % )
+Info: Quartus II 64-Bit Classic Timing Analyzer was successful. 0 errors, 451 warnings
+    Info: Allocated 4378 megabytes of memory during processing
+    Info: Processing ended: Thu May 09 13:46:54 2019
+    Info: Elapsed time: 00:00:17
+
+

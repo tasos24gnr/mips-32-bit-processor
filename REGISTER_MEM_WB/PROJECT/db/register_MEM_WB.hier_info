@@ -1,0 +1,42 @@
+|register_MEM_WB
+Result[0] => writeData[0].DATAIN
+Result[1] => writeData[1].DATAIN
+Result[2] => writeData[2].DATAIN
+Result[3] => writeData[3].DATAIN
+Result[4] => writeData[4].DATAIN
+Result[5] => writeData[5].DATAIN
+Result[6] => writeData[6].DATAIN
+Result[7] => writeData[7].DATAIN
+Result[8] => writeData[8].DATAIN
+Result[9] => writeData[9].DATAIN
+Result[10] => writeData[10].DATAIN
+Result[11] => writeData[11].DATAIN
+Result[12] => writeData[12].DATAIN
+Result[13] => writeData[13].DATAIN
+Result[14] => writeData[14].DATAIN
+Result[15] => writeData[15].DATAIN
+RegAD[0] => writeAD[0].DATAIN
+RegAD[1] => writeAD[1].DATAIN
+RegAD[2] => writeAD[2].DATAIN
+clk => ~NO_FANOUT~
+writeData[0] <= Result[0].DB_MAX_OUTPUT_PORT_TYPE
+writeData[1] <= Result[1].DB_MAX_OUTPUT_PORT_TYPE
+writeData[2] <= Result[2].DB_MAX_OUTPUT_PORT_TYPE
+writeData[3] <= Result[3].DB_MAX_OUTPUT_PORT_TYPE
+writeData[4] <= Result[4].DB_MAX_OUTPUT_PORT_TYPE
+writeData[5] <= Result[5].DB_MAX_OUTPUT_PORT_TYPE
+writeData[6] <= Result[6].DB_MAX_OUTPUT_PORT_TYPE
+writeData[7] <= Result[7].DB_MAX_OUTPUT_PORT_TYPE
+writeData[8] <= Result[8].DB_MAX_OUTPUT_PORT_TYPE
+writeData[9] <= Result[9].DB_MAX_OUTPUT_PORT_TYPE
+writeData[10] <= Result[10].DB_MAX_OUTPUT_PORT_TYPE
+writeData[11] <= Result[11].DB_MAX_OUTPUT_PORT_TYPE
+writeData[12] <= Result[12].DB_MAX_OUTPUT_PORT_TYPE
+writeData[13] <= Result[13].DB_MAX_OUTPUT_PORT_TYPE
+writeData[14] <= Result[14].DB_MAX_OUTPUT_PORT_TYPE
+writeData[15] <= Result[15].DB_MAX_OUTPUT_PORT_TYPE
+writeAD[0] <= RegAD[0].DB_MAX_OUTPUT_PORT_TYPE
+writeAD[1] <= RegAD[1].DB_MAX_OUTPUT_PORT_TYPE
+writeAD[2] <= RegAD[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

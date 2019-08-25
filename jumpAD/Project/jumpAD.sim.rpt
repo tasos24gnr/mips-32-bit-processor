@@ -1,0 +1,269 @@
+Simulator report for jumpAD
+Thu May 09 14:32:25 2019
+Quartus II 64-Bit Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 112 nodes    ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 8844         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 112          ;
+; Total output ports checked                          ; 112          ;
+; Total output ports with complete 1/0-value coverage ; 112          ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                      ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |jumpAD|jumpadr[0]    ; |jumpAD|jumpadr[0]    ; out              ;
+; |jumpAD|jumpadr[1]    ; |jumpAD|jumpadr[1]    ; out              ;
+; |jumpAD|jumpadr[2]    ; |jumpAD|jumpadr[2]    ; out              ;
+; |jumpAD|jumpadr[3]    ; |jumpAD|jumpadr[3]    ; out              ;
+; |jumpAD|jumpadr[4]    ; |jumpAD|jumpadr[4]    ; out              ;
+; |jumpAD|jumpadr[5]    ; |jumpAD|jumpadr[5]    ; out              ;
+; |jumpAD|jumpadr[6]    ; |jumpAD|jumpadr[6]    ; out              ;
+; |jumpAD|jumpadr[7]    ; |jumpAD|jumpadr[7]    ; out              ;
+; |jumpAD|jumpadr[8]    ; |jumpAD|jumpadr[8]    ; out              ;
+; |jumpAD|jumpadr[9]    ; |jumpAD|jumpadr[9]    ; out              ;
+; |jumpAD|jumpadr[10]   ; |jumpAD|jumpadr[10]   ; out              ;
+; |jumpAD|jumpadr[11]   ; |jumpAD|jumpadr[11]   ; out              ;
+; |jumpAD|instrp2ad[0]  ; |jumpAD|instrp2ad[0]  ; out              ;
+; |jumpAD|instrp2ad[1]  ; |jumpAD|instrp2ad[1]  ; out              ;
+; |jumpAD|instrp2ad[2]  ; |jumpAD|instrp2ad[2]  ; out              ;
+; |jumpAD|instrp2ad[3]  ; |jumpAD|instrp2ad[3]  ; out              ;
+; |jumpAD|instrp2ad[4]  ; |jumpAD|instrp2ad[4]  ; out              ;
+; |jumpAD|instrp2ad[5]  ; |jumpAD|instrp2ad[5]  ; out              ;
+; |jumpAD|instrp2ad[6]  ; |jumpAD|instrp2ad[6]  ; out              ;
+; |jumpAD|instrp2ad[7]  ; |jumpAD|instrp2ad[7]  ; out              ;
+; |jumpAD|instrp2ad[8]  ; |jumpAD|instrp2ad[8]  ; out              ;
+; |jumpAD|instrp2ad[9]  ; |jumpAD|instrp2ad[9]  ; out              ;
+; |jumpAD|instrp2ad[10] ; |jumpAD|instrp2ad[10] ; out              ;
+; |jumpAD|instrp2ad[11] ; |jumpAD|instrp2ad[11] ; out              ;
+; |jumpAD|instrp2ad[12] ; |jumpAD|instrp2ad[12] ; out              ;
+; |jumpAD|instrp2ad[13] ; |jumpAD|instrp2ad[13] ; out              ;
+; |jumpAD|instrp2ad[14] ; |jumpAD|instrp2ad[14] ; out              ;
+; |jumpAD|instrp2ad[15] ; |jumpAD|instrp2ad[15] ; out              ;
+; |jumpAD|ejumpad[0]    ; |jumpAD|ejumpad[0]    ; pin_out          ;
+; |jumpAD|ejumpad[1]    ; |jumpAD|ejumpad[1]    ; pin_out          ;
+; |jumpAD|ejumpad[2]    ; |jumpAD|ejumpad[2]    ; pin_out          ;
+; |jumpAD|ejumpad[3]    ; |jumpAD|ejumpad[3]    ; pin_out          ;
+; |jumpAD|ejumpad[4]    ; |jumpAD|ejumpad[4]    ; pin_out          ;
+; |jumpAD|ejumpad[5]    ; |jumpAD|ejumpad[5]    ; pin_out          ;
+; |jumpAD|ejumpad[6]    ; |jumpAD|ejumpad[6]    ; pin_out          ;
+; |jumpAD|ejumpad[7]    ; |jumpAD|ejumpad[7]    ; pin_out          ;
+; |jumpAD|ejumpad[8]    ; |jumpAD|ejumpad[8]    ; pin_out          ;
+; |jumpAD|ejumpad[9]    ; |jumpAD|ejumpad[9]    ; pin_out          ;
+; |jumpAD|ejumpad[10]   ; |jumpAD|ejumpad[10]   ; pin_out          ;
+; |jumpAD|ejumpad[11]   ; |jumpAD|ejumpad[11]   ; pin_out          ;
+; |jumpAD|ejumpad[12]   ; |jumpAD|ejumpad[12]   ; pin_out          ;
+; |jumpAD|ejumpad[13]   ; |jumpAD|ejumpad[13]   ; pin_out          ;
+; |jumpAD|ejumpad[14]   ; |jumpAD|ejumpad[14]   ; pin_out          ;
+; |jumpAD|ejumpad[15]   ; |jumpAD|ejumpad[15]   ; pin_out          ;
+; |jumpAD|Add0~80       ; |jumpAD|Add0~80       ; out0             ;
+; |jumpAD|Add0~81       ; |jumpAD|Add0~81       ; out0             ;
+; |jumpAD|Add0~82       ; |jumpAD|Add0~82       ; out0             ;
+; |jumpAD|Add0~83       ; |jumpAD|Add0~83       ; out0             ;
+; |jumpAD|Add0~84       ; |jumpAD|Add0~84       ; out0             ;
+; |jumpAD|Add0~85       ; |jumpAD|Add0~85       ; out0             ;
+; |jumpAD|Add0~86       ; |jumpAD|Add0~86       ; out0             ;
+; |jumpAD|Add0~87       ; |jumpAD|Add0~87       ; out0             ;
+; |jumpAD|Add0~88       ; |jumpAD|Add0~88       ; out0             ;
+; |jumpAD|Add0~89       ; |jumpAD|Add0~89       ; out0             ;
+; |jumpAD|Add0~90       ; |jumpAD|Add0~90       ; out0             ;
+; |jumpAD|Add0~91       ; |jumpAD|Add0~91       ; out0             ;
+; |jumpAD|Add0~92       ; |jumpAD|Add0~92       ; out0             ;
+; |jumpAD|Add0~93       ; |jumpAD|Add0~93       ; out0             ;
+; |jumpAD|Add0~94       ; |jumpAD|Add0~94       ; out0             ;
+; |jumpAD|Add0~95       ; |jumpAD|Add0~95       ; out0             ;
+; |jumpAD|Add0~96       ; |jumpAD|Add0~96       ; out0             ;
+; |jumpAD|Add0~97       ; |jumpAD|Add0~97       ; out0             ;
+; |jumpAD|Add0~98       ; |jumpAD|Add0~98       ; out0             ;
+; |jumpAD|Add0~99       ; |jumpAD|Add0~99       ; out0             ;
+; |jumpAD|Add0~100      ; |jumpAD|Add0~100      ; out0             ;
+; |jumpAD|Add0~101      ; |jumpAD|Add0~101      ; out0             ;
+; |jumpAD|Add0~102      ; |jumpAD|Add0~102      ; out0             ;
+; |jumpAD|Add0~103      ; |jumpAD|Add0~103      ; out0             ;
+; |jumpAD|Add0~104      ; |jumpAD|Add0~104      ; out0             ;
+; |jumpAD|Add0~105      ; |jumpAD|Add0~105      ; out0             ;
+; |jumpAD|Add0~106      ; |jumpAD|Add0~106      ; out0             ;
+; |jumpAD|Add0~107      ; |jumpAD|Add0~107      ; out0             ;
+; |jumpAD|Add0~108      ; |jumpAD|Add0~108      ; out0             ;
+; |jumpAD|Add0~109      ; |jumpAD|Add0~109      ; out0             ;
+; |jumpAD|Add0~110      ; |jumpAD|Add0~110      ; out0             ;
+; |jumpAD|Add0~111      ; |jumpAD|Add0~111      ; out0             ;
+; |jumpAD|Add0~112      ; |jumpAD|Add0~112      ; out0             ;
+; |jumpAD|Add0~113      ; |jumpAD|Add0~113      ; out0             ;
+; |jumpAD|Add0~114      ; |jumpAD|Add0~114      ; out0             ;
+; |jumpAD|Add0~115      ; |jumpAD|Add0~115      ; out0             ;
+; |jumpAD|Add0~116      ; |jumpAD|Add0~116      ; out0             ;
+; |jumpAD|Add0~117      ; |jumpAD|Add0~117      ; out0             ;
+; |jumpAD|Add0~118      ; |jumpAD|Add0~118      ; out0             ;
+; |jumpAD|Add0~119      ; |jumpAD|Add0~119      ; out0             ;
+; |jumpAD|Add0~120      ; |jumpAD|Add0~120      ; out0             ;
+; |jumpAD|Add0~121      ; |jumpAD|Add0~121      ; out0             ;
+; |jumpAD|Add0~122      ; |jumpAD|Add0~122      ; out0             ;
+; |jumpAD|Add0~123      ; |jumpAD|Add0~123      ; out0             ;
+; |jumpAD|Add0~124      ; |jumpAD|Add0~124      ; out0             ;
+; |jumpAD|Add0~125      ; |jumpAD|Add0~125      ; out0             ;
+; |jumpAD|Add0~126      ; |jumpAD|Add0~126      ; out0             ;
+; |jumpAD|Add0~127      ; |jumpAD|Add0~127      ; out0             ;
+; |jumpAD|Add0~128      ; |jumpAD|Add0~128      ; out0             ;
+; |jumpAD|Add0~129      ; |jumpAD|Add0~129      ; out0             ;
+; |jumpAD|Add0~130      ; |jumpAD|Add0~130      ; out0             ;
+; |jumpAD|Add0~131      ; |jumpAD|Add0~131      ; out0             ;
+; |jumpAD|Add0~132      ; |jumpAD|Add0~132      ; out0             ;
+; |jumpAD|Add0~133      ; |jumpAD|Add0~133      ; out0             ;
+; |jumpAD|Add0~134      ; |jumpAD|Add0~134      ; out0             ;
+; |jumpAD|Add0~135      ; |jumpAD|Add0~135      ; out0             ;
+; |jumpAD|Add0~136      ; |jumpAD|Add0~136      ; out0             ;
+; |jumpAD|Add0~137      ; |jumpAD|Add0~137      ; out0             ;
+; |jumpAD|Add0~138      ; |jumpAD|Add0~138      ; out0             ;
+; |jumpAD|Add0~139      ; |jumpAD|Add0~139      ; out0             ;
+; |jumpAD|Add0~140      ; |jumpAD|Add0~140      ; out0             ;
+; |jumpAD|Add0~141      ; |jumpAD|Add0~141      ; out0             ;
+; |jumpAD|Add0~142      ; |jumpAD|Add0~142      ; out0             ;
+; |jumpAD|Add0~143      ; |jumpAD|Add0~143      ; out0             ;
+; |jumpAD|Add0~144      ; |jumpAD|Add0~144      ; out0             ;
+; |jumpAD|Add0~145      ; |jumpAD|Add0~145      ; out0             ;
+; |jumpAD|Add0~146      ; |jumpAD|Add0~146      ; out0             ;
+; |jumpAD|Add0~147      ; |jumpAD|Add0~147      ; out0             ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Full Version
+    Info: Processing started: Thu May 09 14:32:09 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off jumpAD -c jumpAD
+Info: Using vector source file "C:/Users/p3130141/Desktop/NEW/jumpAD/jumpAD.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is     100.00 %
+Info: Number of transitions in simulation is 8844
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Allocated 4323 megabytes of memory during processing
+    Info: Processing ended: Thu May 09 14:32:41 2019
+    Info: Elapsed time: 00:00:32
+
+

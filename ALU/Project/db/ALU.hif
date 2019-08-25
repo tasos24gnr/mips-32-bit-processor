@@ -1,0 +1,304 @@
+Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Full Version
+11
+1009
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+ALU
+# storage
+db|ALU.(0).cnf
+db|ALU.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ALU.vhd
+3b1af48d02865fb90304f2b1bbc46a
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+16
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+|
+}
+# lmf
+..|..|..|..|..|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+AluSlice
+# storage
+db|ALU.(1).cnf
+db|ALU.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ALU.vhd
+3b1af48d02865fb90304f2b1bbc46a
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+AluSlice:G0
+AluSlice:G1
+AluSlice:G2
+AluSlice:G3
+AluSlice:G4
+AluSlice:G5
+AluSlice:G6
+AluSlice:G7
+AluSlice:G8
+AluSlice:G9
+AluSlice:G10
+AluSlice:G11
+AluSlice:G12
+AluSlice:G13
+AluSlice:G14
+AluSlice:G15
+}
+# lmf
+..|..|..|..|..|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+mux
+# storage
+db|ALU.(2).cnf
+db|ALU.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ALU.vhd
+3b1af48d02865fb90304f2b1bbc46a
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+AluSlice:G0|mux:G0
+AluSlice:G0|mux:G1
+AluSlice:G0|mux3:G3|mux:G1
+AluSlice:G0|mux3:G3|mux:G2
+AluSlice:G1|mux:G0
+AluSlice:G1|mux:G1
+AluSlice:G1|mux3:G3|mux:G1
+AluSlice:G1|mux3:G3|mux:G2
+AluSlice:G2|mux:G0
+AluSlice:G2|mux:G1
+AluSlice:G2|mux3:G3|mux:G1
+AluSlice:G2|mux3:G3|mux:G2
+AluSlice:G3|mux:G0
+AluSlice:G3|mux:G1
+AluSlice:G3|mux3:G3|mux:G1
+AluSlice:G3|mux3:G3|mux:G2
+AluSlice:G4|mux:G0
+AluSlice:G4|mux:G1
+AluSlice:G4|mux3:G3|mux:G1
+AluSlice:G4|mux3:G3|mux:G2
+AluSlice:G5|mux:G0
+AluSlice:G5|mux:G1
+AluSlice:G5|mux3:G3|mux:G1
+AluSlice:G5|mux3:G3|mux:G2
+AluSlice:G6|mux:G0
+AluSlice:G6|mux:G1
+AluSlice:G6|mux3:G3|mux:G1
+AluSlice:G6|mux3:G3|mux:G2
+AluSlice:G7|mux:G0
+AluSlice:G7|mux:G1
+AluSlice:G7|mux3:G3|mux:G1
+AluSlice:G7|mux3:G3|mux:G2
+AluSlice:G8|mux:G0
+AluSlice:G8|mux:G1
+AluSlice:G8|mux3:G3|mux:G1
+AluSlice:G8|mux3:G3|mux:G2
+AluSlice:G9|mux:G0
+AluSlice:G9|mux:G1
+AluSlice:G9|mux3:G3|mux:G1
+AluSlice:G9|mux3:G3|mux:G2
+AluSlice:G10|mux:G0
+AluSlice:G10|mux:G1
+AluSlice:G10|mux3:G3|mux:G1
+AluSlice:G10|mux3:G3|mux:G2
+AluSlice:G11|mux:G0
+AluSlice:G11|mux:G1
+AluSlice:G11|mux3:G3|mux:G1
+AluSlice:G11|mux3:G3|mux:G2
+AluSlice:G12|mux:G0
+AluSlice:G12|mux:G1
+AluSlice:G12|mux3:G3|mux:G1
+AluSlice:G12|mux3:G3|mux:G2
+AluSlice:G13|mux:G0
+AluSlice:G13|mux:G1
+AluSlice:G13|mux3:G3|mux:G1
+AluSlice:G13|mux3:G3|mux:G2
+AluSlice:G14|mux:G0
+AluSlice:G14|mux:G1
+AluSlice:G14|mux3:G3|mux:G1
+AluSlice:G14|mux3:G3|mux:G2
+AluSlice:G15|mux:G0
+AluSlice:G15|mux:G1
+AluSlice:G15|mux3:G3|mux:G1
+AluSlice:G15|mux3:G3|mux:G2
+}
+# lmf
+..|..|..|..|..|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+fa
+# storage
+db|ALU.(3).cnf
+db|ALU.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ALU.vhd
+3b1af48d02865fb90304f2b1bbc46a
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+AluSlice:G0|fa:G2
+AluSlice:G1|fa:G2
+AluSlice:G2|fa:G2
+AluSlice:G3|fa:G2
+AluSlice:G4|fa:G2
+AluSlice:G5|fa:G2
+AluSlice:G6|fa:G2
+AluSlice:G7|fa:G2
+AluSlice:G8|fa:G2
+AluSlice:G9|fa:G2
+AluSlice:G10|fa:G2
+AluSlice:G11|fa:G2
+AluSlice:G12|fa:G2
+AluSlice:G13|fa:G2
+AluSlice:G14|fa:G2
+AluSlice:G15|fa:G2
+}
+# lmf
+..|..|..|..|..|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+mux3
+# storage
+db|ALU.(4).cnf
+db|ALU.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ALU.vhd
+3b1af48d02865fb90304f2b1bbc46a
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+AluSlice:G0|mux3:G3
+AluSlice:G1|mux3:G3
+AluSlice:G2|mux3:G3
+AluSlice:G3|mux3:G3
+AluSlice:G4|mux3:G3
+AluSlice:G5|mux3:G3
+AluSlice:G6|mux3:G3
+AluSlice:G7|mux3:G3
+AluSlice:G8|mux3:G3
+AluSlice:G9|mux3:G3
+AluSlice:G10|mux3:G3
+AluSlice:G11|mux3:G3
+AluSlice:G12|mux3:G3
+AluSlice:G13|mux3:G3
+AluSlice:G14|mux3:G3
+AluSlice:G15|mux3:G3
+}
+# lmf
+..|..|..|..|..|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

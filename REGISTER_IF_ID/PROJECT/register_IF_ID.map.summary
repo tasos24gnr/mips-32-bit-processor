@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu May 23 13:15:55 2019
+Quartus II 64-Bit Version : 7.2 Build 207 03/18/2008 SP 3 SJ Full Version
+Revision Name : register_IF_ID
+Top-level Entity Name : register_IF_ID
+Family : Cyclone II
+Total logic elements : 40
+    Total combinational functions : 40
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 67
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

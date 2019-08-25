@@ -1,0 +1,1371 @@
+|ALU
+input1[0] => AluSlice:G0.input1
+input1[0] => Add0.IN32
+input1[0] => Equal0.IN31
+input1[1] => AluSlice:G1.input1
+input1[1] => Add0.IN31
+input1[1] => Equal0.IN30
+input1[2] => AluSlice:G2.input1
+input1[2] => Add0.IN30
+input1[2] => Equal0.IN29
+input1[3] => AluSlice:G3.input1
+input1[3] => Add0.IN29
+input1[3] => Equal0.IN28
+input1[4] => AluSlice:G4.input1
+input1[4] => Add0.IN28
+input1[4] => Equal0.IN27
+input1[5] => AluSlice:G5.input1
+input1[5] => Add0.IN27
+input1[5] => Equal0.IN26
+input1[6] => AluSlice:G6.input1
+input1[6] => Add0.IN26
+input1[6] => Equal0.IN25
+input1[7] => AluSlice:G7.input1
+input1[7] => Add0.IN25
+input1[7] => Equal0.IN24
+input1[8] => AluSlice:G8.input1
+input1[8] => Add0.IN24
+input1[8] => Equal0.IN23
+input1[9] => AluSlice:G9.input1
+input1[9] => Add0.IN23
+input1[9] => Equal0.IN22
+input1[10] => AluSlice:G10.input1
+input1[10] => Add0.IN22
+input1[10] => Equal0.IN21
+input1[11] => AluSlice:G11.input1
+input1[11] => Add0.IN21
+input1[11] => Equal0.IN20
+input1[12] => AluSlice:G12.input1
+input1[12] => Add0.IN20
+input1[12] => Equal0.IN19
+input1[13] => AluSlice:G13.input1
+input1[13] => Add0.IN19
+input1[13] => Equal0.IN18
+input1[14] => AluSlice:G14.input1
+input1[14] => Add0.IN18
+input1[14] => Equal0.IN17
+input1[15] => AluSlice:G15.input1
+input1[15] => Add0.IN17
+input1[15] => Equal0.IN16
+input1[15] => Mux18.IN0
+input1[15] => Mux0.IN15
+input1[15] => Mux16.IN0
+input1[15] => Mux15.IN1
+input1[15] => Mux14.IN1
+input1[15] => Mux13.IN1
+input1[15] => Mux12.IN1
+input1[15] => Mux11.IN1
+input1[15] => Mux10.IN1
+input1[15] => Mux9.IN1
+input1[15] => Mux8.IN1
+input1[15] => Mux7.IN1
+input1[15] => Mux6.IN1
+input1[15] => Mux5.IN1
+input1[15] => Mux4.IN1
+input1[15] => Mux3.IN1
+input1[15] => Mux2.IN1
+input1[15] => Mux1.IN1
+input2[0] => AluSlice:G0.input2
+input2[0] => Add0.IN16
+input2[1] => AluSlice:G1.input2
+input2[1] => Add0.IN15
+input2[2] => AluSlice:G2.input2
+input2[2] => Add0.IN14
+input2[3] => AluSlice:G3.input2
+input2[3] => Add0.IN13
+input2[4] => AluSlice:G4.input2
+input2[4] => Add0.IN12
+input2[5] => AluSlice:G5.input2
+input2[5] => Add0.IN11
+input2[6] => AluSlice:G6.input2
+input2[6] => Add0.IN10
+input2[7] => AluSlice:G7.input2
+input2[7] => Add0.IN9
+input2[8] => AluSlice:G8.input2
+input2[8] => Add0.IN8
+input2[9] => AluSlice:G9.input2
+input2[9] => Add0.IN7
+input2[10] => AluSlice:G10.input2
+input2[10] => Add0.IN6
+input2[11] => AluSlice:G11.input2
+input2[11] => Add0.IN5
+input2[12] => AluSlice:G12.input2
+input2[12] => Add0.IN4
+input2[13] => AluSlice:G13.input2
+input2[13] => Add0.IN3
+input2[14] => AluSlice:G14.input2
+input2[14] => Add0.IN2
+input2[15] => AluSlice:G15.input2
+input2[15] => Add0.IN1
+carryin => AluSlice:G0.carryin
+carryout <= carryout~0.DB_MAX_OUTPUT_PORT_TYPE
+operation[0] => AluSlice:G15.op2
+operation[0] => AluSlice:G14.op2
+operation[0] => AluSlice:G13.op2
+operation[0] => AluSlice:G12.op2
+operation[0] => AluSlice:G11.op2
+operation[0] => AluSlice:G10.op2
+operation[0] => AluSlice:G9.op2
+operation[0] => AluSlice:G8.op2
+operation[0] => AluSlice:G7.op2
+operation[0] => AluSlice:G6.op2
+operation[0] => AluSlice:G5.op2
+operation[0] => AluSlice:G4.op2
+operation[0] => AluSlice:G3.op2
+operation[0] => AluSlice:G2.op2
+operation[0] => AluSlice:G1.op2
+operation[0] => Mux20.IN19
+operation[0] => Mux19.IN19
+operation[0] => Mux0.IN19
+operation[0] => AluSlice:G0.op2
+operation[0] => Mux18.IN4
+operation[0] => Mux17.IN4
+operation[0] => Mux16.IN16
+operation[0] => Mux15.IN16
+operation[0] => Mux14.IN16
+operation[0] => Mux13.IN16
+operation[0] => Mux12.IN16
+operation[0] => Mux11.IN16
+operation[0] => Mux10.IN16
+operation[0] => Mux9.IN16
+operation[0] => Mux8.IN16
+operation[0] => Mux7.IN16
+operation[0] => Mux6.IN16
+operation[0] => Mux5.IN16
+operation[0] => Mux4.IN16
+operation[0] => Mux3.IN16
+operation[0] => Mux2.IN16
+operation[0] => Mux1.IN16
+operation[1] => AluSlice:G15.op1
+operation[1] => AluSlice:G14.op1
+operation[1] => AluSlice:G13.op1
+operation[1] => AluSlice:G12.op1
+operation[1] => AluSlice:G11.op1
+operation[1] => AluSlice:G10.op1
+operation[1] => AluSlice:G9.op1
+operation[1] => AluSlice:G8.op1
+operation[1] => AluSlice:G7.op1
+operation[1] => AluSlice:G6.op1
+operation[1] => AluSlice:G5.op1
+operation[1] => AluSlice:G4.op1
+operation[1] => AluSlice:G3.op1
+operation[1] => AluSlice:G2.op1
+operation[1] => AluSlice:G1.op1
+operation[1] => Mux20.IN18
+operation[1] => Mux19.IN18
+operation[1] => Mux0.IN18
+operation[1] => AluSlice:G0.op1
+operation[1] => Mux18.IN3
+operation[1] => Mux17.IN3
+operation[1] => Mux16.IN15
+operation[1] => Mux15.IN15
+operation[1] => Mux14.IN15
+operation[1] => Mux13.IN15
+operation[1] => Mux12.IN15
+operation[1] => Mux11.IN15
+operation[1] => Mux10.IN15
+operation[1] => Mux9.IN15
+operation[1] => Mux8.IN15
+operation[1] => Mux7.IN15
+operation[1] => Mux6.IN15
+operation[1] => Mux5.IN15
+operation[1] => Mux4.IN15
+operation[1] => Mux3.IN15
+operation[1] => Mux2.IN15
+operation[1] => Mux1.IN15
+operation[2] => AluSlice:G15.binvert
+operation[2] => AluSlice:G14.binvert
+operation[2] => AluSlice:G13.binvert
+operation[2] => AluSlice:G12.binvert
+operation[2] => AluSlice:G11.binvert
+operation[2] => AluSlice:G10.binvert
+operation[2] => AluSlice:G9.binvert
+operation[2] => AluSlice:G8.binvert
+operation[2] => AluSlice:G7.binvert
+operation[2] => AluSlice:G6.binvert
+operation[2] => AluSlice:G5.binvert
+operation[2] => AluSlice:G4.binvert
+operation[2] => AluSlice:G3.binvert
+operation[2] => AluSlice:G2.binvert
+operation[2] => AluSlice:G1.binvert
+operation[2] => Mux20.IN17
+operation[2] => Mux19.IN17
+operation[2] => Mux0.IN17
+operation[2] => AluSlice:G0.binvert
+operation[2] => Mux18.IN2
+operation[2] => Mux17.IN2
+operation[2] => Mux16.IN14
+operation[2] => Mux15.IN14
+operation[2] => Mux14.IN14
+operation[2] => Mux13.IN14
+operation[2] => Mux12.IN14
+operation[2] => Mux11.IN14
+operation[2] => Mux10.IN14
+operation[2] => Mux9.IN14
+operation[2] => Mux8.IN14
+operation[2] => Mux7.IN14
+operation[2] => Mux6.IN14
+operation[2] => Mux5.IN14
+operation[2] => Mux4.IN14
+operation[2] => Mux3.IN14
+operation[2] => Mux2.IN14
+operation[2] => Mux1.IN14
+operation[3] => AluSlice:G15.ainvert
+operation[3] => AluSlice:G14.ainvert
+operation[3] => AluSlice:G13.ainvert
+operation[3] => AluSlice:G12.ainvert
+operation[3] => AluSlice:G11.ainvert
+operation[3] => AluSlice:G10.ainvert
+operation[3] => AluSlice:G9.ainvert
+operation[3] => AluSlice:G8.ainvert
+operation[3] => AluSlice:G7.ainvert
+operation[3] => AluSlice:G6.ainvert
+operation[3] => AluSlice:G5.ainvert
+operation[3] => AluSlice:G4.ainvert
+operation[3] => AluSlice:G3.ainvert
+operation[3] => AluSlice:G2.ainvert
+operation[3] => AluSlice:G1.ainvert
+operation[3] => Mux20.IN16
+operation[3] => Mux19.IN16
+operation[3] => Mux0.IN16
+operation[3] => AluSlice:G0.ainvert
+operation[3] => Mux18.IN1
+operation[3] => Mux17.IN1
+operation[3] => Mux16.IN13
+operation[3] => Mux15.IN13
+operation[3] => Mux14.IN13
+operation[3] => Mux13.IN13
+operation[3] => Mux12.IN13
+operation[3] => Mux11.IN13
+operation[3] => Mux10.IN13
+operation[3] => Mux9.IN13
+operation[3] => Mux8.IN13
+operation[3] => Mux7.IN13
+operation[3] => Mux6.IN13
+operation[3] => Mux5.IN13
+operation[3] => Mux4.IN13
+operation[3] => Mux3.IN13
+operation[3] => Mux2.IN13
+operation[3] => Mux1.IN13
+output[0] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+output[8] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+output[9] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+output[10] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+output[11] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+output[12] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+output[13] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+output[14] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+output[15] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G0
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G0|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G0|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G0|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G0|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G0|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G0|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G1
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G1|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G1|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G1|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G1|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G1|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G1|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G2
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G2|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G2|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G2|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G2|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G2|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G2|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G3
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G3|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G3|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G3|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G3|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G3|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G4
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G4|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G4|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G4|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G4|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G4|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G4|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G5
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G5|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G5|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G5|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G5|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G5|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G5|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G6
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G6|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G6|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G6|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G6|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G6|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G6|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G7
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G7|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G7|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G7|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G7|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G7|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G7|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G8
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G8|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G8|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G8|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G8|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G8|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G8|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G9
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G9|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G9|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G9|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G9|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G9|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G9|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G10
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G10|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G10|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G10|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G10|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G10|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G10|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G11
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G11|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G11|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G11|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G11|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G11|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G11|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G12
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G12|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G12|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G12|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G12|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G12|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G12|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G13
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G13|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G13|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G13|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G13|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G13|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G13|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G14
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G14|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G14|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G14|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G14|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G14|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G14|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G15
+input1 => mux:G0.in1
+input1 => mux:G0.in2
+input2 => mux:G1.in1
+input2 => mux:G1.in2
+carryin => fa:G2.carryin
+ainvert => mux:G0.sig
+binvert => mux:G1.sig
+op1 => mux3:G3.sig1
+op2 => mux3:G3.sig2
+output <= mux3:G3.output
+carryout <= fa:G2.carryout
+
+
+|ALU|AluSlice:G15|mux:G0
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G15|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G15|fa:G2
+in1 => carryout~1.IN0
+in1 => carryout~0.IN0
+in1 => sum~0.IN0
+in2 => carryout~3.IN0
+in2 => carryout~0.IN1
+in2 => sum~0.IN1
+carryin => carryout~3.IN1
+carryin => carryout~1.IN1
+carryin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G15|mux3:G3
+in1 => mux:G1.in1
+in2 => mux:G1.in2
+in3 => mux:G2.in2
+sig1 => mux:G1.sig
+sig2 => mux:G2.sig
+output <= mux:G2.output
+
+
+|ALU|AluSlice:G15|mux3:G3|mux:G1
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AluSlice:G15|mux3:G3|mux:G2
+in1 => output~0.IN1
+in2 => output~1.IN1
+sig => output~1.IN0
+sig => output~0.IN0
+output <= output~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

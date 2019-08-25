@@ -1,0 +1,875 @@
+Classic Timing Analyzer report for register_ID_EX
+Thu May 23 13:02:57 2019
+Quartus II 64-Bit Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. tsu
+  6. tco
+  7. th
+  8. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                 ;
++------------------------------+-------+---------------+-------------+-----------------------------+-----------------------------+------------+------------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From                        ; To                          ; From Clock ; To Clock   ; Failed Paths ;
++------------------------------+-------+---------------+-------------+-----------------------------+-----------------------------+------------+------------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 3.762 ns    ; R1Reg[4]                    ; R1Reg_IDEX[4]$latch         ; --         ; isR        ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 9.355 ns    ; jumpShortAddr_IDEX[1]$latch ; jumpShortAddr_IDEX[1]       ; wasJumpOut ; --         ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -0.075 ns   ; jumpShortAddr[1]            ; jumpShortAddr_IDEX[1]$latch ; --         ; wasJumpOut ; 0            ;
+; Total number of failed paths ;       ;               ;             ;                             ;                             ;            ;            ; 0            ;
++------------------------------+-------+---------------+-------------+-----------------------------+-----------------------------+------------+------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                      ;
++----------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                         ; Setting            ; From ; To ; Entity Name ;
++----------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                    ; EP2C35F672C6       ;      ;    ;             ;
+; Timing Models                                                  ; Final              ;      ;    ;             ;
+; Default hold multicycle                                        ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                      ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                         ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                 ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                               ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                          ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                        ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                               ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                           ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                  ; Off                ;      ;    ;             ;
+; Number of source nodes to report per destination node          ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                          ; 10                 ;      ;    ;             ;
+; Number of paths to report                                      ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                   ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                         ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                     ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                   ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis ; Off                ;      ;    ;             ;
++----------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; isR             ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; isMFPC          ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; isEOR           ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; isJR            ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; isBranch        ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; isJump          ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; wasJumpOut      ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; isPrintDigit    ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; isLW            ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; isSW            ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; isReadDigit     ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; tsu                                                                                                                                                                        ;
++-----------------------------------------+-----------------------------------------------------+------------+------------------+-----------------------------+--------------+
+; Slack                                   ; Required tsu                                        ; Actual tsu ; From             ; To                          ; To Clock     ;
++-----------------------------------------+-----------------------------------------------------+------------+------------------+-----------------------------+--------------+
+; N/A                                     ; None                                                ; 3.762 ns   ; R1Reg[4]         ; R1Reg_IDEX[4]$latch         ; isR          ;
+; N/A                                     ; None                                                ; 3.727 ns   ; R1Reg[7]         ; R1Reg_IDEX[7]$latch         ; isR          ;
+; N/A                                     ; None                                                ; 3.643 ns   ; R1Reg[4]         ; R1Reg_IDEX[4]$latch         ; isMFPC       ;
+; N/A                                     ; None                                                ; 3.608 ns   ; R1Reg[7]         ; R1Reg_IDEX[7]$latch         ; isMFPC       ;
+; N/A                                     ; None                                                ; 3.420 ns   ; R2Reg[11]        ; R2Reg_IDEX[11]$latch        ; isPrintDigit ;
+; N/A                                     ; None                                                ; 3.417 ns   ; R1Reg[4]         ; R1Reg_IDEX[4]$latch         ; isEOR        ;
+; N/A                                     ; None                                                ; 3.382 ns   ; R1Reg[7]         ; R1Reg_IDEX[7]$latch         ; isEOR        ;
+; N/A                                     ; None                                                ; 3.269 ns   ; R2Reg[11]        ; R2Reg_IDEX[11]$latch        ; isLW         ;
+; N/A                                     ; None                                                ; 3.215 ns   ; R2Reg[10]        ; R2Reg_IDEX[10]$latch        ; isPrintDigit ;
+; N/A                                     ; None                                                ; 3.181 ns   ; R2Reg[11]        ; R2Reg_IDEX[11]$latch        ; isSW         ;
+; N/A                                     ; None                                                ; 3.064 ns   ; R2Reg[10]        ; R2Reg_IDEX[10]$latch        ; isLW         ;
+; N/A                                     ; None                                                ; 3.037 ns   ; R2Reg[11]        ; R2Reg_IDEX[11]$latch        ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.977 ns   ; R1AD[2]          ; R1AD_IDEX[2]$latch          ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.976 ns   ; R2Reg[10]        ; R2Reg_IDEX[10]$latch        ; isSW         ;
+; N/A                                     ; None                                                ; 2.832 ns   ; R2Reg[10]        ; R2Reg_IDEX[10]$latch        ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.826 ns   ; R1AD[2]          ; R1AD_IDEX[2]$latch          ; isLW         ;
+; N/A                                     ; None                                                ; 2.809 ns   ; R2Reg[8]         ; R2Reg_IDEX[8]$latch         ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.793 ns   ; ALUFunc[1]       ; ALUFunc_IDEX[1]$latch       ; isR          ;
+; N/A                                     ; None                                                ; 2.738 ns   ; R1AD[2]          ; R1AD_IDEX[2]$latch          ; isSW         ;
+; N/A                                     ; None                                                ; 2.719 ns   ; immediate16[13]  ; immediate16_IDEX[13]$latch  ; isR          ;
+; N/A                                     ; None                                                ; 2.674 ns   ; ALUFunc[1]       ; ALUFunc_IDEX[1]$latch       ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.672 ns   ; R1Reg[10]        ; R1Reg_IDEX[10]$latch        ; isR          ;
+; N/A                                     ; None                                                ; 2.660 ns   ; immediate16[6]   ; immediate16_IDEX[6]$latch   ; isR          ;
+; N/A                                     ; None                                                ; 2.658 ns   ; R2Reg[8]         ; R2Reg_IDEX[8]$latch         ; isLW         ;
+; N/A                                     ; None                                                ; 2.657 ns   ; immediate16[10]  ; immediate16_IDEX[10]$latch  ; isR          ;
+; N/A                                     ; None                                                ; 2.653 ns   ; R1Reg[2]         ; R1Reg_IDEX[2]$latch         ; isR          ;
+; N/A                                     ; None                                                ; 2.645 ns   ; R1AD[1]          ; R1AD_IDEX[1]$latch          ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.642 ns   ; R1Reg[13]        ; R1Reg_IDEX[13]$latch        ; isR          ;
+; N/A                                     ; None                                                ; 2.600 ns   ; immediate16[13]  ; immediate16_IDEX[13]$latch  ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.594 ns   ; R1AD[2]          ; R1AD_IDEX[2]$latch          ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.581 ns   ; R2Reg[15]        ; R2Reg_IDEX[15]$latch        ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.570 ns   ; R2Reg[8]         ; R2Reg_IDEX[8]$latch         ; isSW         ;
+; N/A                                     ; None                                                ; 2.553 ns   ; R1Reg[10]        ; R1Reg_IDEX[10]$latch        ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.543 ns   ; R1Reg[15]        ; R1Reg_IDEX[15]$latch        ; isR          ;
+; N/A                                     ; None                                                ; 2.541 ns   ; immediate16[6]   ; immediate16_IDEX[6]$latch   ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.538 ns   ; immediate16[10]  ; immediate16_IDEX[10]$latch  ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.537 ns   ; immediate16[14]  ; immediate16_IDEX[14]$latch  ; isR          ;
+; N/A                                     ; None                                                ; 2.536 ns   ; R1Reg[8]         ; R1Reg_IDEX[8]$latch         ; isR          ;
+; N/A                                     ; None                                                ; 2.534 ns   ; R2Reg[14]        ; R2Reg_IDEX[14]$latch        ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.534 ns   ; R1Reg[2]         ; R1Reg_IDEX[2]$latch         ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.523 ns   ; R1Reg[13]        ; R1Reg_IDEX[13]$latch        ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.505 ns   ; immediate16[11]  ; immediate16_IDEX[11]$latch  ; isR          ;
+; N/A                                     ; None                                                ; 2.494 ns   ; R1AD[1]          ; R1AD_IDEX[1]$latch          ; isLW         ;
+; N/A                                     ; None                                                ; 2.479 ns   ; R1Reg[14]        ; R1Reg_IDEX[14]$latch        ; isR          ;
+; N/A                                     ; None                                                ; 2.476 ns   ; R1Reg[1]         ; R1Reg_IDEX[1]$latch         ; isR          ;
+; N/A                                     ; None                                                ; 2.473 ns   ; R2Reg[7]         ; R2Reg_IDEX[7]$latch         ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.472 ns   ; immediate16[8]   ; immediate16_IDEX[8]$latch   ; isR          ;
+; N/A                                     ; None                                                ; 2.472 ns   ; immediate16[1]   ; immediate16_IDEX[1]$latch   ; isR          ;
+; N/A                                     ; None                                                ; 2.470 ns   ; immediate16[5]   ; immediate16_IDEX[5]$latch   ; isR          ;
+; N/A                                     ; None                                                ; 2.467 ns   ; immediate16[12]  ; immediate16_IDEX[12]$latch  ; isR          ;
+; N/A                                     ; None                                                ; 2.467 ns   ; R2Reg[5]         ; R2Reg_IDEX[5]$latch         ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.466 ns   ; R2Reg[12]        ; R2Reg_IDEX[12]$latch        ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.463 ns   ; immediate16[7]   ; immediate16_IDEX[7]$latch   ; isR          ;
+; N/A                                     ; None                                                ; 2.448 ns   ; ALUFunc[1]       ; ALUFunc_IDEX[1]$latch       ; isEOR        ;
+; N/A                                     ; None                                                ; 2.441 ns   ; R2Reg[6]         ; R2Reg_IDEX[6]$latch         ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.435 ns   ; R2Reg[3]         ; R2Reg_IDEX[3]$latch         ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.433 ns   ; R2Reg[1]         ; R2Reg_IDEX[1]$latch         ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.430 ns   ; R2Reg[15]        ; R2Reg_IDEX[15]$latch        ; isLW         ;
+; N/A                                     ; None                                                ; 2.426 ns   ; R2Reg[8]         ; R2Reg_IDEX[8]$latch         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.425 ns   ; immediate16[3]   ; immediate16_IDEX[3]$latch   ; isR          ;
+; N/A                                     ; None                                                ; 2.424 ns   ; R1Reg[15]        ; R1Reg_IDEX[15]$latch        ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.421 ns   ; immediate16[15]  ; immediate16_IDEX[15]$latch  ; isR          ;
+; N/A                                     ; None                                                ; 2.418 ns   ; immediate16[14]  ; immediate16_IDEX[14]$latch  ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.417 ns   ; R1Reg[8]         ; R1Reg_IDEX[8]$latch         ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.415 ns   ; R2Reg[2]         ; R2Reg_IDEX[2]$latch         ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.409 ns   ; R2Reg[0]         ; R2Reg_IDEX[0]$latch         ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.406 ns   ; R1AD[1]          ; R1AD_IDEX[1]$latch          ; isSW         ;
+; N/A                                     ; None                                                ; 2.402 ns   ; jumpShortAddr[8] ; jumpShortAddr_IDEX[8]$latch ; isJR         ;
+; N/A                                     ; None                                                ; 2.391 ns   ; immediate16[9]   ; immediate16_IDEX[9]$latch   ; isR          ;
+; N/A                                     ; None                                                ; 2.386 ns   ; immediate16[11]  ; immediate16_IDEX[11]$latch  ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.384 ns   ; R1Reg[0]         ; R1Reg_IDEX[0]$latch         ; isR          ;
+; N/A                                     ; None                                                ; 2.383 ns   ; R2Reg[14]        ; R2Reg_IDEX[14]$latch        ; isLW         ;
+; N/A                                     ; None                                                ; 2.377 ns   ; ALUFunc[0]       ; ALUFunc_IDEX[0]$latch       ; isR          ;
+; N/A                                     ; None                                                ; 2.374 ns   ; immediate16[13]  ; immediate16_IDEX[13]$latch  ; isEOR        ;
+; N/A                                     ; None                                                ; 2.372 ns   ; ALUFunc[2]       ; ALUFunc_IDEX[2]$latch       ; isR          ;
+; N/A                                     ; None                                                ; 2.360 ns   ; R1Reg[14]        ; R1Reg_IDEX[14]$latch        ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.359 ns   ; R2Reg[4]         ; R2Reg_IDEX[4]$latch         ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.357 ns   ; R1Reg[1]         ; R1Reg_IDEX[1]$latch         ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.353 ns   ; immediate16[8]   ; immediate16_IDEX[8]$latch   ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.353 ns   ; immediate16[1]   ; immediate16_IDEX[1]$latch   ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.351 ns   ; immediate16[5]   ; immediate16_IDEX[5]$latch   ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.349 ns   ; R1Reg[12]        ; R1Reg_IDEX[12]$latch        ; isR          ;
+; N/A                                     ; None                                                ; 2.348 ns   ; immediate16[12]  ; immediate16_IDEX[12]$latch  ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.344 ns   ; immediate16[7]   ; immediate16_IDEX[7]$latch   ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.342 ns   ; R2Reg[15]        ; R2Reg_IDEX[15]$latch        ; isSW         ;
+; N/A                                     ; None                                                ; 2.337 ns   ; R1Reg[3]         ; R1Reg_IDEX[3]$latch         ; isR          ;
+; N/A                                     ; None                                                ; 2.327 ns   ; R1Reg[10]        ; R1Reg_IDEX[10]$latch        ; isEOR        ;
+; N/A                                     ; None                                                ; 2.322 ns   ; R2Reg[7]         ; R2Reg_IDEX[7]$latch         ; isLW         ;
+; N/A                                     ; None                                                ; 2.321 ns   ; isReadDigit      ; isReadDigit_IDEX$latch      ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.316 ns   ; R2Reg[5]         ; R2Reg_IDEX[5]$latch         ; isLW         ;
+; N/A                                     ; None                                                ; 2.315 ns   ; immediate16[6]   ; immediate16_IDEX[6]$latch   ; isEOR        ;
+; N/A                                     ; None                                                ; 2.315 ns   ; R2Reg[12]        ; R2Reg_IDEX[12]$latch        ; isLW         ;
+; N/A                                     ; None                                                ; 2.312 ns   ; immediate16[10]  ; immediate16_IDEX[10]$latch  ; isEOR        ;
+; N/A                                     ; None                                                ; 2.308 ns   ; R1Reg[2]         ; R1Reg_IDEX[2]$latch         ; isEOR        ;
+; N/A                                     ; None                                                ; 2.306 ns   ; immediate16[3]   ; immediate16_IDEX[3]$latch   ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.302 ns   ; immediate16[15]  ; immediate16_IDEX[15]$latch  ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.297 ns   ; R1Reg[13]        ; R1Reg_IDEX[13]$latch        ; isEOR        ;
+; N/A                                     ; None                                                ; 2.295 ns   ; jumpShortAddr[8] ; jumpShortAddr_IDEX[8]$latch ; isBranch     ;
+; N/A                                     ; None                                                ; 2.295 ns   ; R2Reg[14]        ; R2Reg_IDEX[14]$latch        ; isSW         ;
+; N/A                                     ; None                                                ; 2.290 ns   ; R2Reg[6]         ; R2Reg_IDEX[6]$latch         ; isLW         ;
+; N/A                                     ; None                                                ; 2.284 ns   ; R2Reg[3]         ; R2Reg_IDEX[3]$latch         ; isLW         ;
+; N/A                                     ; None                                                ; 2.282 ns   ; R2Reg[1]         ; R2Reg_IDEX[1]$latch         ; isLW         ;
+; N/A                                     ; None                                                ; 2.272 ns   ; immediate16[9]   ; immediate16_IDEX[9]$latch   ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.265 ns   ; isLW             ; isLW_IDEX$latch             ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.265 ns   ; R1Reg[9]         ; R1Reg_IDEX[9]$latch         ; isR          ;
+; N/A                                     ; None                                                ; 2.265 ns   ; R1Reg[0]         ; R1Reg_IDEX[0]$latch         ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.264 ns   ; R2Reg[2]         ; R2Reg_IDEX[2]$latch         ; isLW         ;
+; N/A                                     ; None                                                ; 2.262 ns   ; R1AD[1]          ; R1AD_IDEX[1]$latch          ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.258 ns   ; R2Reg[0]         ; R2Reg_IDEX[0]$latch         ; isLW         ;
+; N/A                                     ; None                                                ; 2.258 ns   ; ALUFunc[0]       ; ALUFunc_IDEX[0]$latch       ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.256 ns   ; R2Reg[13]        ; R2Reg_IDEX[13]$latch        ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.253 ns   ; ALUFunc[2]       ; ALUFunc_IDEX[2]$latch       ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.236 ns   ; R1Reg[11]        ; R1Reg_IDEX[11]$latch        ; isR          ;
+; N/A                                     ; None                                                ; 2.234 ns   ; R2Reg[7]         ; R2Reg_IDEX[7]$latch         ; isSW         ;
+; N/A                                     ; None                                                ; 2.230 ns   ; R1Reg[12]        ; R1Reg_IDEX[12]$latch        ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.228 ns   ; R2Reg[5]         ; R2Reg_IDEX[5]$latch         ; isSW         ;
+; N/A                                     ; None                                                ; 2.227 ns   ; R2Reg[12]        ; R2Reg_IDEX[12]$latch        ; isSW         ;
+; N/A                                     ; None                                                ; 2.224 ns   ; isPrintDigit     ; isPrintDigit_IDEX$latch     ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.223 ns   ; isSW             ; isSW_IDEX$latch             ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.218 ns   ; R1Reg[3]         ; R1Reg_IDEX[3]$latch         ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.216 ns   ; R1Reg[5]         ; R1Reg_IDEX[5]$latch         ; isR          ;
+; N/A                                     ; None                                                ; 2.212 ns   ; immediate16[0]   ; immediate16_IDEX[0]$latch   ; isR          ;
+; N/A                                     ; None                                                ; 2.208 ns   ; immediate16[4]   ; immediate16_IDEX[4]$latch   ; isR          ;
+; N/A                                     ; None                                                ; 2.208 ns   ; R2Reg[4]         ; R2Reg_IDEX[4]$latch         ; isLW         ;
+; N/A                                     ; None                                                ; 2.202 ns   ; R2Reg[6]         ; R2Reg_IDEX[6]$latch         ; isSW         ;
+; N/A                                     ; None                                                ; 2.198 ns   ; R2Reg[15]        ; R2Reg_IDEX[15]$latch        ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.198 ns   ; R1Reg[15]        ; R1Reg_IDEX[15]$latch        ; isEOR        ;
+; N/A                                     ; None                                                ; 2.196 ns   ; R2Reg[3]         ; R2Reg_IDEX[3]$latch         ; isSW         ;
+; N/A                                     ; None                                                ; 2.194 ns   ; R2Reg[1]         ; R2Reg_IDEX[1]$latch         ; isSW         ;
+; N/A                                     ; None                                                ; 2.192 ns   ; immediate16[14]  ; immediate16_IDEX[14]$latch  ; isEOR        ;
+; N/A                                     ; None                                                ; 2.191 ns   ; R1Reg[8]         ; R1Reg_IDEX[8]$latch         ; isEOR        ;
+; N/A                                     ; None                                                ; 2.184 ns   ; isR              ; isR_IDEX$latch              ; isR          ;
+; N/A                                     ; None                                                ; 2.180 ns   ; isEOR            ; isEOR_IDEX$latch            ; isR          ;
+; N/A                                     ; None                                                ; 2.177 ns   ; isMFPC           ; isMFPC_IDEX$latch           ; isR          ;
+; N/A                                     ; None                                                ; 2.176 ns   ; R2Reg[2]         ; R2Reg_IDEX[2]$latch         ; isSW         ;
+; N/A                                     ; None                                                ; 2.171 ns   ; immediate16[2]   ; immediate16_IDEX[2]$latch   ; isR          ;
+; N/A                                     ; None                                                ; 2.170 ns   ; isReadDigit      ; isReadDigit_IDEX$latch      ; isLW         ;
+; N/A                                     ; None                                                ; 2.170 ns   ; R2Reg[0]         ; R2Reg_IDEX[0]$latch         ; isSW         ;
+; N/A                                     ; None                                                ; 2.160 ns   ; immediate16[11]  ; immediate16_IDEX[11]$latch  ; isEOR        ;
+; N/A                                     ; None                                                ; 2.158 ns   ; R1AD[0]          ; R1AD_IDEX[0]$latch          ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.157 ns   ; R1Reg[6]         ; R1Reg_IDEX[6]$latch         ; isR          ;
+; N/A                                     ; None                                                ; 2.153 ns   ; ALUFunc[3]       ; ALUFunc_IDEX[3]$latch       ; isR          ;
+; N/A                                     ; None                                                ; 2.151 ns   ; R2Reg[14]        ; R2Reg_IDEX[14]$latch        ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.146 ns   ; R1Reg[9]         ; R1Reg_IDEX[9]$latch         ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.134 ns   ; R1Reg[14]        ; R1Reg_IDEX[14]$latch        ; isEOR        ;
+; N/A                                     ; None                                                ; 2.131 ns   ; R1Reg[1]         ; R1Reg_IDEX[1]$latch         ; isEOR        ;
+; N/A                                     ; None                                                ; 2.127 ns   ; immediate16[8]   ; immediate16_IDEX[8]$latch   ; isEOR        ;
+; N/A                                     ; None                                                ; 2.127 ns   ; immediate16[1]   ; immediate16_IDEX[1]$latch   ; isEOR        ;
+; N/A                                     ; None                                                ; 2.126 ns   ; R2Reg[9]         ; R2Reg_IDEX[9]$latch         ; isPrintDigit ;
+; N/A                                     ; None                                                ; 2.125 ns   ; immediate16[5]   ; immediate16_IDEX[5]$latch   ; isEOR        ;
+; N/A                                     ; None                                                ; 2.124 ns   ; jumpShortAddr[8] ; jumpShortAddr_IDEX[8]$latch ; isJump       ;
+; N/A                                     ; None                                                ; 2.122 ns   ; immediate16[12]  ; immediate16_IDEX[12]$latch  ; isEOR        ;
+; N/A                                     ; None                                                ; 2.120 ns   ; R2Reg[4]         ; R2Reg_IDEX[4]$latch         ; isSW         ;
+; N/A                                     ; None                                                ; 2.118 ns   ; immediate16[7]   ; immediate16_IDEX[7]$latch   ; isEOR        ;
+; N/A                                     ; None                                                ; 2.117 ns   ; R1Reg[11]        ; R1Reg_IDEX[11]$latch        ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.114 ns   ; isLW             ; isLW_IDEX$latch             ; isLW         ;
+; N/A                                     ; None                                                ; 2.105 ns   ; R2Reg[13]        ; R2Reg_IDEX[13]$latch        ; isLW         ;
+; N/A                                     ; None                                                ; 2.097 ns   ; R1Reg[5]         ; R1Reg_IDEX[5]$latch         ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.093 ns   ; immediate16[0]   ; immediate16_IDEX[0]$latch   ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.090 ns   ; R2Reg[7]         ; R2Reg_IDEX[7]$latch         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.089 ns   ; immediate16[4]   ; immediate16_IDEX[4]$latch   ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.084 ns   ; R2Reg[5]         ; R2Reg_IDEX[5]$latch         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.083 ns   ; R2Reg[12]        ; R2Reg_IDEX[12]$latch        ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.082 ns   ; isReadDigit      ; isReadDigit_IDEX$latch      ; isSW         ;
+; N/A                                     ; None                                                ; 2.080 ns   ; immediate16[3]   ; immediate16_IDEX[3]$latch   ; isEOR        ;
+; N/A                                     ; None                                                ; 2.079 ns   ; jumpShortAddr[8] ; jumpShortAddr_IDEX[8]$latch ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 2.076 ns   ; immediate16[15]  ; immediate16_IDEX[15]$latch  ; isEOR        ;
+; N/A                                     ; None                                                ; 2.073 ns   ; isPrintDigit     ; isPrintDigit_IDEX$latch     ; isLW         ;
+; N/A                                     ; None                                                ; 2.072 ns   ; isSW             ; isSW_IDEX$latch             ; isLW         ;
+; N/A                                     ; None                                                ; 2.065 ns   ; isR              ; isR_IDEX$latch              ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.061 ns   ; isEOR            ; isEOR_IDEX$latch            ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.058 ns   ; isMFPC           ; isMFPC_IDEX$latch           ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.058 ns   ; R2Reg[6]         ; R2Reg_IDEX[6]$latch         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.052 ns   ; immediate16[2]   ; immediate16_IDEX[2]$latch   ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.052 ns   ; R2Reg[3]         ; R2Reg_IDEX[3]$latch         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.050 ns   ; R2Reg[1]         ; R2Reg_IDEX[1]$latch         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.046 ns   ; immediate16[9]   ; immediate16_IDEX[9]$latch   ; isEOR        ;
+; N/A                                     ; None                                                ; 2.039 ns   ; R1Reg[0]         ; R1Reg_IDEX[0]$latch         ; isEOR        ;
+; N/A                                     ; None                                                ; 2.038 ns   ; R1Reg[6]         ; R1Reg_IDEX[6]$latch         ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.034 ns   ; ALUFunc[3]       ; ALUFunc_IDEX[3]$latch       ; isMFPC       ;
+; N/A                                     ; None                                                ; 2.032 ns   ; R2Reg[2]         ; R2Reg_IDEX[2]$latch         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.032 ns   ; ALUFunc[0]       ; ALUFunc_IDEX[0]$latch       ; isEOR        ;
+; N/A                                     ; None                                                ; 2.027 ns   ; ALUFunc[2]       ; ALUFunc_IDEX[2]$latch       ; isEOR        ;
+; N/A                                     ; None                                                ; 2.026 ns   ; isLW             ; isLW_IDEX$latch             ; isSW         ;
+; N/A                                     ; None                                                ; 2.026 ns   ; R2Reg[0]         ; R2Reg_IDEX[0]$latch         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 2.017 ns   ; R2Reg[13]        ; R2Reg_IDEX[13]$latch        ; isSW         ;
+; N/A                                     ; None                                                ; 2.007 ns   ; R1AD[0]          ; R1AD_IDEX[0]$latch          ; isLW         ;
+; N/A                                     ; None                                                ; 2.004 ns   ; R1Reg[12]        ; R1Reg_IDEX[12]$latch        ; isEOR        ;
+; N/A                                     ; None                                                ; 1.992 ns   ; R1Reg[3]         ; R1Reg_IDEX[3]$latch         ; isEOR        ;
+; N/A                                     ; None                                                ; 1.985 ns   ; isPrintDigit     ; isPrintDigit_IDEX$latch     ; isSW         ;
+; N/A                                     ; None                                                ; 1.984 ns   ; isSW             ; isSW_IDEX$latch             ; isSW         ;
+; N/A                                     ; None                                                ; 1.976 ns   ; R2Reg[4]         ; R2Reg_IDEX[4]$latch         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 1.975 ns   ; R2Reg[9]         ; R2Reg_IDEX[9]$latch         ; isLW         ;
+; N/A                                     ; None                                                ; 1.938 ns   ; isReadDigit      ; isReadDigit_IDEX$latch      ; isReadDigit  ;
+; N/A                                     ; None                                                ; 1.920 ns   ; R1Reg[9]         ; R1Reg_IDEX[9]$latch         ; isEOR        ;
+; N/A                                     ; None                                                ; 1.919 ns   ; R1AD[0]          ; R1AD_IDEX[0]$latch          ; isSW         ;
+; N/A                                     ; None                                                ; 1.891 ns   ; R1Reg[11]        ; R1Reg_IDEX[11]$latch        ; isEOR        ;
+; N/A                                     ; None                                                ; 1.887 ns   ; R2Reg[9]         ; R2Reg_IDEX[9]$latch         ; isSW         ;
+; N/A                                     ; None                                                ; 1.882 ns   ; isLW             ; isLW_IDEX$latch             ; isReadDigit  ;
+; N/A                                     ; None                                                ; 1.873 ns   ; R2Reg[13]        ; R2Reg_IDEX[13]$latch        ; isReadDigit  ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;            ;                  ;                             ;              ;
++-----------------------------------------+-----------------------------------------------------+------------+------------------+-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; tco                                                                                                                                                                               ;
++-----------------------------------------+-----------------------------------------------------+------------+------------------------------+------------------------+--------------+
+; Slack                                   ; Required tco                                        ; Actual tco ; From                         ; To                     ; From Clock   ;
++-----------------------------------------+-----------------------------------------------------+------------+------------------------------+------------------------+--------------+
+; N/A                                     ; None                                                ; 9.355 ns   ; jumpShortAddr_IDEX[1]$latch  ; jumpShortAddr_IDEX[1]  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 9.318 ns   ; R2Reg_IDEX[15]$latch         ; R2Reg_IDEX[15]         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 9.310 ns   ; jumpShortAddr_IDEX[1]$latch  ; jumpShortAddr_IDEX[1]  ; isJump       ;
+; N/A                                     ; None                                                ; 9.302 ns   ; jumpShortAddr_IDEX[6]$latch  ; jumpShortAddr_IDEX[6]  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 9.266 ns   ; isJump_IDEX$latch            ; isJump_IDEX            ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 9.257 ns   ; jumpShortAddr_IDEX[6]$latch  ; jumpShortAddr_IDEX[6]  ; isJump       ;
+; N/A                                     ; None                                                ; 9.221 ns   ; isJump_IDEX$latch            ; isJump_IDEX            ; isJump       ;
+; N/A                                     ; None                                                ; 9.174 ns   ; R2Reg_IDEX[15]$latch         ; R2Reg_IDEX[15]         ; isSW         ;
+; N/A                                     ; None                                                ; 9.139 ns   ; jumpShortAddr_IDEX[1]$latch  ; jumpShortAddr_IDEX[1]  ; isBranch     ;
+; N/A                                     ; None                                                ; 9.136 ns   ; jumpShortAddr_IDEX[9]$latch  ; jumpShortAddr_IDEX[9]  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 9.091 ns   ; jumpShortAddr_IDEX[9]$latch  ; jumpShortAddr_IDEX[9]  ; isJump       ;
+; N/A                                     ; None                                                ; 9.086 ns   ; jumpShortAddr_IDEX[6]$latch  ; jumpShortAddr_IDEX[6]  ; isBranch     ;
+; N/A                                     ; None                                                ; 9.086 ns   ; R2Reg_IDEX[15]$latch         ; R2Reg_IDEX[15]         ; isLW         ;
+; N/A                                     ; None                                                ; 9.083 ns   ; isBranch_IDEX$latch          ; isBranch_IDEX          ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 9.083 ns   ; isJR_IDEX$latch              ; isJR_IDEX              ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 9.072 ns   ; wasJumpOut_IDEX$latch        ; wasJumpOut_IDEX        ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 9.050 ns   ; jumpShortAddr_IDEX[3]$latch  ; jumpShortAddr_IDEX[3]  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 9.050 ns   ; isJump_IDEX$latch            ; isJump_IDEX            ; isBranch     ;
+; N/A                                     ; None                                                ; 9.038 ns   ; jumpShortAddr_IDEX[2]$latch  ; jumpShortAddr_IDEX[2]  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 9.038 ns   ; isBranch_IDEX$latch          ; isBranch_IDEX          ; isJump       ;
+; N/A                                     ; None                                                ; 9.038 ns   ; isJR_IDEX$latch              ; isJR_IDEX              ; isJump       ;
+; N/A                                     ; None                                                ; 9.032 ns   ; jumpShortAddr_IDEX[1]$latch  ; jumpShortAddr_IDEX[1]  ; isJR         ;
+; N/A                                     ; None                                                ; 9.027 ns   ; wasJumpOut_IDEX$latch        ; wasJumpOut_IDEX        ; isJump       ;
+; N/A                                     ; None                                                ; 9.026 ns   ; jumpShortAddr_IDEX[8]$latch  ; jumpShortAddr_IDEX[8]  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 9.015 ns   ; jumpShortAddr_IDEX[4]$latch  ; jumpShortAddr_IDEX[4]  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 9.005 ns   ; jumpShortAddr_IDEX[3]$latch  ; jumpShortAddr_IDEX[3]  ; isJump       ;
+; N/A                                     ; None                                                ; 8.993 ns   ; jumpShortAddr_IDEX[2]$latch  ; jumpShortAddr_IDEX[2]  ; isJump       ;
+; N/A                                     ; None                                                ; 8.981 ns   ; jumpShortAddr_IDEX[8]$latch  ; jumpShortAddr_IDEX[8]  ; isJump       ;
+; N/A                                     ; None                                                ; 8.979 ns   ; jumpShortAddr_IDEX[6]$latch  ; jumpShortAddr_IDEX[6]  ; isJR         ;
+; N/A                                     ; None                                                ; 8.970 ns   ; jumpShortAddr_IDEX[4]$latch  ; jumpShortAddr_IDEX[4]  ; isJump       ;
+; N/A                                     ; None                                                ; 8.963 ns   ; jumpShortAddr_IDEX[0]$latch  ; jumpShortAddr_IDEX[0]  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 8.943 ns   ; isJump_IDEX$latch            ; isJump_IDEX            ; isJR         ;
+; N/A                                     ; None                                                ; 8.935 ns   ; R2Reg_IDEX[15]$latch         ; R2Reg_IDEX[15]         ; isPrintDigit ;
+; N/A                                     ; None                                                ; 8.923 ns   ; jumpShortAddr_IDEX[5]$latch  ; jumpShortAddr_IDEX[5]  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 8.920 ns   ; jumpShortAddr_IDEX[9]$latch  ; jumpShortAddr_IDEX[9]  ; isBranch     ;
+; N/A                                     ; None                                                ; 8.918 ns   ; jumpShortAddr_IDEX[0]$latch  ; jumpShortAddr_IDEX[0]  ; isJump       ;
+; N/A                                     ; None                                                ; 8.913 ns   ; R2Reg_IDEX[4]$latch          ; R2Reg_IDEX[4]          ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.878 ns   ; jumpShortAddr_IDEX[5]$latch  ; jumpShortAddr_IDEX[5]  ; isJump       ;
+; N/A                                     ; None                                                ; 8.867 ns   ; isBranch_IDEX$latch          ; isBranch_IDEX          ; isBranch     ;
+; N/A                                     ; None                                                ; 8.867 ns   ; isJR_IDEX$latch              ; isJR_IDEX              ; isBranch     ;
+; N/A                                     ; None                                                ; 8.856 ns   ; wasJumpOut_IDEX$latch        ; wasJumpOut_IDEX        ; isBranch     ;
+; N/A                                     ; None                                                ; 8.834 ns   ; jumpShortAddr_IDEX[3]$latch  ; jumpShortAddr_IDEX[3]  ; isBranch     ;
+; N/A                                     ; None                                                ; 8.822 ns   ; jumpShortAddr_IDEX[2]$latch  ; jumpShortAddr_IDEX[2]  ; isBranch     ;
+; N/A                                     ; None                                                ; 8.813 ns   ; jumpShortAddr_IDEX[9]$latch  ; jumpShortAddr_IDEX[9]  ; isJR         ;
+; N/A                                     ; None                                                ; 8.810 ns   ; jumpShortAddr_IDEX[8]$latch  ; jumpShortAddr_IDEX[8]  ; isBranch     ;
+; N/A                                     ; None                                                ; 8.799 ns   ; jumpShortAddr_IDEX[4]$latch  ; jumpShortAddr_IDEX[4]  ; isBranch     ;
+; N/A                                     ; None                                                ; 8.773 ns   ; jumpShortAddr_IDEX[10]$latch ; jumpShortAddr_IDEX[10] ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 8.769 ns   ; jumpShortAddr_IDEX[11]$latch ; jumpShortAddr_IDEX[11] ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 8.769 ns   ; R2Reg_IDEX[4]$latch          ; R2Reg_IDEX[4]          ; isSW         ;
+; N/A                                     ; None                                                ; 8.760 ns   ; isBranch_IDEX$latch          ; isBranch_IDEX          ; isJR         ;
+; N/A                                     ; None                                                ; 8.760 ns   ; isJR_IDEX$latch              ; isJR_IDEX              ; isJR         ;
+; N/A                                     ; None                                                ; 8.749 ns   ; wasJumpOut_IDEX$latch        ; wasJumpOut_IDEX        ; isJR         ;
+; N/A                                     ; None                                                ; 8.747 ns   ; jumpShortAddr_IDEX[0]$latch  ; jumpShortAddr_IDEX[0]  ; isBranch     ;
+; N/A                                     ; None                                                ; 8.740 ns   ; jumpShortAddr_IDEX[7]$latch  ; jumpShortAddr_IDEX[7]  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; 8.728 ns   ; jumpShortAddr_IDEX[10]$latch ; jumpShortAddr_IDEX[10] ; isJump       ;
+; N/A                                     ; None                                                ; 8.727 ns   ; jumpShortAddr_IDEX[3]$latch  ; jumpShortAddr_IDEX[3]  ; isJR         ;
+; N/A                                     ; None                                                ; 8.724 ns   ; jumpShortAddr_IDEX[11]$latch ; jumpShortAddr_IDEX[11] ; isJump       ;
+; N/A                                     ; None                                                ; 8.715 ns   ; jumpShortAddr_IDEX[2]$latch  ; jumpShortAddr_IDEX[2]  ; isJR         ;
+; N/A                                     ; None                                                ; 8.707 ns   ; jumpShortAddr_IDEX[5]$latch  ; jumpShortAddr_IDEX[5]  ; isBranch     ;
+; N/A                                     ; None                                                ; 8.703 ns   ; jumpShortAddr_IDEX[8]$latch  ; jumpShortAddr_IDEX[8]  ; isJR         ;
+; N/A                                     ; None                                                ; 8.695 ns   ; jumpShortAddr_IDEX[7]$latch  ; jumpShortAddr_IDEX[7]  ; isJump       ;
+; N/A                                     ; None                                                ; 8.692 ns   ; jumpShortAddr_IDEX[4]$latch  ; jumpShortAddr_IDEX[4]  ; isJR         ;
+; N/A                                     ; None                                                ; 8.681 ns   ; R2Reg_IDEX[4]$latch          ; R2Reg_IDEX[4]          ; isLW         ;
+; N/A                                     ; None                                                ; 8.640 ns   ; jumpShortAddr_IDEX[0]$latch  ; jumpShortAddr_IDEX[0]  ; isJR         ;
+; N/A                                     ; None                                                ; 8.600 ns   ; jumpShortAddr_IDEX[5]$latch  ; jumpShortAddr_IDEX[5]  ; isJR         ;
+; N/A                                     ; None                                                ; 8.571 ns   ; immediate16_IDEX[6]$latch    ; immediate16_IDEX[6]    ; isEOR        ;
+; N/A                                     ; None                                                ; 8.557 ns   ; jumpShortAddr_IDEX[10]$latch ; jumpShortAddr_IDEX[10] ; isBranch     ;
+; N/A                                     ; None                                                ; 8.553 ns   ; jumpShortAddr_IDEX[11]$latch ; jumpShortAddr_IDEX[11] ; isBranch     ;
+; N/A                                     ; None                                                ; 8.530 ns   ; R2Reg_IDEX[4]$latch          ; R2Reg_IDEX[4]          ; isPrintDigit ;
+; N/A                                     ; None                                                ; 8.524 ns   ; jumpShortAddr_IDEX[7]$latch  ; jumpShortAddr_IDEX[7]  ; isBranch     ;
+; N/A                                     ; None                                                ; 8.500 ns   ; isSW_IDEX$latch              ; isSW_IDEX              ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.469 ns   ; isPrintDigit_IDEX$latch      ; isPrintDigit_IDEX      ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.450 ns   ; jumpShortAddr_IDEX[10]$latch ; jumpShortAddr_IDEX[10] ; isJR         ;
+; N/A                                     ; None                                                ; 8.446 ns   ; jumpShortAddr_IDEX[11]$latch ; jumpShortAddr_IDEX[11] ; isJR         ;
+; N/A                                     ; None                                                ; 8.417 ns   ; jumpShortAddr_IDEX[7]$latch  ; jumpShortAddr_IDEX[7]  ; isJR         ;
+; N/A                                     ; None                                                ; 8.356 ns   ; isSW_IDEX$latch              ; isSW_IDEX              ; isSW         ;
+; N/A                                     ; None                                                ; 8.345 ns   ; immediate16_IDEX[6]$latch    ; immediate16_IDEX[6]    ; isMFPC       ;
+; N/A                                     ; None                                                ; 8.345 ns   ; R1Reg_IDEX[15]$latch         ; R1Reg_IDEX[15]         ; isEOR        ;
+; N/A                                     ; None                                                ; 8.342 ns   ; R1AD_IDEX[1]$latch           ; R1AD_IDEX[1]           ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.325 ns   ; isPrintDigit_IDEX$latch      ; isPrintDigit_IDEX      ; isSW         ;
+; N/A                                     ; None                                                ; 8.319 ns   ; R2Reg_IDEX[14]$latch         ; R2Reg_IDEX[14]         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.281 ns   ; immediate16_IDEX[0]$latch    ; immediate16_IDEX[0]    ; isEOR        ;
+; N/A                                     ; None                                                ; 8.268 ns   ; isSW_IDEX$latch              ; isSW_IDEX              ; isLW         ;
+; N/A                                     ; None                                                ; 8.260 ns   ; isReadDigit_IDEX$latch       ; isReadDigit_IDEX       ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.260 ns   ; isLW_IDEX$latch              ; isLW_IDEX              ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.237 ns   ; isPrintDigit_IDEX$latch      ; isPrintDigit_IDEX      ; isLW         ;
+; N/A                                     ; None                                                ; 8.226 ns   ; immediate16_IDEX[6]$latch    ; immediate16_IDEX[6]    ; isR          ;
+; N/A                                     ; None                                                ; 8.204 ns   ; R2Reg_IDEX[3]$latch          ; R2Reg_IDEX[3]          ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.198 ns   ; R1AD_IDEX[1]$latch           ; R1AD_IDEX[1]           ; isSW         ;
+; N/A                                     ; None                                                ; 8.175 ns   ; R2Reg_IDEX[14]$latch         ; R2Reg_IDEX[14]         ; isSW         ;
+; N/A                                     ; None                                                ; 8.119 ns   ; R1Reg_IDEX[15]$latch         ; R1Reg_IDEX[15]         ; isMFPC       ;
+; N/A                                     ; None                                                ; 8.117 ns   ; isSW_IDEX$latch              ; isSW_IDEX              ; isPrintDigit ;
+; N/A                                     ; None                                                ; 8.116 ns   ; isReadDigit_IDEX$latch       ; isReadDigit_IDEX       ; isSW         ;
+; N/A                                     ; None                                                ; 8.116 ns   ; isLW_IDEX$latch              ; isLW_IDEX              ; isSW         ;
+; N/A                                     ; None                                                ; 8.110 ns   ; R1AD_IDEX[1]$latch           ; R1AD_IDEX[1]           ; isLW         ;
+; N/A                                     ; None                                                ; 8.094 ns   ; R2Reg_IDEX[1]$latch          ; R2Reg_IDEX[1]          ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.087 ns   ; R2Reg_IDEX[14]$latch         ; R2Reg_IDEX[14]         ; isLW         ;
+; N/A                                     ; None                                                ; 8.086 ns   ; R1Reg_IDEX[7]$latch          ; R1Reg_IDEX[7]          ; isEOR        ;
+; N/A                                     ; None                                                ; 8.086 ns   ; isPrintDigit_IDEX$latch      ; isPrintDigit_IDEX      ; isPrintDigit ;
+; N/A                                     ; None                                                ; 8.085 ns   ; R2Reg_IDEX[2]$latch          ; R2Reg_IDEX[2]          ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.085 ns   ; R2Reg_IDEX[0]$latch          ; R2Reg_IDEX[0]          ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.078 ns   ; R1Reg_IDEX[13]$latch         ; R1Reg_IDEX[13]         ; isEOR        ;
+; N/A                                     ; None                                                ; 8.067 ns   ; R2Reg_IDEX[8]$latch          ; R2Reg_IDEX[8]          ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.066 ns   ; immediate16_IDEX[14]$latch   ; immediate16_IDEX[14]   ; isEOR        ;
+; N/A                                     ; None                                                ; 8.060 ns   ; R2Reg_IDEX[3]$latch          ; R2Reg_IDEX[3]          ; isSW         ;
+; N/A                                     ; None                                                ; 8.057 ns   ; immediate16_IDEX[12]$latch   ; immediate16_IDEX[12]   ; isEOR        ;
+; N/A                                     ; None                                                ; 8.055 ns   ; immediate16_IDEX[0]$latch    ; immediate16_IDEX[0]    ; isMFPC       ;
+; N/A                                     ; None                                                ; 8.028 ns   ; isReadDigit_IDEX$latch       ; isReadDigit_IDEX       ; isLW         ;
+; N/A                                     ; None                                                ; 8.028 ns   ; isLW_IDEX$latch              ; isLW_IDEX              ; isLW         ;
+; N/A                                     ; None                                                ; 8.015 ns   ; R1Reg_IDEX[0]$latch          ; R1Reg_IDEX[0]          ; isEOR        ;
+; N/A                                     ; None                                                ; 8.010 ns   ; R2Reg_IDEX[10]$latch         ; R2Reg_IDEX[10]         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.009 ns   ; R2Reg_IDEX[12]$latch         ; R2Reg_IDEX[12]         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.008 ns   ; R2Reg_IDEX[7]$latch          ; R2Reg_IDEX[7]          ; isReadDigit  ;
+; N/A                                     ; None                                                ; 8.007 ns   ; immediate16_IDEX[9]$latch    ; immediate16_IDEX[9]    ; isEOR        ;
+; N/A                                     ; None                                                ; 8.000 ns   ; R1Reg_IDEX[15]$latch         ; R1Reg_IDEX[15]         ; isR          ;
+; N/A                                     ; None                                                ; 7.998 ns   ; immediate16_IDEX[15]$latch   ; immediate16_IDEX[15]   ; isEOR        ;
+; N/A                                     ; None                                                ; 7.989 ns   ; ALUFunc_IDEX[1]$latch        ; ALUFunc_IDEX[1]        ; isEOR        ;
+; N/A                                     ; None                                                ; 7.985 ns   ; immediate16_IDEX[10]$latch   ; immediate16_IDEX[10]   ; isEOR        ;
+; N/A                                     ; None                                                ; 7.985 ns   ; immediate16_IDEX[1]$latch    ; immediate16_IDEX[1]    ; isEOR        ;
+; N/A                                     ; None                                                ; 7.981 ns   ; R1Reg_IDEX[1]$latch          ; R1Reg_IDEX[1]          ; isEOR        ;
+; N/A                                     ; None                                                ; 7.978 ns   ; R1Reg_IDEX[2]$latch          ; R1Reg_IDEX[2]          ; isEOR        ;
+; N/A                                     ; None                                                ; 7.972 ns   ; R2Reg_IDEX[3]$latch          ; R2Reg_IDEX[3]          ; isLW         ;
+; N/A                                     ; None                                                ; 7.971 ns   ; R2Reg_IDEX[11]$latch         ; R2Reg_IDEX[11]         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 7.968 ns   ; isR_IDEX$latch               ; isR_IDEX               ; isEOR        ;
+; N/A                                     ; None                                                ; 7.964 ns   ; immediate16_IDEX[11]$latch   ; immediate16_IDEX[11]   ; isEOR        ;
+; N/A                                     ; None                                                ; 7.963 ns   ; R1Reg_IDEX[14]$latch         ; R1Reg_IDEX[14]         ; isEOR        ;
+; N/A                                     ; None                                                ; 7.962 ns   ; immediate16_IDEX[5]$latch    ; immediate16_IDEX[5]    ; isEOR        ;
+; N/A                                     ; None                                                ; 7.962 ns   ; R1Reg_IDEX[10]$latch         ; R1Reg_IDEX[10]         ; isEOR        ;
+; N/A                                     ; None                                                ; 7.959 ns   ; R1AD_IDEX[1]$latch           ; R1AD_IDEX[1]           ; isPrintDigit ;
+; N/A                                     ; None                                                ; 7.954 ns   ; immediate16_IDEX[7]$latch    ; immediate16_IDEX[7]    ; isEOR        ;
+; N/A                                     ; None                                                ; 7.950 ns   ; R2Reg_IDEX[1]$latch          ; R2Reg_IDEX[1]          ; isSW         ;
+; N/A                                     ; None                                                ; 7.941 ns   ; R2Reg_IDEX[2]$latch          ; R2Reg_IDEX[2]          ; isSW         ;
+; N/A                                     ; None                                                ; 7.941 ns   ; R2Reg_IDEX[0]$latch          ; R2Reg_IDEX[0]          ; isSW         ;
+; N/A                                     ; None                                                ; 7.939 ns   ; R1Reg_IDEX[4]$latch          ; R1Reg_IDEX[4]          ; isEOR        ;
+; N/A                                     ; None                                                ; 7.937 ns   ; immediate16_IDEX[8]$latch    ; immediate16_IDEX[8]    ; isEOR        ;
+; N/A                                     ; None                                                ; 7.936 ns   ; immediate16_IDEX[0]$latch    ; immediate16_IDEX[0]    ; isR          ;
+; N/A                                     ; None                                                ; 7.936 ns   ; R2Reg_IDEX[14]$latch         ; R2Reg_IDEX[14]         ; isPrintDigit ;
+; N/A                                     ; None                                                ; 7.923 ns   ; R2Reg_IDEX[8]$latch          ; R2Reg_IDEX[8]          ; isSW         ;
+; N/A                                     ; None                                                ; 7.893 ns   ; R1Reg_IDEX[8]$latch          ; R1Reg_IDEX[8]          ; isEOR        ;
+; N/A                                     ; None                                                ; 7.877 ns   ; isReadDigit_IDEX$latch       ; isReadDigit_IDEX       ; isPrintDigit ;
+; N/A                                     ; None                                                ; 7.877 ns   ; isLW_IDEX$latch              ; isLW_IDEX              ; isPrintDigit ;
+; N/A                                     ; None                                                ; 7.866 ns   ; R2Reg_IDEX[10]$latch         ; R2Reg_IDEX[10]         ; isSW         ;
+; N/A                                     ; None                                                ; 7.865 ns   ; R2Reg_IDEX[12]$latch         ; R2Reg_IDEX[12]         ; isSW         ;
+; N/A                                     ; None                                                ; 7.864 ns   ; R2Reg_IDEX[7]$latch          ; R2Reg_IDEX[7]          ; isSW         ;
+; N/A                                     ; None                                                ; 7.862 ns   ; R2Reg_IDEX[1]$latch          ; R2Reg_IDEX[1]          ; isLW         ;
+; N/A                                     ; None                                                ; 7.860 ns   ; R1Reg_IDEX[7]$latch          ; R1Reg_IDEX[7]          ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.857 ns   ; immediate16_IDEX[3]$latch    ; immediate16_IDEX[3]    ; isEOR        ;
+; N/A                                     ; None                                                ; 7.853 ns   ; R2Reg_IDEX[2]$latch          ; R2Reg_IDEX[2]          ; isLW         ;
+; N/A                                     ; None                                                ; 7.853 ns   ; R2Reg_IDEX[0]$latch          ; R2Reg_IDEX[0]          ; isLW         ;
+; N/A                                     ; None                                                ; 7.852 ns   ; R1Reg_IDEX[13]$latch         ; R1Reg_IDEX[13]         ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.840 ns   ; immediate16_IDEX[14]$latch   ; immediate16_IDEX[14]   ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.835 ns   ; R2Reg_IDEX[8]$latch          ; R2Reg_IDEX[8]          ; isLW         ;
+; N/A                                     ; None                                                ; 7.831 ns   ; immediate16_IDEX[12]$latch   ; immediate16_IDEX[12]   ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.827 ns   ; R2Reg_IDEX[11]$latch         ; R2Reg_IDEX[11]         ; isSW         ;
+; N/A                                     ; None                                                ; 7.826 ns   ; R2Reg_IDEX[5]$latch          ; R2Reg_IDEX[5]          ; isReadDigit  ;
+; N/A                                     ; None                                                ; 7.821 ns   ; R2Reg_IDEX[3]$latch          ; R2Reg_IDEX[3]          ; isPrintDigit ;
+; N/A                                     ; None                                                ; 7.815 ns   ; R2Reg_IDEX[13]$latch         ; R2Reg_IDEX[13]         ; isReadDigit  ;
+; N/A                                     ; None                                                ; 7.789 ns   ; R1Reg_IDEX[0]$latch          ; R1Reg_IDEX[0]          ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.782 ns   ; R2Reg_IDEX[9]$latch          ; R2Reg_IDEX[9]          ; isReadDigit  ;
+; N/A                                     ; None                                                ; 7.781 ns   ; immediate16_IDEX[9]$latch    ; immediate16_IDEX[9]    ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.778 ns   ; R2Reg_IDEX[10]$latch         ; R2Reg_IDEX[10]         ; isLW         ;
+; N/A                                     ; None                                                ; 7.777 ns   ; R2Reg_IDEX[12]$latch         ; R2Reg_IDEX[12]         ; isLW         ;
+; N/A                                     ; None                                                ; 7.776 ns   ; R2Reg_IDEX[7]$latch          ; R2Reg_IDEX[7]          ; isLW         ;
+; N/A                                     ; None                                                ; 7.772 ns   ; immediate16_IDEX[15]$latch   ; immediate16_IDEX[15]   ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.770 ns   ; R2Reg_IDEX[6]$latch          ; R2Reg_IDEX[6]          ; isReadDigit  ;
+; N/A                                     ; None                                                ; 7.763 ns   ; R1AD_IDEX[0]$latch           ; R1AD_IDEX[0]           ; isReadDigit  ;
+; N/A                                     ; None                                                ; 7.763 ns   ; ALUFunc_IDEX[1]$latch        ; ALUFunc_IDEX[1]        ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.759 ns   ; immediate16_IDEX[10]$latch   ; immediate16_IDEX[10]   ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.759 ns   ; immediate16_IDEX[1]$latch    ; immediate16_IDEX[1]    ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.758 ns   ; R1AD_IDEX[2]$latch           ; R1AD_IDEX[2]           ; isReadDigit  ;
+; N/A                                     ; None                                                ; 7.755 ns   ; R1Reg_IDEX[1]$latch          ; R1Reg_IDEX[1]          ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.752 ns   ; R1Reg_IDEX[2]$latch          ; R1Reg_IDEX[2]          ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.742 ns   ; isR_IDEX$latch               ; isR_IDEX               ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.741 ns   ; R1Reg_IDEX[7]$latch          ; R1Reg_IDEX[7]          ; isR          ;
+; N/A                                     ; None                                                ; 7.739 ns   ; R2Reg_IDEX[11]$latch         ; R2Reg_IDEX[11]         ; isLW         ;
+; N/A                                     ; None                                                ; 7.738 ns   ; immediate16_IDEX[11]$latch   ; immediate16_IDEX[11]   ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.737 ns   ; R1Reg_IDEX[14]$latch         ; R1Reg_IDEX[14]         ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.736 ns   ; immediate16_IDEX[5]$latch    ; immediate16_IDEX[5]    ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.736 ns   ; R1Reg_IDEX[10]$latch         ; R1Reg_IDEX[10]         ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.733 ns   ; R1Reg_IDEX[13]$latch         ; R1Reg_IDEX[13]         ; isR          ;
+; N/A                                     ; None                                                ; 7.728 ns   ; immediate16_IDEX[7]$latch    ; immediate16_IDEX[7]    ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.721 ns   ; immediate16_IDEX[14]$latch   ; immediate16_IDEX[14]   ; isR          ;
+; N/A                                     ; None                                                ; 7.713 ns   ; R1Reg_IDEX[4]$latch          ; R1Reg_IDEX[4]          ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.712 ns   ; immediate16_IDEX[12]$latch   ; immediate16_IDEX[12]   ; isR          ;
+; N/A                                     ; None                                                ; 7.711 ns   ; immediate16_IDEX[8]$latch    ; immediate16_IDEX[8]    ; isMFPC       ;
+; N/A                                     ; None                                                ; 7.711 ns   ; R2Reg_IDEX[1]$latch          ; R2Reg_IDEX[1]          ; isPrintDigit ;
+; N/A                                     ; None                                                ; 7.710 ns   ; immediate16_IDEX[13]$latch   ; immediate16_IDEX[13]   ; isEOR        ;
+; N/A                                     ; None                                                ; 7.709 ns   ; immediate16_IDEX[2]$latch    ; immediate16_IDEX[2]    ; isEOR        ;
+; N/A                                     ; None                                                ; 7.702 ns   ; R2Reg_IDEX[2]$latch          ; R2Reg_IDEX[2]          ; isPrintDigit ;
+; N/A                                     ; None                                                ; 7.702 ns   ; R2Reg_IDEX[0]$latch          ; R2Reg_IDEX[0]          ; isPrintDigit ;
+; N/A                                     ; None                                                ; 7.701 ns   ; R1Reg_IDEX[6]$latch          ; R1Reg_IDEX[6]          ; isEOR        ;
+; N/A                                     ; None                                                ; 7.700 ns   ; ALUFunc_IDEX[0]$latch        ; ALUFunc_IDEX[0]        ; isEOR        ;
+; N/A                                     ; None                                                ; 7.698 ns   ; isEOR_IDEX$latch             ; isEOR_IDEX             ; isEOR        ;
+; N/A                                     ; None                                                ; 7.693 ns   ; isMFPC_IDEX$latch            ; isMFPC_IDEX            ; isEOR        ;
+; N/A                                     ; None                                                ; 7.687 ns   ; ALUFunc_IDEX[3]$latch        ; ALUFunc_IDEX[3]        ; isEOR        ;
+; N/A                                     ; None                                                ; 7.684 ns   ; R2Reg_IDEX[8]$latch          ; R2Reg_IDEX[8]          ; isPrintDigit ;
+; N/A                                     ; None                                                ; 7.682 ns   ; R2Reg_IDEX[5]$latch          ; R2Reg_IDEX[5]          ; isSW         ;
+; N/A                                     ; None                                                ; 7.681 ns   ; immediate16_IDEX[4]$latch    ; immediate16_IDEX[4]    ; isEOR        ;
+; N/A                                     ; None                                                ; 7.678 ns   ; R1Reg_IDEX[12]$latch         ; R1Reg_IDEX[12]         ; isEOR        ;
+; N/A                                     ; None                                                ; 7.674 ns   ; R1Reg_IDEX[11]$latch         ; R1Reg_IDEX[11]         ; isEOR        ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;            ;                              ;                        ;              ;
++-----------------------------------------+-----------------------------------------------------+------------+------------------------------+------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; th                                                                                                                                                                          ;
++-----------------------------------------+-----------------------------------------------------+-----------+-------------------+------------------------------+--------------+
+; Minimum Slack                           ; Required th                                         ; Actual th ; From              ; To                           ; To Clock     ;
++-----------------------------------------+-----------------------------------------------------+-----------+-------------------+------------------------------+--------------+
+; N/A                                     ; None                                                ; -0.075 ns ; jumpShortAddr[11] ; jumpShortAddr_IDEX[11]$latch ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.075 ns ; jumpShortAddr[1]  ; jumpShortAddr_IDEX[1]$latch  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.115 ns ; jumpShortAddr[10] ; jumpShortAddr_IDEX[10]$latch ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.120 ns ; jumpShortAddr[11] ; jumpShortAddr_IDEX[11]$latch ; isJump       ;
+; N/A                                     ; None                                                ; -0.120 ns ; jumpShortAddr[1]  ; jumpShortAddr_IDEX[1]$latch  ; isJump       ;
+; N/A                                     ; None                                                ; -0.160 ns ; jumpShortAddr[10] ; jumpShortAddr_IDEX[10]$latch ; isJump       ;
+; N/A                                     ; None                                                ; -0.208 ns ; jumpShortAddr[2]  ; jumpShortAddr_IDEX[2]$latch  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.239 ns ; isJump            ; isJump_IDEX$latch            ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.253 ns ; jumpShortAddr[2]  ; jumpShortAddr_IDEX[2]$latch  ; isJump       ;
+; N/A                                     ; None                                                ; -0.284 ns ; isJump            ; isJump_IDEX$latch            ; isJump       ;
+; N/A                                     ; None                                                ; -0.291 ns ; jumpShortAddr[11] ; jumpShortAddr_IDEX[11]$latch ; isBranch     ;
+; N/A                                     ; None                                                ; -0.291 ns ; jumpShortAddr[1]  ; jumpShortAddr_IDEX[1]$latch  ; isBranch     ;
+; N/A                                     ; None                                                ; -0.319 ns ; jumpShortAddr[5]  ; jumpShortAddr_IDEX[5]$latch  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.331 ns ; jumpShortAddr[10] ; jumpShortAddr_IDEX[10]$latch ; isBranch     ;
+; N/A                                     ; None                                                ; -0.364 ns ; jumpShortAddr[5]  ; jumpShortAddr_IDEX[5]$latch  ; isJump       ;
+; N/A                                     ; None                                                ; -0.387 ns ; jumpShortAddr[9]  ; jumpShortAddr_IDEX[9]$latch  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.395 ns ; jumpShortAddr[7]  ; jumpShortAddr_IDEX[7]$latch  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.398 ns ; jumpShortAddr[11] ; jumpShortAddr_IDEX[11]$latch ; isJR         ;
+; N/A                                     ; None                                                ; -0.398 ns ; jumpShortAddr[1]  ; jumpShortAddr_IDEX[1]$latch  ; isJR         ;
+; N/A                                     ; None                                                ; -0.412 ns ; jumpShortAddr[4]  ; jumpShortAddr_IDEX[4]$latch  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.424 ns ; jumpShortAddr[2]  ; jumpShortAddr_IDEX[2]$latch  ; isBranch     ;
+; N/A                                     ; None                                                ; -0.430 ns ; jumpShortAddr[3]  ; jumpShortAddr_IDEX[3]$latch  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.432 ns ; jumpShortAddr[9]  ; jumpShortAddr_IDEX[9]$latch  ; isJump       ;
+; N/A                                     ; None                                                ; -0.438 ns ; jumpShortAddr[10] ; jumpShortAddr_IDEX[10]$latch ; isJR         ;
+; N/A                                     ; None                                                ; -0.440 ns ; jumpShortAddr[7]  ; jumpShortAddr_IDEX[7]$latch  ; isJump       ;
+; N/A                                     ; None                                                ; -0.455 ns ; isJump            ; isJump_IDEX$latch            ; isBranch     ;
+; N/A                                     ; None                                                ; -0.457 ns ; jumpShortAddr[4]  ; jumpShortAddr_IDEX[4]$latch  ; isJump       ;
+; N/A                                     ; None                                                ; -0.475 ns ; jumpShortAddr[3]  ; jumpShortAddr_IDEX[3]$latch  ; isJump       ;
+; N/A                                     ; None                                                ; -0.497 ns ; jumpShortAddr[6]  ; jumpShortAddr_IDEX[6]$latch  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.531 ns ; jumpShortAddr[2]  ; jumpShortAddr_IDEX[2]$latch  ; isJR         ;
+; N/A                                     ; None                                                ; -0.535 ns ; jumpShortAddr[5]  ; jumpShortAddr_IDEX[5]$latch  ; isBranch     ;
+; N/A                                     ; None                                                ; -0.542 ns ; jumpShortAddr[6]  ; jumpShortAddr_IDEX[6]$latch  ; isJump       ;
+; N/A                                     ; None                                                ; -0.562 ns ; isJump            ; isJump_IDEX$latch            ; isJR         ;
+; N/A                                     ; None                                                ; -0.581 ns ; wasJumpOut        ; wasJumpOut_IDEX$latch        ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.603 ns ; jumpShortAddr[9]  ; jumpShortAddr_IDEX[9]$latch  ; isBranch     ;
+; N/A                                     ; None                                                ; -0.611 ns ; jumpShortAddr[7]  ; jumpShortAddr_IDEX[7]$latch  ; isBranch     ;
+; N/A                                     ; None                                                ; -0.613 ns ; isJR              ; isJR_IDEX$latch              ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.626 ns ; wasJumpOut        ; wasJumpOut_IDEX$latch        ; isJump       ;
+; N/A                                     ; None                                                ; -0.627 ns ; isBranch          ; isBranch_IDEX$latch          ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.628 ns ; jumpShortAddr[4]  ; jumpShortAddr_IDEX[4]$latch  ; isBranch     ;
+; N/A                                     ; None                                                ; -0.642 ns ; jumpShortAddr[5]  ; jumpShortAddr_IDEX[5]$latch  ; isJR         ;
+; N/A                                     ; None                                                ; -0.646 ns ; jumpShortAddr[3]  ; jumpShortAddr_IDEX[3]$latch  ; isBranch     ;
+; N/A                                     ; None                                                ; -0.658 ns ; isJR              ; isJR_IDEX$latch              ; isJump       ;
+; N/A                                     ; None                                                ; -0.672 ns ; isBranch          ; isBranch_IDEX$latch          ; isJump       ;
+; N/A                                     ; None                                                ; -0.710 ns ; jumpShortAddr[9]  ; jumpShortAddr_IDEX[9]$latch  ; isJR         ;
+; N/A                                     ; None                                                ; -0.713 ns ; jumpShortAddr[6]  ; jumpShortAddr_IDEX[6]$latch  ; isBranch     ;
+; N/A                                     ; None                                                ; -0.718 ns ; jumpShortAddr[7]  ; jumpShortAddr_IDEX[7]$latch  ; isJR         ;
+; N/A                                     ; None                                                ; -0.726 ns ; jumpShortAddr[0]  ; jumpShortAddr_IDEX[0]$latch  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -0.735 ns ; jumpShortAddr[4]  ; jumpShortAddr_IDEX[4]$latch  ; isJR         ;
+; N/A                                     ; None                                                ; -0.753 ns ; jumpShortAddr[3]  ; jumpShortAddr_IDEX[3]$latch  ; isJR         ;
+; N/A                                     ; None                                                ; -0.771 ns ; jumpShortAddr[0]  ; jumpShortAddr_IDEX[0]$latch  ; isJump       ;
+; N/A                                     ; None                                                ; -0.797 ns ; wasJumpOut        ; wasJumpOut_IDEX$latch        ; isBranch     ;
+; N/A                                     ; None                                                ; -0.820 ns ; jumpShortAddr[6]  ; jumpShortAddr_IDEX[6]$latch  ; isJR         ;
+; N/A                                     ; None                                                ; -0.829 ns ; isJR              ; isJR_IDEX$latch              ; isBranch     ;
+; N/A                                     ; None                                                ; -0.843 ns ; isBranch          ; isBranch_IDEX$latch          ; isBranch     ;
+; N/A                                     ; None                                                ; -0.904 ns ; wasJumpOut        ; wasJumpOut_IDEX$latch        ; isJR         ;
+; N/A                                     ; None                                                ; -0.936 ns ; isJR              ; isJR_IDEX$latch              ; isJR         ;
+; N/A                                     ; None                                                ; -0.942 ns ; jumpShortAddr[0]  ; jumpShortAddr_IDEX[0]$latch  ; isBranch     ;
+; N/A                                     ; None                                                ; -0.950 ns ; isBranch          ; isBranch_IDEX$latch          ; isJR         ;
+; N/A                                     ; None                                                ; -1.049 ns ; jumpShortAddr[0]  ; jumpShortAddr_IDEX[0]$latch  ; isJR         ;
+; N/A                                     ; None                                                ; -1.055 ns ; R2Reg[13]         ; R2Reg_IDEX[13]$latch         ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.067 ns ; R2Reg[9]          ; R2Reg_IDEX[9]$latch          ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.099 ns ; R1AD[0]           ; R1AD_IDEX[0]$latch           ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.132 ns ; ALUFunc[3]        ; ALUFunc_IDEX[3]$latch        ; isEOR        ;
+; N/A                                     ; None                                                ; -1.136 ns ; R1Reg[6]          ; R1Reg_IDEX[6]$latch          ; isEOR        ;
+; N/A                                     ; None                                                ; -1.141 ns ; R1Reg[3]          ; R1Reg_IDEX[3]$latch          ; isEOR        ;
+; N/A                                     ; None                                                ; -1.150 ns ; immediate16[2]    ; immediate16_IDEX[2]$latch    ; isEOR        ;
+; N/A                                     ; None                                                ; -1.152 ns ; isEOR             ; isEOR_IDEX$latch             ; isEOR        ;
+; N/A                                     ; None                                                ; -1.153 ns ; R1Reg[12]         ; R1Reg_IDEX[12]$latch         ; isEOR        ;
+; N/A                                     ; None                                                ; -1.156 ns ; isMFPC            ; isMFPC_IDEX$latch            ; isEOR        ;
+; N/A                                     ; None                                                ; -1.156 ns ; isR               ; isR_IDEX$latch               ; isEOR        ;
+; N/A                                     ; None                                                ; -1.165 ns ; isSW              ; isSW_IDEX$latch              ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.169 ns ; isPrintDigit      ; isPrintDigit_IDEX$latch      ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.181 ns ; ALUFunc[0]        ; ALUFunc_IDEX[0]$latch        ; isEOR        ;
+; N/A                                     ; None                                                ; -1.187 ns ; immediate16[4]    ; immediate16_IDEX[4]$latch    ; isEOR        ;
+; N/A                                     ; None                                                ; -1.191 ns ; immediate16[0]    ; immediate16_IDEX[0]$latch    ; isEOR        ;
+; N/A                                     ; None                                                ; -1.195 ns ; R1Reg[5]          ; R1Reg_IDEX[5]$latch          ; isEOR        ;
+; N/A                                     ; None                                                ; -1.199 ns ; R2Reg[13]         ; R2Reg_IDEX[13]$latch         ; isSW         ;
+; N/A                                     ; None                                                ; -1.207 ns ; R2Reg[6]          ; R2Reg_IDEX[6]$latch          ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.208 ns ; R2Reg[0]          ; R2Reg_IDEX[0]$latch          ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.209 ns ; ALUFunc[2]        ; ALUFunc_IDEX[2]$latch        ; isEOR        ;
+; N/A                                     ; None                                                ; -1.211 ns ; R2Reg[9]          ; R2Reg_IDEX[9]$latch          ; isSW         ;
+; N/A                                     ; None                                                ; -1.213 ns ; isLW              ; isLW_IDEX$latch              ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.214 ns ; R2Reg[2]          ; R2Reg_IDEX[2]$latch          ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.215 ns ; R1Reg[11]         ; R1Reg_IDEX[11]$latch         ; isEOR        ;
+; N/A                                     ; None                                                ; -1.228 ns ; immediate16[9]    ; immediate16_IDEX[9]$latch    ; isEOR        ;
+; N/A                                     ; None                                                ; -1.243 ns ; R1AD[0]           ; R1AD_IDEX[0]$latch           ; isSW         ;
+; N/A                                     ; None                                                ; -1.244 ns ; R1Reg[9]          ; R1Reg_IDEX[9]$latch          ; isEOR        ;
+; N/A                                     ; None                                                ; -1.264 ns ; isReadDigit       ; isReadDigit_IDEX$latch       ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.265 ns ; R2Reg[12]         ; R2Reg_IDEX[12]$latch         ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.287 ns ; R2Reg[13]         ; R2Reg_IDEX[13]$latch         ; isLW         ;
+; N/A                                     ; None                                                ; -1.299 ns ; R2Reg[9]          ; R2Reg_IDEX[9]$latch          ; isLW         ;
+; N/A                                     ; None                                                ; -1.300 ns ; R2Reg[14]         ; R2Reg_IDEX[14]$latch         ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.300 ns ; R2Reg[4]          ; R2Reg_IDEX[4]$latch          ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.304 ns ; immediate16[12]   ; immediate16_IDEX[12]$latch   ; isEOR        ;
+; N/A                                     ; None                                                ; -1.307 ns ; immediate16[5]    ; immediate16_IDEX[5]$latch    ; isEOR        ;
+; N/A                                     ; None                                                ; -1.309 ns ; isSW              ; isSW_IDEX$latch              ; isSW         ;
+; N/A                                     ; None                                                ; -1.313 ns ; isPrintDigit      ; isPrintDigit_IDEX$latch      ; isSW         ;
+; N/A                                     ; None                                                ; -1.316 ns ; R1Reg[14]         ; R1Reg_IDEX[14]$latch         ; isEOR        ;
+; N/A                                     ; None                                                ; -1.331 ns ; R1AD[0]           ; R1AD_IDEX[0]$latch           ; isLW         ;
+; N/A                                     ; None                                                ; -1.342 ns ; immediate16[11]   ; immediate16_IDEX[11]$latch   ; isEOR        ;
+; N/A                                     ; None                                                ; -1.347 ns ; R1Reg[15]         ; R1Reg_IDEX[15]$latch         ; isEOR        ;
+; N/A                                     ; None                                                ; -1.351 ns ; R2Reg[6]          ; R2Reg_IDEX[6]$latch          ; isSW         ;
+; N/A                                     ; None                                                ; -1.352 ns ; R2Reg[0]          ; R2Reg_IDEX[0]$latch          ; isSW         ;
+; N/A                                     ; None                                                ; -1.357 ns ; isLW              ; isLW_IDEX$latch              ; isSW         ;
+; N/A                                     ; None                                                ; -1.358 ns ; R2Reg[2]          ; R2Reg_IDEX[2]$latch          ; isSW         ;
+; N/A                                     ; None                                                ; -1.358 ns ; ALUFunc[3]        ; ALUFunc_IDEX[3]$latch        ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.362 ns ; R1Reg[6]          ; R1Reg_IDEX[6]$latch          ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.363 ns ; R1Reg[0]          ; R1Reg_IDEX[0]$latch          ; isEOR        ;
+; N/A                                     ; None                                                ; -1.367 ns ; R1Reg[3]          ; R1Reg_IDEX[3]$latch          ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.374 ns ; R2Reg[1]          ; R2Reg_IDEX[1]$latch          ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.376 ns ; immediate16[2]    ; immediate16_IDEX[2]$latch    ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.376 ns ; R2Reg[3]          ; R2Reg_IDEX[3]$latch          ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.378 ns ; isEOR             ; isEOR_IDEX$latch             ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.379 ns ; R1Reg[12]         ; R1Reg_IDEX[12]$latch         ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.380 ns ; R2Reg[15]         ; R2Reg_IDEX[15]$latch         ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.382 ns ; isMFPC            ; isMFPC_IDEX$latch            ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.382 ns ; isR               ; isR_IDEX$latch               ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.397 ns ; isSW              ; isSW_IDEX$latch              ; isLW         ;
+; N/A                                     ; None                                                ; -1.400 ns ; immediate16[15]   ; immediate16_IDEX[15]$latch   ; isEOR        ;
+; N/A                                     ; None                                                ; -1.401 ns ; isPrintDigit      ; isPrintDigit_IDEX$latch      ; isLW         ;
+; N/A                                     ; None                                                ; -1.403 ns ; jumpShortAddr[8]  ; jumpShortAddr_IDEX[8]$latch  ; wasJumpOut   ;
+; N/A                                     ; None                                                ; -1.404 ns ; immediate16[3]    ; immediate16_IDEX[3]$latch    ; isEOR        ;
+; N/A                                     ; None                                                ; -1.407 ns ; ALUFunc[0]        ; ALUFunc_IDEX[0]$latch        ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.408 ns ; isReadDigit       ; isReadDigit_IDEX$latch       ; isSW         ;
+; N/A                                     ; None                                                ; -1.408 ns ; R2Reg[5]          ; R2Reg_IDEX[5]$latch          ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.409 ns ; R2Reg[12]         ; R2Reg_IDEX[12]$latch         ; isSW         ;
+; N/A                                     ; None                                                ; -1.413 ns ; immediate16[4]    ; immediate16_IDEX[4]$latch    ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.414 ns ; R2Reg[7]          ; R2Reg_IDEX[7]$latch          ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.417 ns ; immediate16[0]    ; immediate16_IDEX[0]$latch    ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.421 ns ; R1Reg[5]          ; R1Reg_IDEX[5]$latch          ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.435 ns ; ALUFunc[2]        ; ALUFunc_IDEX[2]$latch        ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.438 ns ; R2Reg[13]         ; R2Reg_IDEX[13]$latch         ; isPrintDigit ;
+; N/A                                     ; None                                                ; -1.439 ns ; R2Reg[6]          ; R2Reg_IDEX[6]$latch          ; isLW         ;
+; N/A                                     ; None                                                ; -1.440 ns ; R2Reg[0]          ; R2Reg_IDEX[0]$latch          ; isLW         ;
+; N/A                                     ; None                                                ; -1.441 ns ; R1Reg[11]         ; R1Reg_IDEX[11]$latch         ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.442 ns ; immediate16[7]    ; immediate16_IDEX[7]$latch    ; isEOR        ;
+; N/A                                     ; None                                                ; -1.444 ns ; R2Reg[14]         ; R2Reg_IDEX[14]$latch         ; isSW         ;
+; N/A                                     ; None                                                ; -1.444 ns ; R2Reg[4]          ; R2Reg_IDEX[4]$latch          ; isSW         ;
+; N/A                                     ; None                                                ; -1.445 ns ; isLW              ; isLW_IDEX$latch              ; isLW         ;
+; N/A                                     ; None                                                ; -1.446 ns ; R2Reg[2]          ; R2Reg_IDEX[2]$latch          ; isLW         ;
+; N/A                                     ; None                                                ; -1.448 ns ; jumpShortAddr[8]  ; jumpShortAddr_IDEX[8]$latch  ; isJump       ;
+; N/A                                     ; None                                                ; -1.450 ns ; R2Reg[9]          ; R2Reg_IDEX[9]$latch          ; isPrintDigit ;
+; N/A                                     ; None                                                ; -1.451 ns ; immediate16[8]    ; immediate16_IDEX[8]$latch    ; isEOR        ;
+; N/A                                     ; None                                                ; -1.451 ns ; immediate16[1]    ; immediate16_IDEX[1]$latch    ; isEOR        ;
+; N/A                                     ; None                                                ; -1.454 ns ; immediate16[9]    ; immediate16_IDEX[9]$latch    ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.454 ns ; immediate16[6]    ; immediate16_IDEX[6]$latch    ; isEOR        ;
+; N/A                                     ; None                                                ; -1.455 ns ; R1Reg[1]          ; R1Reg_IDEX[1]$latch          ; isEOR        ;
+; N/A                                     ; None                                                ; -1.470 ns ; R1Reg[9]          ; R1Reg_IDEX[9]$latch          ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.477 ns ; ALUFunc[3]        ; ALUFunc_IDEX[3]$latch        ; isR          ;
+; N/A                                     ; None                                                ; -1.479 ns ; R1Reg[13]         ; R1Reg_IDEX[13]$latch         ; isEOR        ;
+; N/A                                     ; None                                                ; -1.481 ns ; R1Reg[6]          ; R1Reg_IDEX[6]$latch          ; isR          ;
+; N/A                                     ; None                                                ; -1.482 ns ; R1AD[0]           ; R1AD_IDEX[0]$latch           ; isPrintDigit ;
+; N/A                                     ; None                                                ; -1.486 ns ; R1Reg[3]          ; R1Reg_IDEX[3]$latch          ; isR          ;
+; N/A                                     ; None                                                ; -1.490 ns ; R1Reg[2]          ; R1Reg_IDEX[2]$latch          ; isEOR        ;
+; N/A                                     ; None                                                ; -1.494 ns ; immediate16[10]   ; immediate16_IDEX[10]$latch   ; isEOR        ;
+; N/A                                     ; None                                                ; -1.495 ns ; immediate16[2]    ; immediate16_IDEX[2]$latch    ; isR          ;
+; N/A                                     ; None                                                ; -1.496 ns ; isReadDigit       ; isReadDigit_IDEX$latch       ; isLW         ;
+; N/A                                     ; None                                                ; -1.497 ns ; isEOR             ; isEOR_IDEX$latch             ; isR          ;
+; N/A                                     ; None                                                ; -1.497 ns ; R2Reg[12]         ; R2Reg_IDEX[12]$latch         ; isLW         ;
+; N/A                                     ; None                                                ; -1.498 ns ; R1Reg[12]         ; R1Reg_IDEX[12]$latch         ; isR          ;
+; N/A                                     ; None                                                ; -1.501 ns ; isMFPC            ; isMFPC_IDEX$latch            ; isR          ;
+; N/A                                     ; None                                                ; -1.501 ns ; isR               ; isR_IDEX$latch               ; isR          ;
+; N/A                                     ; None                                                ; -1.509 ns ; R1Reg[10]         ; R1Reg_IDEX[10]$latch         ; isEOR        ;
+; N/A                                     ; None                                                ; -1.515 ns ; R1Reg[8]          ; R1Reg_IDEX[8]$latch          ; isEOR        ;
+; N/A                                     ; None                                                ; -1.516 ns ; immediate16[14]   ; immediate16_IDEX[14]$latch   ; isEOR        ;
+; N/A                                     ; None                                                ; -1.518 ns ; R2Reg[1]          ; R2Reg_IDEX[1]$latch          ; isSW         ;
+; N/A                                     ; None                                                ; -1.520 ns ; R2Reg[3]          ; R2Reg_IDEX[3]$latch          ; isSW         ;
+; N/A                                     ; None                                                ; -1.523 ns ; immediate16[13]   ; immediate16_IDEX[13]$latch   ; isEOR        ;
+; N/A                                     ; None                                                ; -1.524 ns ; R2Reg[15]         ; R2Reg_IDEX[15]$latch         ; isSW         ;
+; N/A                                     ; None                                                ; -1.526 ns ; ALUFunc[0]        ; ALUFunc_IDEX[0]$latch        ; isR          ;
+; N/A                                     ; None                                                ; -1.530 ns ; immediate16[12]   ; immediate16_IDEX[12]$latch   ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.532 ns ; immediate16[4]    ; immediate16_IDEX[4]$latch    ; isR          ;
+; N/A                                     ; None                                                ; -1.532 ns ; R2Reg[14]         ; R2Reg_IDEX[14]$latch         ; isLW         ;
+; N/A                                     ; None                                                ; -1.532 ns ; R2Reg[4]          ; R2Reg_IDEX[4]$latch          ; isLW         ;
+; N/A                                     ; None                                                ; -1.533 ns ; immediate16[5]    ; immediate16_IDEX[5]$latch    ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.536 ns ; immediate16[0]    ; immediate16_IDEX[0]$latch    ; isR          ;
+; N/A                                     ; None                                                ; -1.540 ns ; R1Reg[5]          ; R1Reg_IDEX[5]$latch          ; isR          ;
+; N/A                                     ; None                                                ; -1.542 ns ; R1Reg[14]         ; R1Reg_IDEX[14]$latch         ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.548 ns ; isSW              ; isSW_IDEX$latch              ; isPrintDigit ;
+; N/A                                     ; None                                                ; -1.552 ns ; isPrintDigit      ; isPrintDigit_IDEX$latch      ; isPrintDigit ;
+; N/A                                     ; None                                                ; -1.552 ns ; R2Reg[5]          ; R2Reg_IDEX[5]$latch          ; isSW         ;
+; N/A                                     ; None                                                ; -1.554 ns ; ALUFunc[2]        ; ALUFunc_IDEX[2]$latch        ; isR          ;
+; N/A                                     ; None                                                ; -1.558 ns ; R2Reg[7]          ; R2Reg_IDEX[7]$latch          ; isSW         ;
+; N/A                                     ; None                                                ; -1.560 ns ; R1Reg[11]         ; R1Reg_IDEX[11]$latch         ; isR          ;
+; N/A                                     ; None                                                ; -1.568 ns ; immediate16[11]   ; immediate16_IDEX[11]$latch   ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.573 ns ; immediate16[9]    ; immediate16_IDEX[9]$latch    ; isR          ;
+; N/A                                     ; None                                                ; -1.573 ns ; R1Reg[15]         ; R1Reg_IDEX[15]$latch         ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.586 ns ; R1AD[1]           ; R1AD_IDEX[1]$latch           ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.589 ns ; R1Reg[9]          ; R1Reg_IDEX[9]$latch          ; isR          ;
+; N/A                                     ; None                                                ; -1.589 ns ; R1Reg[0]          ; R1Reg_IDEX[0]$latch          ; isMFPC       ;
+; N/A                                     ; None                                                ; -1.590 ns ; R2Reg[6]          ; R2Reg_IDEX[6]$latch          ; isPrintDigit ;
+; N/A                                     ; None                                                ; -1.591 ns ; R2Reg[0]          ; R2Reg_IDEX[0]$latch          ; isPrintDigit ;
+; N/A                                     ; None                                                ; -1.596 ns ; isLW              ; isLW_IDEX$latch              ; isPrintDigit ;
+; N/A                                     ; None                                                ; -1.597 ns ; R2Reg[2]          ; R2Reg_IDEX[2]$latch          ; isPrintDigit ;
+; N/A                                     ; None                                                ; -1.606 ns ; R2Reg[1]          ; R2Reg_IDEX[1]$latch          ; isLW         ;
+; N/A                                     ; None                                                ; -1.608 ns ; R2Reg[8]          ; R2Reg_IDEX[8]$latch          ; isReadDigit  ;
+; N/A                                     ; None                                                ; -1.608 ns ; R2Reg[3]          ; R2Reg_IDEX[3]$latch          ; isLW         ;
+; N/A                                     ; None                                                ; -1.612 ns ; R2Reg[15]         ; R2Reg_IDEX[15]$latch         ; isLW         ;
+; N/A                                     ; None                                                ; -1.619 ns ; jumpShortAddr[8]  ; jumpShortAddr_IDEX[8]$latch  ; isBranch     ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;           ;                   ;                              ;              ;
++-----------------------------------------+-----------------------------------------------------+-----------+-------------------+------------------------------+--------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Classic Timing Analyzer
+    Info: Version 7.2 Build 207 03/18/2008 Service Pack 3 SJ Full Version
+    Info: Processing started: Thu May 23 13:02:41 2019
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off register_ID_EX -c register_ID_EX --timing_analysis_only
+Warning: Timing Analysis is analyzing one or more combinational loops as latches
+    Warning: Node "isEOR_IDEX$latch" is a latch
+    Warning: Node "wasJumpOut_IDEX$latch" is a latch
+    Warning: Node "isJump_IDEX$latch" is a latch
+    Warning: Node "isJR_IDEX$latch" is a latch
+    Warning: Node "isBranch_IDEX$latch" is a latch
+    Warning: Node "isR_IDEX$latch" is a latch
+    Warning: Node "isMFPC_IDEX$latch" is a latch
+    Warning: Node "isLW_IDEX$latch" is a latch
+    Warning: Node "isSW_IDEX$latch" is a latch
+    Warning: Node "isReadDigit_IDEX$latch" is a latch
+    Warning: Node "isPrintDigit_IDEX$latch" is a latch
+    Warning: Node "ALUFunc_IDEX[0]$latch" is a latch
+    Warning: Node "ALUFunc_IDEX[1]$latch" is a latch
+    Warning: Node "ALUFunc_IDEX[2]$latch" is a latch
+    Warning: Node "ALUFunc_IDEX[3]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[0]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[1]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[2]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[3]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[4]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[5]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[6]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[7]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[8]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[9]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[10]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[11]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[12]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[13]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[14]$latch" is a latch
+    Warning: Node "R1Reg_IDEX[15]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[0]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[1]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[2]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[3]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[4]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[5]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[6]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[7]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[8]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[9]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[10]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[11]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[12]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[13]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[14]$latch" is a latch
+    Warning: Node "R2Reg_IDEX[15]$latch" is a latch
+    Warning: Node "immediate16_IDEX[0]$latch" is a latch
+    Warning: Node "immediate16_IDEX[1]$latch" is a latch
+    Warning: Node "immediate16_IDEX[2]$latch" is a latch
+    Warning: Node "immediate16_IDEX[3]$latch" is a latch
+    Warning: Node "immediate16_IDEX[4]$latch" is a latch
+    Warning: Node "immediate16_IDEX[5]$latch" is a latch
+    Warning: Node "immediate16_IDEX[6]$latch" is a latch
+    Warning: Node "immediate16_IDEX[7]$latch" is a latch
+    Warning: Node "immediate16_IDEX[8]$latch" is a latch
+    Warning: Node "immediate16_IDEX[9]$latch" is a latch
+    Warning: Node "immediate16_IDEX[10]$latch" is a latch
+    Warning: Node "immediate16_IDEX[11]$latch" is a latch
+    Warning: Node "immediate16_IDEX[12]$latch" is a latch
+    Warning: Node "immediate16_IDEX[13]$latch" is a latch
+    Warning: Node "immediate16_IDEX[14]$latch" is a latch
+    Warning: Node "immediate16_IDEX[15]$latch" is a latch
+    Warning: Node "R1AD_IDEX[0]$latch" is a latch
+    Warning: Node "R1AD_IDEX[1]$latch" is a latch
+    Warning: Node "R1AD_IDEX[2]$latch" is a latch
+    Warning: Node "jumpShortAddr_IDEX[0]$latch" is a latch
+    Warning: Node "jumpShortAddr_IDEX[1]$latch" is a latch
+    Warning: Node "jumpShortAddr_IDEX[2]$latch" is a latch
+    Warning: Node "jumpShortAddr_IDEX[3]$latch" is a latch
+    Warning: Node "jumpShortAddr_IDEX[4]$latch" is a latch
+    Warning: Node "jumpShortAddr_IDEX[5]$latch" is a latch
+    Warning: Node "jumpShortAddr_IDEX[6]$latch" is a latch
+    Warning: Node "jumpShortAddr_IDEX[7]$latch" is a latch
+    Warning: Node "jumpShortAddr_IDEX[8]$latch" is a latch
+    Warning: Node "jumpShortAddr_IDEX[9]$latch" is a latch
+    Warning: Node "jumpShortAddr_IDEX[10]$latch" is a latch
+    Warning: Node "jumpShortAddr_IDEX[11]$latch" is a latch
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "isR" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "isMFPC" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "isEOR" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "isJR" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "isBranch" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "isJump" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "wasJumpOut" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "isPrintDigit" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "isLW" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "isSW" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "isReadDigit" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+Warning: Found 3 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected gated clock "process0~57" as buffer
+    Info: Detected gated clock "process0~56" as buffer
+    Info: Detected gated clock "process0~55" as buffer
+Info: tsu for register "R1Reg_IDEX[4]$latch" (data pin = "R1Reg[4]", clock pin = "isR") is 3.762 ns
+    Info: + Longest pin to register delay is 7.195 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.840 ns) = 0.840 ns; Loc. = PIN_AC8; Fanout = 1; PIN Node = 'R1Reg[4]'
+        Info: 2: + IC(6.084 ns) + CELL(0.271 ns) = 7.195 ns; Loc. = LCCOMB_X9_Y35_N0; Fanout = 1; REG Node = 'R1Reg_IDEX[4]$latch'
+        Info: Total cell delay = 1.111 ns ( 15.44 % )
+        Info: Total interconnect delay = 6.084 ns ( 84.56 % )
+    Info: + Micro setup delay of destination is 0.818 ns
+    Info: - Shortest clock path from clock "isR" to destination register is 4.251 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.832 ns) = 0.832 ns; Loc. = PIN_M4; Fanout = 2; CLK Node = 'isR'
+        Info: 2: + IC(0.652 ns) + CELL(0.149 ns) = 1.633 ns; Loc. = LCCOMB_X1_Y23_N20; Fanout = 1; COMB Node = 'process0~55'
+        Info: 3: + IC(1.116 ns) + CELL(0.000 ns) = 2.749 ns; Loc. = CLKCTRL_G2; Fanout = 39; COMB Node = 'process0~55clkctrl'
+        Info: 4: + IC(1.352 ns) + CELL(0.150 ns) = 4.251 ns; Loc. = LCCOMB_X9_Y35_N0; Fanout = 1; REG Node = 'R1Reg_IDEX[4]$latch'
+        Info: Total cell delay = 1.131 ns ( 26.61 % )
+        Info: Total interconnect delay = 3.120 ns ( 73.39 % )
+Info: tco from clock "wasJumpOut" to destination pin "jumpShortAddr_IDEX[1]" through register "jumpShortAddr_IDEX[1]$latch" is 9.355 ns
+    Info: + Longest clock path from clock "wasJumpOut" to source register is 5.656 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.830 ns) = 0.830 ns; Loc. = PIN_G17; Fanout = 2; CLK Node = 'wasJumpOut'
+        Info: 2: + IC(0.998 ns) + CELL(0.438 ns) = 2.266 ns; Loc. = LCCOMB_X47_Y35_N16; Fanout = 1; COMB Node = 'process0~56'
+        Info: 3: + IC(1.908 ns) + CELL(0.000 ns) = 4.174 ns; Loc. = CLKCTRL_G4; Fanout = 16; COMB Node = 'process0~56clkctrl'
+        Info: 4: + IC(1.332 ns) + CELL(0.150 ns) = 5.656 ns; Loc. = LCCOMB_X64_Y6_N10; Fanout = 1; REG Node = 'jumpShortAddr_IDEX[1]$latch'
+        Info: Total cell delay = 1.418 ns ( 25.07 % )
+        Info: Total interconnect delay = 4.238 ns ( 74.93 % )
+    Info: + Micro clock to output delay of source is 0.000 ns
+    Info: + Longest register to pin delay is 3.699 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCCOMB_X64_Y6_N10; Fanout = 1; REG Node = 'jumpShortAddr_IDEX[1]$latch'
+        Info: 2: + IC(0.911 ns) + CELL(2.788 ns) = 3.699 ns; Loc. = PIN_AB21; Fanout = 0; PIN Node = 'jumpShortAddr_IDEX[1]'
+        Info: Total cell delay = 2.788 ns ( 75.37 % )
+        Info: Total interconnect delay = 0.911 ns ( 24.63 % )
+Info: th for register "jumpShortAddr_IDEX[11]$latch" (data pin = "jumpShortAddr[11]", clock pin = "wasJumpOut") is -0.075 ns
+    Info: + Longest clock path from clock "wasJumpOut" to destination register is 5.665 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.830 ns) = 0.830 ns; Loc. = PIN_G17; Fanout = 2; CLK Node = 'wasJumpOut'
+        Info: 2: + IC(0.998 ns) + CELL(0.438 ns) = 2.266 ns; Loc. = LCCOMB_X47_Y35_N16; Fanout = 1; COMB Node = 'process0~56'
+        Info: 3: + IC(1.908 ns) + CELL(0.000 ns) = 4.174 ns; Loc. = CLKCTRL_G4; Fanout = 16; COMB Node = 'process0~56clkctrl'
+        Info: 4: + IC(1.341 ns) + CELL(0.150 ns) = 5.665 ns; Loc. = LCCOMB_X64_Y13_N8; Fanout = 1; REG Node = 'jumpShortAddr_IDEX[11]$latch'
+        Info: Total cell delay = 1.418 ns ( 25.03 % )
+        Info: Total interconnect delay = 4.247 ns ( 74.97 % )
+    Info: + Micro hold delay of destination is 0.000 ns
+    Info: - Shortest pin to register delay is 5.740 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.842 ns) = 0.842 ns; Loc. = PIN_U23; Fanout = 1; PIN Node = 'jumpShortAddr[11]'
+        Info: 2: + IC(4.479 ns) + CELL(0.419 ns) = 5.740 ns; Loc. = LCCOMB_X64_Y13_N8; Fanout = 1; REG Node = 'jumpShortAddr_IDEX[11]$latch'
+        Info: Total cell delay = 1.261 ns ( 21.97 % )
+        Info: Total interconnect delay = 4.479 ns ( 78.03 % )
+Info: Quartus II 64-Bit Classic Timing Analyzer was successful. 0 errors, 81 warnings
+    Info: Allocated 4375 megabytes of memory during processing
+    Info: Processing ended: Thu May 23 13:02:57 2019
+    Info: Elapsed time: 00:00:16
+
+
